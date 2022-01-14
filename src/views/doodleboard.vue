@@ -24,6 +24,7 @@ export default {
   }
 
   .subheader {
+    font-family: "Futura-Book";
     size: 14px;
   }
 
