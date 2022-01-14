@@ -10,7 +10,7 @@
                 <li><router-link :class="[portfolio ? 'link' : 'nolink']" :to="{name: 'portfolio'}" @click="onClickPortfolio">portfolio</router-link></li>
                 <li><router-link :class="[about ? 'link' : 'nolink']" :to="{name: 'about'}" @click="onClickAbout">about</router-link></li>
                 <li><router-link :class="[contact ? 'link' : 'nolink']" :to="{name: 'doodleboard'}" @click="onClickContact">doodle board</router-link></li>
-                <li><router-link :class="[resume ? 'link' : 'nolink']" :to="{name: ''}" @click="onClickResume">resume</router-link></li>
+                <li><a class="nolink" @click="onClickResume" href="https://drive.google.com/file/d/1GBq-92Ls3JWTjgXBrzsG2DOeSk2AAFsH/view?usp=sharing" target="_blank">resume</a></li>
             </ul>
             <div class="icon">
                 <img @click="toggleMobileNav" v-show="mobile" class="bar" :class="{'bar-active' : mobileNav}" src="@/assets/bar.svg"/>
@@ -20,7 +20,7 @@
                     <li><router-link :class="[portfolio ? 'link' : 'nolink']" :to="{name: 'portfolio'}" @click="onClickPortfolio">portfolio</router-link></li>
                     <li><router-link :class="[about ? 'link' : 'nolink']" :to="{name: 'about'}" @click="onClickAbout">about</router-link></li>
                     <li><router-link :class="[contact ? 'link' : 'nolink']" :to="{name: 'doodleboard'}" @click="onClickContact">doodle board</router-link></li>
-                    <li><router-link :class="[resume ? 'link' : 'nolink']" :to="{name: ''}" @click="onClickResume">resume</router-link></li>
+                    <li><a class="nolink" @click="onClickResume" href="https://drive.google.com/file/d/1GBq-92Ls3JWTjgXBrzsG2DOeSk2AAFsH/view?usp=sharing" target="_blank">resume</a></li>
                 </ul>                
             </transition>
         </nav>
@@ -71,6 +71,7 @@ export default {
             this.contact = false;
             this.resume = false;
             console.log(this.portfolio);
+            console.log("RESUME: " + this.resume);
             window.scrollTo(0, 0);
         },
 
@@ -94,7 +95,8 @@ export default {
             this.portfolio = false;
             this.about = false;
             this.contact = false;
-            this.resume = true;
+            this.resume = false;
+            console.log("RESUME FROM OCR: " + this.resume);
             window.scrollTo(0, 0);
         }
     }
