@@ -287,7 +287,7 @@ p {
     font-size: 14px;
 }
 
-.specs-list-m {
+.specs-list {
     font-family: "Futura-Book";
     font-size: 18px;
 }

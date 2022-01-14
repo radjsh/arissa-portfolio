@@ -167,10 +167,12 @@ export default ({
 }
 
 .subheader-posters {
+    font-family: "Futura-Book";
     margin-top: 12px;
 }
 
 .subheader-posters-m {
+    font-family: "Futura-Book";
     font-size: 14px;
     margin-top: 12px;
 }
@@ -234,15 +236,18 @@ p {
     font-size: 14px;
 }
 
-.specs-list-m {
+.specs-list {
+    font-family: "Futura-Book";
     font-size: 18px;
 }
 
 .specs-list-m {
+    font-family: "Futura-Book";
     font-size: 14px;
 }
 
 .introduction {
+    font-family: "Futura-Book";
     font-size: 18px;
     margin-top: 48px;
     text-align: start;
@@ -250,6 +255,7 @@ p {
 }
 
 .introduction-m {
+    font-family: "Futura-Book";
     margin: 24px 24px 0px 24px;
     text-align: start;
     font-size: 14px;
