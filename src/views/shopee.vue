@@ -298,6 +298,7 @@ p {
 }
 
 .introduction {
+    font-family: "Futura-Book";
     font-size: 18px;
     margin-top: 48px;
     text-align: start;
