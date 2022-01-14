@@ -96,11 +96,13 @@ export default ({
 }
 
 .desc {
+    font-family: "Futura-Book";
     margin: 8px 200px 0px 200px;
     line-height: 24px;
 }
 
 .desc-m {
+    font-family: "Futura-Book";
     margin: 24px 24px 0px 24px;
     text-align: start;
     font-size: 14px;
