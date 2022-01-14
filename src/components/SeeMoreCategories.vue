@@ -36,7 +36,7 @@ export default {
                 {
                     title: '30 days of UI challenge',
                     src: require("@/assets/portfolio-categories/30daysofuichallenge.svg"),
-                    path: '',
+                    path: 'ui-challenge',
                 },
                 {
                     title: 'Logos & Icons',
