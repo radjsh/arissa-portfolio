@@ -61,7 +61,13 @@
         <div :class="[mobileView ? 'introduction-m' : 'introduction']">ShopeePay is a digital wallet service by Shopee that users can use for make online and offline retail and interpersonal transactions. Users’ ShopeePay wallet can store money that is topped up from third party bank accounts.
         </div>
         <section class="posters">
-            <poster v-for="icon in icons" :key="icon.title" :poster="icon"></poster>
+            <header :class="[mobileView ? 'header-3-m reveal' : 'header-3 reveal']">Checkout Instant Top Up</header>
+            <div :class="[mobileView ? 'introduction-m reveal' : 'introduction reveal']">Initially, users had to be redirected to the wallet top up page if they did not have enough money in their ShopeePay wallet. To make the top up experience more seamless, a pop up would appear if users do not have enough money, instead of redirecting them to a new page. If users have not activated their ‘Auto Top Up’, they would be prompted at the end of their transaction.</div>
+            <poster :key="itu1.title" :poster="itu1"></poster>
+            <poster :key="itu2.title" :poster="itu2"></poster>
+            <header :class="[mobileView ? 'header-3-m reveal' : 'header-3 reveal']">Shipping 3PLs Masking</header>
+            <div :class="[mobileView ? 'introduction-m reveal' : 'introduction reveal']">This feature allows users to add collection points among the different third party logisitc companies, for their deliveries.</div>
+            <poster :key="tpl.title" :poster="tpl"></poster>
         </section>
         <div class="see-more-div">
             <text :class="[mobileView ? 'sm-title-m' : 'sm-title']">See More Projects</text> 
@@ -114,17 +120,22 @@ export default ({
                     title: "AirPay Contactless NFC Payment",
                     src: require("@/assets/shopee/nfc.svg")
                 },  
-
-            icons: [
+            itu1:                  
                 { 
                     title: "Shopee Pay Instant Top Up, Auto Top Up not activated",
-                    src: require("@/assets/shopee/shopee-ITU-1.png"),
-                },      
+                    src: require("@/assets/shopee/shopee-ITU-2.png"),
+                },   
+            itu2:                  
                 { 
                     title: "Shopee Pay Instant Top Up, Auto Top Up activated",
-                    src: require("@/assets/shopee/shopee-ITU-2.png"),
-                },                                                                   
-            ],
+                    src: require("@/assets/shopee/shopee-ITU-1.png"),
+                },       
+            tpl:                  
+                { 
+                    title: "Shipping 3PLs Masking",
+                    src: require("@/assets/shopee/shopee-3PL.png"),
+                },                                                              
+
         }
     },
 
