@@ -58,7 +58,7 @@
             <poster :key="nfc.title" :poster="nfc"></poster>
         </section>
         <header :class="[mobileView ? 'header-2-m' : 'header-2']">ShopeePay Singapore</header>
-        <div :class="[mobileView ? 'introduction-m' : 'introduction']">I believe that icons are a great way for brands to express themselves while aligning with their brand identity. I’ve created icon sets for a range of purposes, from internal admin terminals, to in-app buttons and Instagram story highlights.
+        <div :class="[mobileView ? 'introduction-m' : 'introduction']">ShopeePay is a digital wallet service by Shopee that users can use for make online and offline retail and interpersonal transactions. Users’ ShopeePay wallet can store money that is topped up from third party bank accounts.
         </div>
         <section class="posters">
             <poster v-for="icon in icons" :key="icon.title" :poster="icon"></poster>
@@ -117,9 +117,13 @@ export default ({
 
             icons: [
                 { 
-                    title: "In-app category icons for Hop App",
-                    src: require("@/assets/logos/hop-icons.svg"),
-                },                                                                      
+                    title: "Shopee Pay Instant Top Up, Auto Top Up not activated",
+                    src: require("@/assets/shopee/shopee-ITU-1.png"),
+                },      
+                { 
+                    title: "Shopee Pay Instant Top Up, Auto Top Up activated",
+                    src: require("@/assets/shopee/shopee-ITU-2.png"),
+                },                                                                   
             ],
         }
     },
