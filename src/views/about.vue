@@ -13,7 +13,7 @@
                 <br>
                 <br>When I&#39;m not making art, you can find me out on a run or on the football field. I've been in competitive sports for half my life, which has fueled my competitive spirit and drive. I also love building things and upcycling clothes!
                 <br>
-                <br>If you&#39;re lucky, you might even catch me coding.
+                <br>If you&#39;re lucky, you might even catch me  <b><a class="link-style" href="https://github.com/radjsh/arissa-portfolio" target="_blank">coding</a></b>.
             </p>
         </div>
     </section>
@@ -119,5 +119,19 @@ export default {
     padding-left: 24px;
     padding-right: 24px;
     line-height: 20px;
+}
+
+a {
+    color: #7287B2;
+}
+
+a:hover {
+   color: #B1BCD5; 
+}
+
+.link-style {
+    text-underline-offset: 2px;
+    text-decoration-color: #F7C760;
+    text-decoration-thickness: 3px;
 }
 </style>

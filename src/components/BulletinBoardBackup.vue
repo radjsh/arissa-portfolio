@@ -1,8 +1,18 @@
 <template>
     <div class="bulletin-div">
-        <img class="bg" src="@/assets/bulletin-board.svg" id="bg"/>
-        <canvas class="canvas" v-if="showControls" @mousedown="startPainting" @mouseup="finishedPainting" @mousemove="keepPainting" id="canvas" width="720" height="480"></canvas>
-        <div class="button-row" v-if="showControls">
+        <div/>
+        <div class="misc-div">
+            <div/>
+            <div/>
+            <div/>
+            <div class="close-div">
+                <img src="@/assets/close_btn.svg" class="close-btn" @click="onClickClose" v-if="photosOnBoard">
+                <img src="@/assets/pencil-btn.svg" class="pencil-btn btn-inactive" @click="onClickOpen" v-if="photosOnBoard">
+            </div>
+            <canvas class="canvas" v-if="showControls" @mousedown="startPainting" @mouseup="finishedPainting" @mousemove="keepPainting" id="canvas" width="640" height="480"></canvas>
+            <div/>
+            <div/>
+                <div class="button-row" v-if="showControls">
                 <div :class="[black ? 'btn-active' : 'btn-inactive']">
                     <img src="@/assets/colours/black-btn.svg" @click="onClickColor('black')"/> 
                     </div>
@@ -36,7 +46,14 @@
                     <div class="btn-inactive" @click="onClickDone">
                         <img src="@/assets/done-btn.svg"/>
                     </div>
-        </div>   
+                </div>   
+            <div/>
+            
+        </div>
+        <div/>
+        
+     
+
     </div>
 </template>
 
@@ -133,25 +150,6 @@ export default ({
             console.log("You're done");
             // var image = this.canvas.toDataURL("image/png").replace("image/png", "image/octet-stream");  // here is the most important part because if you dont replace you will get a DOM 18 exception.
             // window.location.href=image; // it will save locally
-
-            /* CONVERT CANVAS TO JSON
-            var canvasContents = this.canvas.toDataURL();
-            var data = { image : canvasContents, date : Date.now() };
-            var string = JSON.stringify(data);
-
-            // create a blob object representing the data as JSON string
-            var file = new Blob([string], {
-                type: 'applications/json'
-            });
-
-            // trigger a click event on an <a> tag to open the file explorer 
-            var a = document.createElement('a');
-            a.href = URL.createObjectURL(file);
-            a.download = 'data.json';
-            document.body.appendChild(a);
-            a.click();
-            document.body.removeChild(a);
-            */
             this.ctx.clearRect(0, 0, this.canvas.width, this.canvas.height);
         },
 
@@ -238,16 +236,26 @@ export default ({
 
 .bulletin-div {
     display: grid;
-    grid-template-rows: 3;
+    grid-template-columns: 5% auto 5%;
     align-content: center;
+}
+
+.misc-div {
+    display: grid;
+    grid-template-columns: 10% auto 10%;
+    justify-content: space-between;
     justify-items: center;
-    margin-left: 48px;
-    margin-right: 48px;
+    align-content: space-evenly;
+    background-image: url(https://radjsh.github.io/arissa-portfolio/img/bulletin-board.707595aa.svg);
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-position-y: center;
+    height: 700px;
 }
 
 .bg {
     position: relative;
-    z-index: 1;
+    z-index: 2;
     width: 100%;
     height: auto;
 }
@@ -255,8 +263,7 @@ export default ({
 .canvas {
     position: relative;
     background-color: #F1E8E6;
-    z-index: 2;
-    margin-top: -50%;
+    z-index: 3;
     /* bottom: 160px;
     left: 300px; */
 }
@@ -266,6 +273,34 @@ export default ({
     margin-left: 200%;
 }
 
+.close-btn {
+    position: relative;
+    z-index: 4;  
+    width: 54px;
+    cursor: pointer;
+    margin: 0;
+}
+.pencil-btn {
+    position: relative;
+    z-index: 5;  
+    width: 54px;
+    cursor: pointer;
+    margin: 0;
+}
+/* .controls {
+    position: absolute;
+    z-index: 5;
+    margin-top: 20px;
+    bottom: 40px;
+    left: 0;
+    width: 100%;
+    height: 60px;
+    background-color: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    user-select: none;
+} */
 .button-row {
     position: relative;
     z-index: 3;
@@ -277,9 +312,7 @@ export default ({
     flex-direction: row;
     flex: 1;
     justify-content: center;
-    margin-top: -12%;
 }
-
 .btn-inactive {
     width: 54px;
     cursor: pointer;
