@@ -30,5 +30,6 @@ export default {
 
   .bb-div {
     margin-top: 140px;
+    margin-bottom: 100px;
   }
 </style>

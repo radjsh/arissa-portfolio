@@ -50,7 +50,6 @@
 <script>
 export default ({
     name: "bulletin-board",
-
     data () {
         return {
             pencil: true,
@@ -76,7 +75,6 @@ export default ({
             showControls: true,
         }
     },
-
     methods : {
         onClickControl(btn){
             if (btn == 'pencil') {
@@ -86,40 +84,30 @@ export default ({
                 this.drawing = true;
                 this.color_now = this.color_prev;
             }
-
             if (btn == 'eraser') {
                 this.pencil = false;
                 this.eraser = true;
                 this.drawing = true;
                 this.trash = false;
-                this.black = false
-                this.red = false
-                this.yellow = false
-                this.green = false
-                this.blue = false
-                this.brown = false
-                this.skin = false
                 this.color_prev = this.color_now;
                 this.color_now = "#F1E8E6";
             }
-
             if (btn == 'trash') {
                 this.pencil = true;
                 this.eraser = false;
                 this.trash = false;
-                this.black = true;
-                this.red = false
-                this.yellow = false
-                this.green = false
-                this.blue = false
-                this.brown = false
                 this.skin = false
-
+                console.log(this.color_now)
+                if (this.color_now == '#F1E8E6'){
+                    console.log("TRUE, ERASING")
+                    this.color_now = this.color_prev
+                    console.log(this.color_now)
+                }
+                console.log("NOT TRUE")
+                this.color_prev = this.color_now;
                 this.ctx.clearRect(0, 0, this.canvas.width, this.canvas.height);
-
             }
         },
-
         onClickColor(color_btn){
             this.black = false
             this.red = false
@@ -131,7 +119,6 @@ export default ({
             this.pencil = true
             this.trash = false
             this.eraser = false
-
             if (color_btn == "black") {this.black = true; this.color_now = "#2F2A1B"; this.color_prev = "#2F2A1B"; return}
             if (color_btn == "red") {this.red = true; this.color_now = "#D7766F"; this.color_prev = "#D7766F"; return}
             if (color_btn == "yellow") {this.yellow = true; this.color_now = "#F7C65F"; this.color_prev = "#F7C65F";return}
@@ -140,7 +127,6 @@ export default ({
             if (color_btn == "brown") {this.brown = true; this.color_now = "#794E2F"; this.color_prev = "#794E2F"; return}
             if (color_btn == "skin") {this.skin = true; this.color_now = "#F1BE96"; this.color_prev = "#F1BE96"; return}
         },
-
         onClickDone () {
             console.log("You're done");
             // var image = this.canvas.toDataURL("image/png").replace("image/png", "image/octet-stream");  // here is the most important part because if you dont replace you will get a DOM 18 exception.
@@ -148,25 +134,21 @@ export default ({
             // this.ctx.clearRect(0, 0, this.canvas.width, this.canvas.height);
             // this.showControls = false;
         },
-
         onClickClose () {
             console.log("Closing");
             // this.showControls = false;
         },
-
         onClickOpen () {
             console.log("Closing");
             this.showControls = true;
             this.ctx.clearRect(0, 0, this.canvas.width, this.canvas.height);
         },
-
         drawLine(x1, y1, x2, y2) {
             this.ctx.beginPath();
             this.ctx.strokeStyle = this.color_now
             this.ctx.lineWidth = 10;
             if (this.eraser == true) {
                 this.ctx.lineWidth = 30;
-
             }
             this.ctx.lineCap ="round" 
             this.ctx.moveTo(x1, y1);
@@ -174,7 +156,6 @@ export default ({
             this.ctx.stroke();
             this.ctx.closePath();
         },
-
         startPainting(e) {
             if (this.drawing == true) {
                 this.painting = true;
@@ -185,7 +166,6 @@ export default ({
                 this.y = e.offsetY
             }
         },
-
         keepPainting(e) {
             var rect = this.canvas.getBoundingClientRect();
                 if (this.painting === true) {
@@ -196,7 +176,6 @@ export default ({
                     this.y = (e.clientY - rect.top)
             }
         },
-
         finishedPainting(e) {
             this.painting = false;
             this.drawLine(this.x, this.y, e.offsetX, e.offsetY);
@@ -204,63 +183,52 @@ export default ({
             this.y = 0;
         },
     },
-
     mounted() {
         this.canvas = document.getElementById("canvas");
         this.ctx = this.canvas.getContext("2d");  
         this.vueCanvas = this.ctx;
     },
-
-
 });
-
-
 </script>
 
 <style scoped>
 .bulletin-div {
     justify-content: center;
 }
-
 .bg {
     position: absolute;
     z-index: 1;
     left: 140px;
-    top: 200px;
+    top: 300px;
     width: 80%;
     height: auto;
 }
-
 .misc-div{
     position: static;
     justify-content: center;
     overflow: 0;
 }
-
 .canvas {
     position: absolute;
     background-color: #F1E8E6;
     z-index: 3;
     left: 335px;
-    top: 295px;
+    top: 395px;
     /* bottom: 160px;
     left: 300px; */
 }
-
 .close-btn {
     position: absolute;
     z-index: 4;
     left: 235px;
-    top: 295px;     
+    top: 395px;     
 }
-
 .pencil-btn {
     position: absolute;
     z-index: 4;
     right: 255px;
-    top: 295px;     
+    top: 395px;     
 }
-
 /* .controls {
     position: absolute;
     z-index: 5;
@@ -275,11 +243,10 @@ export default ({
     align-items: center;
     user-select: none;
 } */
-
 .button-row {
     position: absolute;
     z-index: 5;
-    top: 780px;
+    top: 880px;
     left: 0;
     width: 100%;
     height: 60px;
@@ -289,13 +256,11 @@ export default ({
     flex: 1;
     justify-content: center;
 }
-
 .btn-inactive {
     width: 54px;
     cursor: pointer;
     margin-left: 24px;
 }
-
 .btn-active {
     position: relative;
     width: 54px;
@@ -309,7 +274,6 @@ export default ({
     border-spacing: 0pt;
     top: -10px;
 }
-
 @media screen and (max-width: 890px) {
   .button-active, .button-inactive {
     height: 36px;
