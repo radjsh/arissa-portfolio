@@ -197,7 +197,7 @@
       <g id="mouth">
       <path id="mouth_2" d="M613 166.96C613 166.96 627 176.96 642 167.96" stroke="#2F2A1B" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
       </g>
-      <g id="bubble_2">
+      <g id="bubble-2">
       <path id="Vector_69" d="M1165.15 5H738.853C731.466 5 724.381 7.93452 719.158 13.158C713.934 18.3814 711 25.4659 711 32.8529V32.8529C711.009 40.0197 713.78 46.9073 718.737 52.0833C723.694 57.2594 730.455 60.3254 737.615 60.644C736.016 64.5124 733.045 71.0837 730.002 74.6014C726.453 78.7277 758.422 85.7322 767.139 60.6749H1165.15C1172.53 60.6749 1179.62 57.7404 1184.84 52.517C1190.07 47.2935 1193 40.209 1193 32.822C1192.99 25.4403 1190.05 18.3637 1184.83 13.147C1179.61 7.93026 1172.53 5 1165.15 5Z" fill="#E7EFFB" stroke="#DDE8F6" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
       <path id="Vector_70" d="M733.365 30.0882L735.531 34.9367L737.852 30.0882H739.915L742.195 35.0605L744.485 30.0676H748.137L743.34 39.2384H741.164L738.874 34.194L736.676 39.2384H734.458L729.744 30.0676L733.365 30.0882Z" fill="#2F2A1B"/>
       <path id="Vector_71" d="M749.251 24.3113H752.511V31.2436C752.8 30.8841 753.149 30.577 753.543 30.3358C754.12 30.0201 754.773 29.8667 755.431 29.8922C755.924 29.863 756.418 29.9349 756.883 30.1034C757.348 30.2719 757.773 30.5335 758.133 30.8723C758.457 31.2088 758.702 31.6126 758.852 32.0548C759.002 32.4969 759.052 32.9667 759 33.4306V39.2591H755.719V34.6272C755.793 34.0025 755.647 33.3717 755.307 32.8426C755.174 32.7061 755.012 32.6004 754.834 32.5327C754.656 32.465 754.465 32.437 754.275 32.4506C753.845 32.4321 753.423 32.5716 753.089 32.8426C752.897 33.0396 752.749 33.2744 752.653 33.5319C752.557 33.7894 752.516 34.0641 752.532 34.3384V39.2591H749.251V24.3113Z" fill="#2F2A1B"/>
@@ -318,7 +318,7 @@ export default {
       const eyes = document.getElementById('eyes')
       const mouth = document.getElementById('mouth')
       const bubble = document.getElementById('bubble')
-      const bubble2 = document.getElementById('bubble_2"')
+      const bubble2 = document.getElementById('bubble-2')
 
       if(arm.classList.contains('wave') == false){
         arm.classList.add('wave')
@@ -337,7 +337,7 @@ export default {
       if((this.clickCount % 3) == 0) {
         console.log("LONG BUBBLE APPEAR")
         bubble2.classList.add('appear')
-        console.log("bubble_2: " + bubble2.classList)
+        console.log("bubble-2: " + bubble2.classList)
       }
 
       setTimeout(() => {this.endWave();}, 2000);
@@ -349,7 +349,7 @@ export default {
       const eyes = document.getElementById('eyes')
       const mouth = document.getElementById('mouth')
       const bubble = document.getElementById('bubble')
-      const bubble2 = document.getElementById('bubble_2')
+      const bubble2 = document.getElementById('bubble-2')
       arm.classList.remove('wave')
       eyes.classList.remove('wave')
       mouth.classList.remove('wave')
@@ -626,7 +626,7 @@ export default {
 
 
 #bubble, #bubble-2 {
-  opacity: 0%;
+  opacity: 100%;
 }
 
 
