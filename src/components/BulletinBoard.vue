@@ -41,6 +41,9 @@
 </template>
 
 <script>
+// import { setCanvas } from '../config/firebase.js';
+// import { reactive } from 'vue';
+
 export default ({
     name: "bulletin-board",
     created() {
@@ -218,6 +221,11 @@ export default ({
         this.ctx = this.canvas.getContext("2d");  
         this.vueCanvas = this.ctx;
     },
+    // setup() {
+    //     const obj = reactive({canvas: ''})
+    //     const onSubmit = async () => {}
+    //     return { obj, onSubmit }
+    // }
 });
 </script>
 

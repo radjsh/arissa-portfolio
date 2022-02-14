@@ -3,6 +3,8 @@ import "firebase/auth";
 import "firebase/firestore";
 import "firebase/performance";
 import "firebase/messaging";
+import { userSetter } from "core-js/fn/symbol";
+import { onUnmounted } from "vue";
 
 const firebaseConfig = {
     apiKey: "AIzaSyBDa7a-5ykkS5B1Qxxu-L0cCPyoq8uCG64",
@@ -23,10 +25,35 @@ firebase
     console.warn("DB offline support not available");
   });
 
+const db = firebase.firestore();
+const canvasCollection = db.collection('canvases');
+
 export default {
-  firestore: firebase.firestore(),
+  db,
   auth: firebase.auth(),
   firebase: firebase,
   notificationSupported: firebase.messaging.isSupported(),
   messaging: firebase.messaging.isSupported() ? firebase.messaging() : null,
 };
+
+// export const setCanvas = canvas => {
+//     return canvasCollection.add(canvas)
+// }
+
+// export const getCanvas = async id => {
+//     const canvas = await canvasCollection.doc(id).get()
+//     return canvas.exists ? canvas.data() : null
+// }
+
+// export const deleteCanvas = id => {
+//     return canvasCollection.doc(id).delete()
+// }
+
+// export const useLoadCanvases = () => {
+//     const canvases = ref([])
+//     const close = canvasCollection.onSnapshot(snapshot => {
+//         canvases.value = snapshot.docs.map( doc => ({ id : doc.id, ...doc.data() }))
+//     })
+//     onUnmounted(close)
+//     return canvases
+// }

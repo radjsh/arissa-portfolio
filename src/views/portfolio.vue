@@ -50,7 +50,7 @@
       </g>
       </g>
       </g>
-      <g id="Layer 27">
+      <g id="hair" @click="startWave">
       <path id="Vector_19" d="M751 144.96C714 119.96 707.47 31.69 601.24 59.82C601.24 59.82 568.17 57.96 541.58 102.96C514.99 147.96 469 130.96 467 174.96C465.32 211.96 493.31 216.87 510.45 212.6C507.32 202.23 511.11 192.9 521 199.96C527 204.25 520.65 210.06 510.45 212.6C511.857 217.303 514.458 221.561 518 224.96C527.25 233.72 539.75 231.2 548.1 226.02C543.01 218.32 542.88 209.74 552 210.96C561.12 212.18 556.91 220.57 548.1 226.02C551.38 231.02 556.73 235.59 563 236.96C595 243.96 608.18 217.84 617 214.96L674 208.96C674 208.96 671 233.96 712 234.96C720.74 235.17 726.68 233.85 730.51 231.78C722.64 228 718.18 221.78 724 215.96C731.77 208.19 743.9 224.55 730.51 231.78C737.58 235.18 747.41 236.6 755 233.96C758.487 232.784 761.654 230.818 764.256 228.216C766.858 225.614 768.824 222.447 770 218.96C761 215.63 754.74 208.1 760 203.96C769 196.9 773.78 207.96 770 218.96C778.92 222.28 790.49 221.45 796 208.96C807 183.96 788 169.96 751 144.96Z" fill="#794E2F" stroke="#503A2E" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
       </g>
       <g id="body" @click="startWave">
@@ -62,7 +62,7 @@
       <g id="Layer 23">
       <path id="Vector_22" d="M621.5 231.96C630.613 231.96 638 224.573 638 215.46C638 206.347 630.613 198.96 621.5 198.96C612.387 198.96 605 206.347 605 215.46C605 224.573 612.387 231.96 621.5 231.96Z" fill="#F2BF98" stroke="#DEA881" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
       </g>
-      <g id="arm">
+      <g id="arm" @click="startWave">
       <g id="arm_2">
       <g id="Vector_23">
       <path d="M527 228.96C527 228.96 484 193.96 455.61 123.62C455.61 123.62 451.61 111.7 458.72 110.62C465.83 109.54 466.03 112.62 469.05 119.75C472.07 126.88 462.4 108.94 468.79 105.4C475.18 101.86 478.59 105.15 483.04 114.24C487.49 123.33 474.38 103.93 480.04 99.86C485.7 95.79 491.09 103.08 494.12 109.26C497.15 115.44 545.45 197.57 569.79 208.64" fill="#F2BF98"/>
@@ -188,13 +188,13 @@
       <path id="Vector_65" d="M577.86 174.79L578.26 179.02" stroke="#D7766F" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
       <path id="Vector_66" d="M567.74 172.91L568.14 177.13" stroke="#D7766F" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
       </g>
-      <g id="eyes">
+      <g id="eyes" @click="startWave">
       <g id="eyes_2">
       <path id="Vector_67" d="M590.97 158.9C593.715 158.9 595.94 156.675 595.94 153.93C595.94 151.185 593.715 148.96 590.97 148.96C588.225 148.96 586 151.185 586 153.93C586 156.675 588.225 158.9 590.97 158.9Z" fill="#2F2A1B"/>
       <path id="Vector_68" d="M662.85 163.96C665.595 163.96 667.82 161.735 667.82 158.99C667.82 156.245 665.595 154.02 662.85 154.02C660.105 154.02 657.88 156.245 657.88 158.99C657.88 161.735 660.105 163.96 662.85 163.96Z" fill="#2F2A1B"/>
       </g>
       </g>
-      <g id="mouth">
+      <g id="mouth" @click="startWave">
       <path id="mouth_2" d="M613 166.96C613 166.96 627 176.96 642 167.96" stroke="#2F2A1B" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
       </g>
       <g id="bubble-2">
@@ -327,17 +327,11 @@ export default {
         this.clickCount += 1;
       }
 
-      console.log('clickCount: ' + this.clickCount)
-
       if(this.clickCount == 1) {
-        console.log("HELLO BUBBLE APPEAR")
         bubble.classList.add('appear')
-        console.log("bubble: " + bubble.classList)
       }
       if((this.clickCount % 3) == 0) {
-        console.log("LONG BUBBLE APPEAR")
         bubble2.classList.add('appear')
-        console.log("bubble-2: " + bubble2.classList)
       }
 
       setTimeout(() => {this.endWave();}, 2000);
@@ -623,7 +617,7 @@ export default {
   }
 } 
 
-#face:hover, #body:hover {
+#face:hover, #body:hover, #hair:hover, #eyes:hover, #mouth:hover, #arm:hover{
   cursor: pointer
 }
 
