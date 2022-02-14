@@ -471,11 +471,11 @@ export default {
 }
 
 #bubble, #bubble-2 {
-  opacity: 50%;
+  opacity: 0%;
 }
 
 #bubble.appear, #bubble-2.appear{
-  animation: bubble-move ease-in 4s;
+  animation: bubble-move ease-in 2s;
   transform-origin: top;
   transform-box: fill-box;
 }
