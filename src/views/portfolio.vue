@@ -6,7 +6,7 @@
         <text :class="[mobileView ? 'landing-page-mobile-subheader' : 'landing-page-subheader']" >ui/ux design | graphic design | illustrator</text>
       </div>
       <div :class="[mobileView ? 'landing-graphic-m' : 'landing-graphic']">
-      <svg :width="[mobileView? 300 : 1232]" :height="[mobileView ? 80 : 328]" viewBox="0 0 1232 328" fill="none" xmlns="http://www.w3.org/2000/svg" class="landing-animation">
+      <svg width="1232" height="328" viewBox="0 0 1232 328" fill="none" xmlns="http://www.w3.org/2000/svg" class="landing-animation">
       <g id="landing-animation" clip-path="url(#clip0_204_109)">
       <rect width="1232" height="327.5" fill="white"/>
       <g id="plant-r">
@@ -254,6 +254,7 @@
       </clipPath>
       </defs>
       </svg>
+
       </div>
     </div>
   <portfolio-categories/>
