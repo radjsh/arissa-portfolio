@@ -316,8 +316,8 @@ export default {
       const arm = document.getElementById('arm')
       const eyes = document.getElementById('eyes')
       const mouth = document.getElementById('mouth')
-      const bubble = document.getElementById('bubble')
-      const bubble2 = document.getElementById('bubble-2')
+      // const bubble = document.getElementById('bubble')
+      // const bubble2 = document.getElementById('bubble-2')
 
       if(arm.classList.contains('wave') == false){
         arm.classList.add('wave')
@@ -328,16 +328,16 @@ export default {
 
       console.log('clickCount: ' + this.clickCount)
 
-      if(this.clickCount == 1) {
-        console.log("HELLO BUBBLE APPEAR")
-        bubble.classList.add('appear')
-        console.log("bubble: " + bubble.classList)
-      }
-      if((this.clickCount % 3) == 0) {
-        console.log("LONG BUBBLE APPEAR")
-        bubble2.classList.add('appear')
-        console.log("bubble-2: " + bubble2.classList)
-      }
+      // if(this.clickCount == 1) {
+      //   console.log("HELLO BUBBLE APPEAR")
+      //   bubble.classList.add('appear')
+      //   console.log("bubble: " + bubble.classList)
+      // }
+      // if((this.clickCount % 3) == 0) {
+      //   console.log("LONG BUBBLE APPEAR")
+      //   bubble2.classList.add('appear')
+      //   console.log("bubble-2: " + bubble2.classList)
+      // }
 
       setTimeout(() => {this.endWave();}, 2000);
 
@@ -347,19 +347,14 @@ export default {
       const arm = document.getElementById('arm')
       const eyes = document.getElementById('eyes')
       const mouth = document.getElementById('mouth')
-      const bubble = document.getElementById('bubble')
-      const bubble2 = document.getElementById('bubble-2')
+      // const bubble = document.getElementById('bubble')
+      // const bubble2 = document.getElementById('bubble-2')
       arm.classList.remove('wave')
       eyes.classList.remove('wave')
       mouth.classList.remove('wave')
-      bubble.classList.remove('appear')
-      bubble2.classList.remove('appear')
+      // bubble.classList.remove('appear')
+      // bubble2.classList.remove('appear')
     },
-
-    // bubbleAppear() {
-    //   const bubble = document.getElementById('bubble')
-    //   bubble.classList.add('appear')
-    // }
   }
 }
 </script>
@@ -628,7 +623,7 @@ export default {
   }
 } 
 
-#bubble, #bubble-2 {
+/* #bubble, #bubble-2 {
   opacity: 100%;
 }
 
@@ -655,7 +650,7 @@ export default {
     opacity: 0%;
     transform: translateY(0px);
   }
-}
+} */
 
 </style>
 
