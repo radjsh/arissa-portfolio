@@ -353,8 +353,12 @@ export default {
       arm.classList.remove('wave')
       eyes.classList.remove('wave')
       mouth.classList.remove('wave')
-      bubble.classList.remove('appear')
-      bubble2.classList.remove('appear')
+      if (bubble.classList.contains('appear')) {
+        bubble.classList.remove('appear')
+      }
+      if (bubble2.classList.contains('appear')) {
+        bubble2.classList.remove('appear')
+      }
     },
   }
 }
