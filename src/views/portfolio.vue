@@ -623,10 +623,11 @@ export default {
   }
 } 
 
-/* #bubble, #bubble-2 {
+#bubble, #bubble-2 {
   opacity: 100%;
 }
 
+/* 
 #bubble.appear, #bubble-2.appear{
   animation: bubble-move ease-in 4s;
   transform-origin: top;
