@@ -466,6 +466,36 @@ export default {
   }
 }
 
+#bubble, #bubble-2 {
+  opacity: 0%;
+}
+
+
+#bubble.appear, #bubble-2.appear{
+  animation: bubble-move ease-in 4s;
+  transform-origin: top;
+  transform-box: fill-box;
+}
+
+@keyframes bubble-move{
+  0% {
+    opacity: 0%;
+    transform: translateY(20px);
+  }
+  10% {
+    opacity: 100%;
+    transform: translateY(4px);
+  }
+  90% {
+    opacity: 100%;
+    transform: translateY(4px);
+  }
+  100% {
+    opacity: 0%;
+    transform: translateY(0px);
+  }
+} 
+
 #mouse {
   animation: move-mouse ease-in-out 1s alternate infinite;
 }
@@ -621,37 +651,6 @@ export default {
   }
   to {
     transform: scale(100%, 100%);
-  }
-} 
-
-
-#bubble, #bubble-2 {
-  opacity: 100%;
-}
-
-
-#bubble.appear, #bubble-2.appear{
-  animation: bubble-move ease-in 4s;
-  transform-origin: top;
-  transform-box: fill-box;
-}
-
-@keyframes bubble-move{
-  0% {
-    opacity: 0%;
-    transform: translateY(20px);
-  }
-  10% {
-    opacity: 100%;
-    transform: translateY(4px);
-  }
-  90% {
-    opacity: 100%;
-    transform: translateY(4px);
-  }
-  100% {
-    opacity: 0%;
-    transform: translateY(0px);
   }
 } 
 
