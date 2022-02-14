@@ -626,7 +626,7 @@ export default {
 
 
 #bubble, #bubble-2 {
-  opacity: 100%;
+  opacity: 0%;
 }
 
 
