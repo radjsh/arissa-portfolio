@@ -6,7 +6,7 @@
         <text :class="[mobileView ? 'landing-page-mobile-subheader' : 'landing-page-subheader']" >ui/ux design | graphic design | illustrator</text>
       </div>
       <div :class="[mobileView ? 'landing-graphic-m' : 'landing-graphic']">
-      <svg width="1232" height="328" viewBox="0 0 1232 328" fill="none" xmlns="http://www.w3.org/2000/svg" class="landing-animation">
+      <svg :width="[mobileView? 300 : 1232]" :height="[mobileView ? 80 : 328]" viewBox="0 0 1232 328" fill="none" xmlns="http://www.w3.org/2000/svg">
       <g id="landing-animation" clip-path="url(#clip0_204_109)">
       <rect width="1232" height="327.5" fill="white"/>
       <g id="plant-r">
@@ -471,7 +471,7 @@ export default {
 }
 
 #bubble, #bubble-2 {
-  opacity: 0%;
+  opacity: 0;
 }
 
 #bubble.appear, #bubble-2.appear{
@@ -482,19 +482,19 @@ export default {
 
 @keyframes bubble-move{
   0% {
-    opacity: 0%;
+    opacity: 0;
     transform: translateY(20px);
   }
   10% {
-    opacity: 100%;
+    opacity: 1;
     transform: translateY(4px);
   }
   90% {
-    opacity: 100%;
+    opacity: 1;
     transform: translateY(4px);
   }
   100% {
-    opacity: 0%;
+    opacity: 0;
     transform: translateY(0px);
   }
 } 
