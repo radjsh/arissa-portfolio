@@ -266,7 +266,6 @@ import ContactMe from "../components/ContactMe.vue";
 
 export default {
   created() {
-    console.log("Path:" + this.$route.path); 
     window.addEventListener('resize', this.checkScreen);
     this.checkScreen();
     window.addEventListener('scroll', this.reveal);
@@ -327,12 +326,12 @@ export default {
       console.log('clickCount: ' + this.clickCount)
 
       if(this.clickCount == 1) {
-        console.log("BUBBLE APPEAR")
+        console.log("HELLO BUBBLE APPEAR")
         const bubble = document.getElementById('bubble')
         bubble.classList.add('appear')
       }
       if((this.clickCount % 3) == 0) {
-        console.log("BUBBLE APPEAR")
+        console.log("LONG BUBBLE APPEAR")
         const bubble2 = document.getElementById('bubble-2')
         bubble2.classList.add('appear')
       }
@@ -357,7 +356,7 @@ export default {
 }
 </script>
 
-<style>
+<style scoped>
 #app {
   text-align: center;
   align-items: center;

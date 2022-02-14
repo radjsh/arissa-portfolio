@@ -99,13 +99,9 @@ export default ({
                 this.pencil = true;
                 this.eraser = false;
                 this.trash = false;
-                console.log(this.color_now)
                 if (this.color_now == '#F1E8E6'){
-                    console.log("TRUE, ERASING")
                     this.color_now = this.color_prev
-                    console.log(this.color_now)
                 }
-                console.log("NOT TRUE")
                 this.color_prev = this.color_now;
                 this.ctx.clearRect(0, 0, this.canvas.width, this.canvas.height);
             }
@@ -156,12 +152,10 @@ export default ({
         },
 
         onClickClose () {
-            console.log("Closing");
             this.showControls = false;
         },
 
         onClickOpen () {
-            console.log("Closing");
             this.showControls = true;
             this.ctx.clearRect(0, 0, this.canvas.width, this.canvas.height);
             this.onClickControl('pencil');
@@ -184,9 +178,6 @@ export default ({
         startPainting(e) {
             if (this.drawing == true) {
                 this.painting = true;
-                console.log("Painting: " + this.painting);
-                console.log(e.offsetX);
-                console.log(e.offsetY);
                 this.x = e.offsetX
                 this.y = e.offsetY
             }
@@ -195,8 +186,6 @@ export default ({
         keepPainting(e) {
             var rect = this.canvas.getBoundingClientRect();
                 if (this.painting === true) {
-                    console.log(this.x, this.y)
-                    console.log(e.offsetX, e.offsetY)
                     this.drawLine(this.x, this.y, e.offsetX, e.offsetY);
                     this.x = (e.clientX - rect.left)
                     this.y = (e.clientY - rect.top)
@@ -219,10 +208,6 @@ export default ({
             return;
             }
 
-            console.log("CANVAS WIDTH: " + this.canvasWidth);
-            console.log("CANVAS HEIGHT: " + this.canvasHeight);
-
-            
             this.mobileView = false;
         }
     },
