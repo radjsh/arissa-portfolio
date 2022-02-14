@@ -347,13 +347,13 @@ export default {
       const arm = document.getElementById('arm')
       const eyes = document.getElementById('eyes')
       const mouth = document.getElementById('mouth')
-      const bubble = document.getElementById('bubble')
-      const bubble2 = document.getElementById('bubble-2')
+      // const bubble = document.getElementById('bubble')
+      // const bubble2 = document.getElementById('bubble-2')
       arm.classList.remove('wave')
       eyes.classList.remove('wave')
       mouth.classList.remove('wave')
-      bubble.classList.remove('appear')
-      bubble2.classList.remove('appear')
+      // bubble.classList.remove('appear')
+      // bubble2.classList.remove('appear')
     }
   }
 }

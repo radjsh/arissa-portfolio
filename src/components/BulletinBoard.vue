@@ -130,7 +130,7 @@ export default ({
             // var image = this.canvas.toDataURL("image/png").replace("image/png", "image/octet-stream");  // here is the most important part because if you dont replace you will get a DOM 18 exception.
             // window.location.href=image; // it will save locally
 
-            /* CONVERT CANVAS TO JSON
+            //CONVERT CANVAS TO JSON
             var canvasContents = this.canvas.toDataURL();
             var data = { image : canvasContents, date : Date.now() };
             var string = JSON.stringify(data);
@@ -143,6 +143,8 @@ export default ({
             // trigger a click event on an <a> tag to open the file explorer 
             var a = document.createElement('a');
             a.href = URL.createObjectURL(file);
+            console.log("CANVAS CONVERTED")
+            /***
             a.download = 'data.json';
             document.body.appendChild(a);
             a.click();
