@@ -62,7 +62,7 @@
       <g id="Layer 23">
       <path id="Vector_22" d="M621.5 231.96C630.613 231.96 638 224.573 638 215.46C638 206.347 630.613 198.96 621.5 198.96C612.387 198.96 605 206.347 605 215.46C605 224.573 612.387 231.96 621.5 231.96Z" fill="#F2BF98" stroke="#DEA881" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
       </g>
-      <g id="arm">
+      <g id="arm" @click="bubbleAppear">
       <g id="arm_2">
       <g id="Vector_23">
       <path d="M527 228.96C527 228.96 484 193.96 455.61 123.62C455.61 123.62 451.61 111.7 458.72 110.62C465.83 109.54 466.03 112.62 469.05 119.75C472.07 126.88 462.4 108.94 468.79 105.4C475.18 101.86 478.59 105.15 483.04 114.24C487.49 123.33 474.38 103.93 480.04 99.86C485.7 95.79 491.09 103.08 494.12 109.26C497.15 115.44 545.45 197.57 569.79 208.64" fill="#F2BF98"/>
@@ -354,6 +354,11 @@ export default {
       mouth.classList.remove('wave')
       // bubble.classList.remove('appear')
       // bubble2.classList.remove('appear')
+    },
+
+    bubbleAppear() {
+      const bubble = document.getElementById('bubble')
+      bubble.classList.add('appear')
     }
   }
 }
