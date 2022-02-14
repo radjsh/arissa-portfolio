@@ -320,9 +320,6 @@ export default {
       const bubble = document.getElementById('bubble')
       const bubble2 = document.getElementById('bubble-2')
 
-      console.log("bubble classList pre-wave: " + bubble.classList)
-      console.log("bubble2 classList pre-wave: " + bubble2.classList)
-
       if(arm.classList.contains('wave') == false){
         arm.classList.add('wave')
         eyes.classList.add('wave')
@@ -344,8 +341,6 @@ export default {
       }
 
       setTimeout(() => {this.endWave();}, 2000);
-      console.log("bubble classList post-wave: " + bubble.classList)
-      console.log("bubble2 classList post-wave: " + bubble2.classList)
 
     },
 
@@ -476,9 +471,8 @@ export default {
 }
 
 #bubble, #bubble-2 {
-  opacity: 0%;
+  opacity: 50%;
 }
-
 
 #bubble.appear, #bubble-2.appear{
   animation: bubble-move ease-in 4s;
