@@ -15,57 +15,68 @@ const routes = [
     {
         path: '/',
         name: 'portfolio',
-        component: Portfolio
+        component: Portfolio,
+        meta: {title: 'arissa\'s portolio'}
     },
     {
         path: '/about',
         name: 'about',
-        component: About
+        component: About,
+        meta: {title: 'about'}
     },
     {
         path: '/doodleboard',
         name: 'doodleboard',
-        component: Doodleboard
+        component: Doodleboard,
+        meta: {title: 'doodleboard'}
     },
     {
         path: '/portfolio/posters',
         name: 'posters',
-        component: Posters
+        component: Posters,
+        meta: {title: 'arissa\'s portolio'}
     },
     {
         path: '/portfolio/paintings',
         name: 'paintings',
-        component: Paintings
+        component: Paintings,
+        meta: {title: 'arissa\'s portolio'}
     },
     {
         path: '/portfolio/logos-and-icons',
         name: 'logos-and-icons',
-        component: LogosAndIcons
+        component: LogosAndIcons,
+        meta: {title: 'arissa\'s portolio'}
     },
     {
         path: '/portfolio/telegram-stickers',
         name: 'telegram-stickers',
-        component: TelegramStickers
+        component: TelegramStickers,
+        meta: {title: 'arissa\'s portolio'}
     },
     {
         path: '/portfolio/digital-illustrations',
         name: 'digital-illustrations',
-        component: DigitalIllustrations
+        component: DigitalIllustrations,
+        meta: {title: 'arissa\'s portolio'}
     },
     {
         path: '/portfolio/shopee',
         name: 'shopee',
-        component: Shopee
+        component: Shopee,
+        meta: {title: 'arissa\'s portolio'}
     },
     {
         path: '/portfolio/disney',
         name: 'disney',
-        component: Disney
+        component: Disney,
+        meta: {title: 'arissa\'s portolio'}
     },
     {
         path: '/portfolio/30-days-of-ui-challenge',
         name: 'ui-challenge',
-        component: UIChallenge
+        component: UIChallenge,
+        meta: {title: 'arissa\'s portolio'}
     },
 ]
 
@@ -74,5 +85,12 @@ const router = createRouter({
     history: createWebHistory(process.env.BASE_URL),
     routes,
   })
+  
+
+router.beforeEach((to, from, next) => {
+    document.title = to.meta.title;
+    next();
+});
+
   
 export default router;
