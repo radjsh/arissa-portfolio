@@ -1,6 +1,7 @@
 <template>
     <div class="bulletin-div">
         <img class="bg" src="@/assets/bulletin-board.svg" id="bg"/>
+        <text class="header">drawing prompt: funky fruits!</text>
         <canvas class="canvas" v-if="showControls" @mousedown="startPainting" @mouseup="finishedPainting" @mousemove="keepPainting" id="canvas" width="720" height="480"></canvas>
         <div class="button-row" v-if="showControls">
                 <div :class="[black ? 'btn-active' : 'btn-inactive']">
@@ -154,6 +155,7 @@ export default ({
             document.body.removeChild(a);
             */
             this.ctx.clearRect(0, 0, this.canvas.width, this.canvas.height);
+            this.scrollDown();
         },
 
         onClickClose () {
@@ -214,6 +216,11 @@ export default ({
             }
 
             this.mobileView = false;
+        },
+
+        scrollDown() {
+            console.log("Scrolling Down");
+            window.scrollTo({top: 700, behavior: 'smooth'});
         }
     },
     mounted() {
@@ -250,10 +257,19 @@ export default ({
 .canvas {
     position: relative;
     background-color: #F1E8E6;
-    z-index: 2;
+    z-index: 3;
     margin-top: -50%;
     /* bottom: 160px;
     left: 300px; */
+}
+
+.header {
+    font-family: "Futura-Med";
+    font-size: 20px;
+    position: relative;
+    color: #F1E8E6;
+    margin-top: -55%;
+    z-index: 2;
 }
 
 .close-div {

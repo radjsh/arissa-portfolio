@@ -252,6 +252,7 @@ p {
     margin-top: 48px;
     text-align: start;
     margin-left: 148px;
+    margin-right: 148px;
 }
 
 .introduction-m {
