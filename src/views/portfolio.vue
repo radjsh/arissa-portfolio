@@ -368,6 +368,7 @@ export default {
       const mouth = document.getElementById('mouth')
       const bubble = document.getElementById('bubble')
       const bubble2 = document.getElementById('bubble-2')
+      try {
       arm.classList.remove('wave')
       eyes.classList.remove('wave')
       mouth.classList.remove('wave')
@@ -376,6 +377,10 @@ export default {
       }
       if (bubble2.classList.contains('appear')) {
         bubble2.classList.remove('appear')
+      }
+      }
+      catch (e) {
+        console.error("Error Loading: ")
       }
     },
 
@@ -656,7 +661,7 @@ export default {
 }
 
 #sparkle-l {
-  animation: sparkle-move-l ease-in-out 3s alternate infinite;
+  animation: sparkle-move-l ease-in-out 1s alternate infinite;
   transform-origin: center;
   transform-box: fill-box;
 }

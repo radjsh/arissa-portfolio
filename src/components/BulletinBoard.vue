@@ -44,6 +44,8 @@
 <script>
 // import { setCanvas } from '../config/firebase.js';
 // import { reactive } from 'vue';
+import { db } from "../firebase.js";
+// import { collection, addDoc } from "firebase/firestore"; 
 
 export default ({
     name: "bulletin-board",
@@ -80,6 +82,9 @@ export default ({
             canvasWidth: null,
             canvasHeight: null,
             photosOnBoard: false,
+            myFile: null,
+            processing: false,
+            fileURL: null,
         }
     },
     methods : {
@@ -130,32 +135,34 @@ export default ({
             if (color_btn == "skin") {this.skin = true; this.color_now = "#F1BE96"; this.color_prev = "#F1BE96"; return}
         },
         onClickDone () {
-            console.log("You're done");
-            // var image = this.canvas.toDataURL("image/png").replace("image/png", "image/octet-stream");  // here is the most important part because if you dont replace you will get a DOM 18 exception.
-            // window.location.href=image; // it will save locally
+            if (this.isCanvasBlank()) {
+                console.log("CANVAS IS BLANK")
+            } else {
+                var canvasContents = this.canvas.toDataURL();
+                var data = { image : canvasContents, date : Date.now(), name : 'Canvas' + Date.now() };
+                this.fileInputTest(data)
+                this.ctx.clearRect(0, 0, this.canvas.width, this.canvas.height);
+                this.scrollDown(); 
+                setTimeout(() => {location.reload(true);}, 500);
+                
+            }
+        },
 
-            //CONVERT CANVAS TO JSON
-            var canvasContents = this.canvas.toDataURL();
-            var data = { image : canvasContents, date : Date.now() };
-            var string = JSON.stringify(data);
+        isCanvasBlank() {
+            var canvas = document.getElementById("canvas")
+            return !canvas.getContext('2d').getImageData(0, 0, canvas.width, canvas.height).data.some(channel => channel !== 0)
+        },
 
-            // create a blob object representing the data as JSON string
-            var file = new Blob([string], {
-                type: 'applications/json'
-            });
-
-            // trigger a click event on an <a> tag to open the file explorer 
-            var a = document.createElement('a');
-            a.href = URL.createObjectURL(file);
-            console.log("CANVAS CONVERTED")
-            /***
-            a.download = 'data.json';
-            document.body.appendChild(a);
-            a.click();
-            document.body.removeChild(a);
-            */
-            this.ctx.clearRect(0, 0, this.canvas.width, this.canvas.height);
-            this.scrollDown();
+        async fileInputTest(file) {
+        try {
+            const canvasRef = db.collection('canvases').doc()
+            canvasRef.set({                
+                image: file.image,
+                date: file.date,
+                name: file.name});
+        } catch (e) {
+        console.error("Error adding document: ", e);
+            }
         },
 
         onClickClose () {
@@ -221,7 +228,8 @@ export default ({
         scrollDown() {
             console.log("Scrolling Down");
             window.scrollTo({top: 700, behavior: 'smooth'});
-        }
+        },
+
     },
     mounted() {
         this.canvas = document.getElementById("canvas");
