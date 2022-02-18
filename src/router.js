@@ -16,7 +16,7 @@ const routes = [
         path: '/',
         name: 'portfolio',
         component: Portfolio,
-        meta: {title: 'arissa\'s portolio'}
+        meta: {title: 'arissa\'s portfolio'}
     },
     {
         path: '/about',
@@ -34,52 +34,51 @@ const routes = [
         path: '/portfolio/posters',
         name: 'posters',
         component: Posters,
-        meta: {title: 'arissa\'s portolio'}
+        meta: {title: 'arissa\'s portfolio'}
     },
     {
         path: '/portfolio/paintings',
         name: 'paintings',
         component: Paintings,
-        meta: {title: 'arissa\'s portolio'}
+        meta: {title: 'arissa\'s portfolio'}
     },
     {
         path: '/portfolio/logos-and-icons',
         name: 'logos-and-icons',
         component: LogosAndIcons,
-        meta: {title: 'arissa\'s portolio'}
+        meta: {title: 'arissa\'s portfolio'}
     },
     {
         path: '/portfolio/telegram-stickers',
         name: 'telegram-stickers',
         component: TelegramStickers,
-        meta: {title: 'arissa\'s portolio'}
+        meta: {title: 'arissa\'s portfolio'}
     },
     {
         path: '/portfolio/digital-illustrations',
         name: 'digital-illustrations',
         component: DigitalIllustrations,
-        meta: {title: 'arissa\'s portolio'}
+        meta: {title: 'arissa\'s portfolio'}
     },
     {
         path: '/portfolio/shopee',
         name: 'shopee',
         component: Shopee,
-        meta: {title: 'arissa\'s portolio'}
+        meta: {title: 'arissa\'s portfolio'}
     },
     {
         path: '/portfolio/disney',
         name: 'disney',
         component: Disney,
-        meta: {title: 'arissa\'s portolio'}
+        meta: {title: 'arissa\'s portfolio'}
     },
     {
         path: '/portfolio/30-days-of-ui-challenge',
         name: 'ui-challenge',
         component: UIChallenge,
-        meta: {title: 'arissa\'s portolio'}
-    },
+        meta: {title: 'arissa\'s portfolio'}
+    }
 ]
-
 
 const router = createRouter({
     history: createWebHistory(process.env.BASE_URL),
