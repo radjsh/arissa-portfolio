@@ -15,7 +15,7 @@
             <div class="col l3 offset-l1 m3">
                 <ul class="specs">
                     <li><p class="specs-title">Strategies:</p></li>
-                    <li><p class="specs-list">Research, Wireframing, UI/UX Design, and Animation</p></li>
+                    <li><p class="specs-list">Research, Prototyping, UI/UX Design, and Animation</p></li>
                 </ul>
             </div>
             <div class="col l3 offset-l1 m3">
@@ -33,7 +33,7 @@
         </div>
         <div v-else class="col s12 col-list">
             <p class="specs-list-m"><text class="specs-title-m">Company:</text> Shopee</p>
-            <p class="specs-list-m"><text class="specs-title-m">Strategies:</text> Research, Wireframing, UI/UX Design, and Animation</p>
+            <p class="specs-list-m"><text class="specs-title-m">Strategies:</text> Research, Prototyping, UI/UX Design, and Animation</p>
             <p class="specs-list-m"><text class="specs-title-m">Timeline:</text> April 2021 - Sept 2021</p>
             <p class="specs-list-m"><text class="specs-title-m">Tools used:</text> Figma, Adobe Illustrator and After Effects</p>
         </div>

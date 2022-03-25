@@ -31,9 +31,15 @@ export default {
                 },
                 {
                     title: 'Shopee, Singapore',
-                    subheader: 'ui/ux design and wireframing',
+                    subheader: 'ui/ux design & prototyping',
                     src: require("@/assets/portfolio-categories/shopee.svg"),
                     path: 'shopee',
+                },
+                {
+                    title: 'Hop App, Singapore',
+                    subheader: 'ui/ux design & prototyping',
+                    src: require("@/assets/portfolio-categories/hop.svg"),
+                    path: 'hop',
                 },
                 {
                     title: '30 days of UI challenge',
@@ -58,12 +64,6 @@ export default {
                     subheader: 'graphic design',
                     src: require("@/assets/portfolio-categories/posters.svg"),
                     path: 'posters',
-                },
-                {
-                    title: 'Paintings',
-                    subheader: 'acrylic & gouache painting',
-                    src: require("@/assets/portfolio-categories/paintings.svg"),
-                    path: 'paintings',
                 },
                 {
                     title: 'Digital Illustrations',

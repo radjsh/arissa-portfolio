@@ -10,6 +10,7 @@ import DigitalIllustrations from './views/digital-illustrations.vue';
 import Shopee from './views/shopee.vue';
 import Disney from './views/disney.vue';
 import UIChallenge from './views/ui-challenge.vue';
+import Hop from './views/hop.vue';
 
 const routes = [
     {
@@ -76,6 +77,12 @@ const routes = [
         path: '/portfolio/30-days-of-ui-challenge',
         name: 'ui-challenge',
         component: UIChallenge,
+        meta: {title: 'arissa\'s portfolio'}
+    },
+    {
+        path: '/portfolio/hop-app',
+        name: 'hop',
+        component: Hop,
         meta: {title: 'arissa\'s portfolio'}
     }
 ]
