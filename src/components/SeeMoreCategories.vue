@@ -34,6 +34,11 @@ export default {
                     path: 'shopee',
                 },
                 {
+                    title: 'Hop App, Singapore',
+                    src: require("@/assets/portfolio-categories/hop.svg"),
+                    path: 'hop',
+                },
+                {
                     title: '30 days of UI challenge',
                     src: require("@/assets/portfolio-categories/30daysofuichallenge.svg"),
                     path: 'ui-challenge',
@@ -52,11 +57,6 @@ export default {
                     title: 'Posters',
                     src: require("@/assets/portfolio-categories/posters.svg"),
                     path: 'posters',
-                },
-                {
-                    title: 'Paintings',
-                    src: require("@/assets/portfolio-categories/paintings.svg"),
-                    path: 'paintings',
                 },
                 {
                     title: 'Digital Illustrations',

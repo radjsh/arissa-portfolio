@@ -51,14 +51,14 @@
             <div :class="[mobileView ? 'introduction-m reveal' : 'introduction reveal']">This feature allows users to pay their bills to third party merchants through an automatic rotation agreement. This means that if one payment method fails, the application would automatically try to process the payment with the next payment method. I led the ui design of this feature, creating all the necessary screens and flows. </div>
             <poster :key="easybills.title" :poster="easybills"></poster>
             <header :class="[mobileView ? 'header-3-m reveal' : 'header-3 reveal']">Homepage, Scan and Pay redesign</header>
-            <div :class="[mobileView ? 'introduction-m' : 'introduction']">From our customer feedback and competitor analysis, we found that most customers are unaware of the difference between “scan” and “pay”, commonly mistaking one for the other. To minimise this mistake, we decided to merge the features into one page. For this feature, I redesigned the homepage, including the home icons, as well as the scan and pay page. </div>
+            <div :class="[mobileView ? 'introduction-m reveal' : 'introduction reveal']">From our customer feedback and competitor analysis, we found that most customers are unaware of the difference between “scan” and “pay”, commonly mistaking one for the other. To minimise this mistake, we decided to merge the features into one page. For this feature, I redesigned the homepage, including the home icons, as well as the scan and pay page. </div>
             <poster :key="saps.title" :poster="saps"></poster>
             <header :class="[mobileView ? 'header-3-m reveal' : 'header-3 reveal']">Contactless NFC Payment</header>
             <div :class="[mobileView ? 'introduction-m reveal' : 'introduction reveal']">AirPay card is a virtual card which allows users to make NFC payments by tapping their phones on POS machines. As it is a new concept, I was tasked to create the onboarding graphics and feedback animation for this feature. I also worked on the user flow and interface design. </div>
             <poster :key="nfc.title" :poster="nfc"></poster>
         </section>
-        <header :class="[mobileView ? 'header-2-m' : 'header-2']">ShopeePay Singapore</header>
-        <div :class="[mobileView ? 'introduction-m' : 'introduction']">ShopeePay is a digital wallet service by Shopee that users can use for make online and offline retail and interpersonal transactions. Users’ ShopeePay wallet can store money that is topped up from third party bank accounts.
+        <header :class="[mobileView ? 'header-2-m reveal' : 'header-2 reveal']">ShopeePay Singapore</header>
+        <div :class="[mobileView ? 'introduction-m reveal' : 'introduction reveal']">ShopeePay is a digital wallet service by Shopee that users can use for make online and offline retail and interpersonal transactions. Users’ ShopeePay wallet can store money that is topped up from third party bank accounts.
         </div>
         <section class="posters">
             <header :class="[mobileView ? 'header-3-m reveal' : 'header-3 reveal']">Checkout Instant Top Up</header>
