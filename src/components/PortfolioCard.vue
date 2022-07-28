@@ -1,7 +1,7 @@
 <template>
     <div :class="[mobileView ? 'card-m' : 'card']">
         <router-link :to="{name: category.path}" class="img" @click="onClickCategory(category.path)">
-            <img :class="[mobileView ? 'image-m' : 'image']" :src="category.src ">
+            <img :class="[mobileView ? 'image-m' : 'image']" :src="category.src">
         </router-link>
         <div class="text">
             <div :class="[mobileView ? 'title-m' : 'title']">{{ category.title }}</div>
