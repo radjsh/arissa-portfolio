@@ -1,13 +1,14 @@
 {
   "name": "arissa-portfolio",
   "version": "0.1.0",
-  "homepage": "https://radjsh.github.io/arissa-portfolio",
+  "homepage": "http://arissar.com",
   "private": true,
   "scripts": {
     "serve": "export NODE_OPTIONS=--openssl-legacy-provider && vue-cli-service serve",
     "build": "export NODE_OPTIONS=--openssl-legacy-provider && vue-cli-service build",
     "lint": "export NODE_OPTIONS=--openssl-legacy-provider && vue-cli-service lint",
-    "deploy": "sh deploy.sh"
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "dependencies": {
     "@fortawesome/fontawesome-free": "^5.15.4",
