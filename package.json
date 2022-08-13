@@ -2,7 +2,7 @@
   "name": "arissa-portfolio",
   "version": "0.1.0",
   "homepage": "http://arissar.com",
-  "private": true,
+  "private": false,
   "scripts": {
     "serve": "export NODE_OPTIONS=--openssl-legacy-provider && vue-cli-service serve",
     "build": "export NODE_OPTIONS=--openssl-legacy-provider && vue-cli-service build",
