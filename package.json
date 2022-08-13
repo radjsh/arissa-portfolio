@@ -1,6 +1,7 @@
 {
   "name": "arissa-portfolio",
   "version": "0.1.0",
+  "homepage": "https://radjsh.github.io/arissa-portfolio",
   "private": true,
   "scripts": {
     "serve": "export NODE_OPTIONS=--openssl-legacy-provider && vue-cli-service serve",
@@ -31,6 +32,5 @@
     "eslint": "^6.7.2",
     "eslint-plugin-vue": "^7.0.0",
     "inject-loader": "^2.0.1"
-  },
-  "homepage": "http://arissar.com/"
+  }
 }
