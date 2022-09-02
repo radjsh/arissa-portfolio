@@ -5,9 +5,9 @@
         </div>
         <div :class="[mobileView ? 'text-div-m' : 'text-div']">
             <text :class="[mobileView ? 'about-header-m' : 'about-header']">hi there,</text>
-            <p :class="[mobileView ? 'body-text-m' : 'body-text']">I&#39;m arissa! I&#39;m a ui/ux and graphic designer based in Singapore, soon to graduate with a B.Eng (hons) in computer science and a major in ui/ux design.  
+            <p :class="[mobileView ? 'body-text-m' : 'body-text']">I&#39;m arissa! I&#39;m a ui/ux and graphic designer based in Singapore, who graduated with a B.Eng (hons) in computer science and a major in ui/ux design.  
                 <br>
-                <br> I&#39;m currently working at The Walt Disney Company doing creative marketing, and I do freelance design on the side.
+                <br> I&#39;m currently working at Warner Bros. CNN Creative team as a web designer, and have worked at the Walt Disney Company doing creative marketing.
                 <br>
                 <br> I&#39;m empathetic and love telling stories through visual media. I&#39;m also incredibly curious and am always seeking new things to learn and try.
                 <br>
