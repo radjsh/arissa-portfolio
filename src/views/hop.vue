@@ -68,7 +68,7 @@
 
         <header :class="[mobileView ? 'header-2-m reveal' : 'header-2 reveal']">Conclusion</header>
         <div :class="[mobileView ? 'introduction-m reveal' : 'introduction reveal']">
-            It was a thoroughly enjoyable experience to dwelve deeper into centralised children booking platforms, and to understand the perspectives of parents when finding classes for their children. The iterative process of creating options and refining them allowed me to get creative with my solutions, while also seeing how I can balance them to be simply understood by the users. Special thanks to Mike and Eugene, developers from ME Tech, and Germaine, client from Hop, for the opportunity to work on this project. To view the live website, check out <b><a class="link-style" href="www.hopapp.sg" target="_blank">www.hopapp.sg</a></b>!
+            It was a thoroughly enjoyable experience to dwelve deeper into centralised children booking platforms, and to understand the perspectives of parents when finding classes for their children. The iterative process of creating options and refining them allowed me to get creative with my solutions, while also seeing how I can balance them to be simply understood by the users. Special thanks to Mike and Eugene, developers from ME Tech, and Germaine, client from Hop, for the opportunity to work on this project. To view the live website, check out <b><a class="link-style" href="https://www.hopapp.sg/" target="_blank">hopapp.sg</a></b>!
         </div>
         <div class="see-more-div">
             <text :class="[mobileView ? 'sm-title-m' : 'sm-title']">See More Projects</text> 
