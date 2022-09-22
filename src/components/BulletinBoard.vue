@@ -140,7 +140,8 @@ export default ({
             } else {
                 var canvasContents = this.canvas.toDataURL();
                 var data = { image : canvasContents, date : Date.now(), name : 'Canvas' + Date.now() };
-                this.fileInputTest(data)
+                console.log("DATA: ", data);
+                this.fileInputTest(data);
                 this.ctx.clearRect(0, 0, this.canvas.width, this.canvas.height);
                 this.scrollDown(); 
                 setTimeout(() => {location.reload(true);}, 500);
@@ -160,6 +161,7 @@ export default ({
                 image: file.image,
                 date: file.date,
                 name: file.name});
+            console.log("Drawing Added");
         } catch (e) {
         console.error("Error adding document: ", e);
             }
