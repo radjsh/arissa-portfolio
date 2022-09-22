@@ -1,7 +1,7 @@
 {
   "name": "arissa-portfolio",
   "version": "0.1.0",
-  "homepage": "http://arissar.com",
+  "homepage": "https://radjsh.github.io/arissa-portfolio",
   "private": false,
   "scripts": {
     "serve": "export NODE_OPTIONS=--openssl-legacy-provider && vue-cli-service serve",
