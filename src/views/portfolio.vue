@@ -1,7 +1,7 @@
 <template>
   <div class="lp-card">
     <div class="lp"/>
-      <img class="arissa-header" alt="arissa-header" src="@/assets/arissa-header.svg">
+      <img class="arissa-header" alt="arissa-header" src="https://arissar.com//src/assets/arissa-header.svg">
       <div :class="[mobileView ? 'lp-sh-m' : 'lp-sh']">
         <text :class="[mobileView ? 'landing-page-mobile-subheader' : 'landing-page-subheader']" >ui/ux design | graphic design | illustrator</text>
       </div>
