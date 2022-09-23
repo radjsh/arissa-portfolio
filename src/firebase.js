@@ -14,6 +14,8 @@ const app = firebase.initializeApp({
     measurementId: process.env.VUE_APP_MEASUREMENT_ID
 })
 
+firebase.firestore().settings({ experimentalForceLongPolling: true });
+
 export var db = firebase.firestore();
 export var storage = firebase.storage();
 export const auth = app.auth()
