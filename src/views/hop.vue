@@ -62,13 +62,19 @@
         <poster key="designLibrary" :poster="designLibrary"></poster>
 
         <header :class="[mobileView ? 'header-2-m reveal' : 'header-2 reveal']">High Fidelity Protoype</header>
-        <div :class="[mobileView ? 'introduction-m reveal' : 'introduction reveal']">After finalising the wireframes and the overall look of the app, it was time to dive into the high fidelity prototype (yay finally)! I used Figma to create the different interfaces, and worked feature by feature. Throughout the process, I found myself creating multiple options of the same feature / flow. By creating different ways of doing a task (no matter how simple), to find the best possible way to achieve an outcome. As the actual mobile application is still under development, I am unable to reveal much of the final high fidelity prototype.</div>
+        <div :class="[mobileView ? 'introduction-m reveal' : 'introduction reveal']">After finalising the wireframes and the overall look of the app, it was time to dive into the high fidelity prototype (yay finally)! I used Figma to create the different interfaces, and worked feature by feature. Throughout the process, I found myself creating multiple options of the same feature / flow. Creating different ways of doing a task helped to find the best possible way to achieve an outcome. What's not shown here is the countless reviews and disscussions made with the developers and client to ensure that the application covered all the essential features, and that the interactions were all as desired. An interactive prototype was created for testing within the team, and to help the developers visualise the transitions between the elements.</div>
         <poster key="classBottom" :poster="classBottom"></poster>
         <poster key="schedule" :poster="schedule"></poster>
+        <div class="prototype">
+        <div id="figma"><iframe style="border: 1px solid rgba(255, 255, 255);" width="375" height="667" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FwxtRWpAfyTPrmmrFAe9xsa%2Fhop-app%3Fnode-id%3D735%253A934%26scaling%3Dcontain%26page-id%3D0%253A1%26starting-point-node-id%3D735%253A1032%26show-proto-sidebar%3D1" allowfullscreen></iframe></div>
+        </div>
+
+        <header :class="[mobileView ? 'header-2-m reveal' : 'header-2 reveal']">Live Product</header>
+        <div :class="[mobileView ? 'introduction-m reveal' : 'introduction reveal']">After months of hardwork and improvements, I am pleased to share that the mobile application is available for download on the <b><a class="link-style" href="https://apps.apple.com/sg/app/hop-app-sg/id1622379908" target="_blank">App Store</a></b> and on <b><a class="link-style" href="https://play.google.com/store/apps/details?id=com.hoptech.hopapp2" target="_blank">Google Play</a></b>.</div>
 
         <header :class="[mobileView ? 'header-2-m reveal' : 'header-2 reveal']">Conclusion</header>
         <div :class="[mobileView ? 'introduction-m reveal' : 'introduction reveal']">
-            It was a thoroughly enjoyable experience to dwelve deeper into centralised children booking platforms, and to understand the perspectives of parents when finding classes for their children. The iterative process of creating options and refining them allowed me to get creative with my solutions, while also seeing how I can balance them to be simply understood by the users. Special thanks to Mike and Eugene, developers from ME Tech, and Germaine, client from Hop, for the opportunity to work on this project. To view the live website, check out <b><a class="link-style" href="https://www.hopapp.sg/" target="_blank">hopapp.sg</a></b>!
+            It was a thoroughly enjoyable experience to delve deeper into centralised children booking platforms, and to understand the perspectives of parents when finding classes for their children. The iterative process of creating options and refining them allowed me to get creative with my solutions, while also seeing how I can balance them to be simply understood by the users. Special thanks to Mike and Eugene, developers from ME Tech, and Germaine, client from Hop, for the opportunity to work on this project. To view the live website, check out <b><a class="link-style" href="https://www.hopapp.sg/" target="_blank">hopapp.sg</a></b>!
         </div>
         <div class="see-more-div">
             <text :class="[mobileView ? 'sm-title-m' : 'sm-title']">See More Projects</text> 
@@ -330,5 +336,23 @@ a:hover {
 .reveal.active{
   transform: translateY(0);
   opacity: 1;
+}
+
+.prototype--viewerContainer--JOiUY {
+    margin: 0px;
+}
+
+#figma{
+    margin: 0px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    margin-top: 64px;
+}
+
+.prototype{
+    display: flex;
+    align-content: center;
+    justify-content: center;
 }
 </style>
