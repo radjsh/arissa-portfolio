@@ -11,7 +11,7 @@
                 <br>
                 <br> I&#39;m empathetic and love telling stories through visual media. I&#39;m also incredibly curious and am always seeking new things to learn and try.
                 <br>
-                <br>When I&#39;m not making art, you can find me out on a run or on the football field. I've been in competitive sports for half my life, which has fueled my competitive spirit and drive. I also love building things and upcycling clothes!
+                <br>When I&#39;m not making art, you can find me out on a run or on the football field. I also run an <b><a class="link-style" href="https://rissaartt.shop/" target="_blank">art shop</a></b> where I sell stickers, washi tape, postcards and pins! 
                 <br>
                 <br>If you&#39;re lucky, you might even catch me  <b><a class="link-style" href="https://github.com/radjsh/arissa-portfolio" target="_blank">coding</a></b>.
             </p>

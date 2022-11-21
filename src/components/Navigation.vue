@@ -10,6 +10,7 @@
                 <li><router-link :class="[portfolio ? 'link' : 'nolink']" :to="{name: 'portfolio'}" @click="onClickPortfolio">portfolio</router-link></li>
                 <li><router-link :class="[about ? 'link' : 'nolink']" :to="{name: 'about'}" @click="onClickAbout">about</router-link></li>
                 <li><router-link :class="[contact ? 'link' : 'nolink']" :to="{name: 'doodleboard'}" @click="onClickContact">doodle board</router-link></li>
+                <li><a class="nolink" @click="onClickShop" href="https://rissaartt.shop/" target="_blank">shop</a></li>
                 <li><a class="nolink" @click="onClickResume" href="https://drive.google.com/file/d/1y33Hic-vvySGJyFb-PW8ydz7olKu1jav/view?usp=sharing" target="_blank">resume</a></li>
             </ul>
             <div class="icon">
@@ -40,6 +41,7 @@ export default {
             contact: null,
             about: null,
             resume: null,
+            shop: null,
         }
     },
     created() {
@@ -70,6 +72,7 @@ export default {
             this.about = false;
             this.contact = false;
             this.resume = false;
+            this.shop = false;
             console.log(this.portfolio);
             console.log("RESUME: " + this.resume);
             window.scrollTo(0, 0);
@@ -80,6 +83,7 @@ export default {
             this.about = true;
             this.contact = false;
             this.resume = false;
+            this.shop = false;
             window.scrollTo(0, 0);
         },
         
@@ -88,6 +92,7 @@ export default {
             this.about = false;
             this.contact = true;
             this.resume = false;
+            this.shop = false;
             window.scrollTo(0, 0);
         },
 
@@ -96,9 +101,20 @@ export default {
             this.about = false;
             this.contact = false;
             this.resume = false;
+            this.shop = false;
             console.log("RESUME FROM OCR: " + this.resume);
             window.scrollTo(0, 0);
-        }
+        },
+
+        onClickShop () {
+            this.portfolio = false;
+            this.about = false;
+            this.contact = false;
+            this.resume = false;
+            this.shop = true;
+            console.log("RESUME FROM OCR: " + this.resume);
+            window.scrollTo(0, 0);
+        },
     }
 }
 </script>
