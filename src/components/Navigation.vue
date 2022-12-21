@@ -21,6 +21,7 @@
                     <li><router-link :class="[portfolio ? 'link' : 'nolink']" :to="{name: 'portfolio'}" @click="onClickPortfolio">portfolio</router-link></li>
                     <li><router-link :class="[about ? 'link' : 'nolink']" :to="{name: 'about'}" @click="onClickAbout">about</router-link></li>
                     <li><router-link :class="[contact ? 'link' : 'nolink']" :to="{name: 'doodleboard'}" @click="onClickContact">doodle board</router-link></li>
+                    <li><a class="nolink" @click="onClickShop" href="https://rissaartt.shop/" target="_blank">shop</a></li>
                     <li><a class="nolink" @click="onClickResume" href="https://drive.google.com/file/d/1y33Hic-vvySGJyFb-PW8ydz7olKu1jav/view?usp=sharing" target="_blank">resume</a></li>
                 </ul>                
             </transition>

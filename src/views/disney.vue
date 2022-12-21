@@ -21,7 +21,7 @@
             <div class="col l3 offset-l1 m3">
                 <ul class="specs">
                     <li><p class="specs-title">Timeline:</p></li>
-                    <li><p class="specs-list">Feb 2021 - Present</p></li>
+                    <li><p class="specs-list">Feb 2021 - June 2022</p></li>
                 </ul>
             </div>
             <div class="col l3 offset-l1 m3">
@@ -34,7 +34,7 @@
         <div v-else class="col s12 col-list">
             <p class="specs-list-m"><text class="specs-title-m">Company:</text> The Walt Disney Company</p>
             <p class="specs-list-m"><text class="specs-title-m">Strategies:</text> Concept Design, Graphic Design, Mockups</p>
-            <p class="specs-list-m"><text class="specs-title-m">Timeline:</text> Feb 2021 - Present</p>
+            <p class="specs-list-m"><text class="specs-title-m">Timeline:</text> Feb 2021 - June 2022</p>
             <p class="specs-list-m"><text class="specs-title-m">Tools used:</text> Adobe Photoshop, Illustrator and After Effects</p>
         </div>
         <header :class="[mobileView ? 'header-2-m' : 'header-2']">Marvel Heroes Unite 2021</header>
