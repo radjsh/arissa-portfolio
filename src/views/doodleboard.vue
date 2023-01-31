@@ -24,7 +24,7 @@ import { db } from "../firebase.js";
 // import projectFirestore from "@/services/firebase.js";
 
 export default {
-  components: { BulletinBoard, ContactMe },
+  components: { BulletinBoard, ContactMe},
   created() {
     console.log("Path:" + this.$route.path); 
     window.addEventListener('resize', this.checkScreen);

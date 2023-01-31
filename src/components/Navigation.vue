@@ -11,7 +11,7 @@
                 <li><router-link :class="[about ? 'link' : 'nolink']" :to="{name: 'about'}" @click="onClickAbout">about</router-link></li>
                 <li><router-link :class="[contact ? 'link' : 'nolink']" :to="{name: 'doodleboard'}" @click="onClickContact">doodle board</router-link></li>
                 <li><a class="nolink" @click="onClickShop" href="https://rissaartt.shop/" target="_blank">shop</a></li>
-                <li><a class="nolink" @click="onClickResume" href="https://drive.google.com/file/d/1y33Hic-vvySGJyFb-PW8ydz7olKu1jav/view?usp=sharing" target="_blank">resume</a></li>
+                <li><a class="nolink" @click="onClickResume" href="https://drive.google.com/file/d/1sv-jbcxx37LJVLJT3MB9G3DKqRM1CHuE/view?usp=sharing" target="_blank">resume</a></li>
             </ul>
             <div class="icon">
                 <img @click="toggleMobileNav" v-show="mobile" class="bar" :class="{'bar-active' : mobileNav}" src="@/assets/bar.svg"/>
@@ -22,7 +22,7 @@
                     <li><router-link :class="[about ? 'link' : 'nolink']" :to="{name: 'about'}" @click="onClickAbout">about</router-link></li>
                     <li><router-link :class="[contact ? 'link' : 'nolink']" :to="{name: 'doodleboard'}" @click="onClickContact">doodle board</router-link></li>
                     <li><a class="nolink" @click="onClickShop" href="https://rissaartt.shop/" target="_blank">shop</a></li>
-                    <li><a class="nolink" @click="onClickResume" href="https://drive.google.com/file/d/1y33Hic-vvySGJyFb-PW8ydz7olKu1jav/view?usp=sharing" target="_blank">resume</a></li>
+                    <li><a class="nolink" @click="onClickResume" href="https://drive.google.com/file/d/1sv-jbcxx37LJVLJT3MB9G3DKqRM1CHuE/view?usp=sharing" target="_blank">resume</a></li>
                 </ul>                
             </transition>
         </nav>
