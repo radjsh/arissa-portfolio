@@ -1,7 +1,7 @@
 <template>
     <section :class="[mobileView ? 'see-more-m' : 'see-more']">
-        <see-more-card 
-        v-for="category in categories"
+        <see-more-card
+        v-for="category in categories" 
         :key="category.title"
         :category="category"/>
     </section>
@@ -18,6 +18,8 @@ export default {
     created() {
         window.addEventListener('resize', this.checkScreen);
         this.checkScreen();
+        this.toDisplay();
+
       },
 
     data () {
@@ -37,6 +39,11 @@ export default {
                     title: 'Hop App, Singapore',
                     src: require("@/assets/portfolio-categories/hop.svg"),
                     path: 'hop',
+                },
+                {
+                    title: '2022 SUTD Yearbook',
+                    src: require("@/assets/portfolio-categories/yearbook.jpg"),
+                    path: 'yearbook',
                 },
                 {
                     title: '30 days of UI challenge',
@@ -64,6 +71,7 @@ export default {
                     path: 'digital-illustrations',
                 },
             ],
+            display: [],
             mobileView: null,
             windowWidth: null,
         }
@@ -79,6 +87,15 @@ export default {
             }
             this.mobileView = false;
         },
+        toDisplay() {
+            this.display = this.categories;
+            for (let i = 0; i < this.categories.length; i++){
+                if (this.categories[i].path == this.pageType){
+                    this.display.splice(i, 1);
+                }
+            }
+            return this.display;
+        }
     }
 }
 </script>

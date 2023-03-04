@@ -38,7 +38,7 @@ export default {
             mobile: null,
             mobileNav: null,
             windowWidth: null,
-            portfolio: null,
+            portfolio: true,
             contact: null,
             about: null,
             resume: null,
@@ -116,7 +116,7 @@ export default {
             console.log("RESUME FROM OCR: " + this.resume);
             window.scrollTo(0, 0);
         },
-    }
+    },
 }
 </script>
 

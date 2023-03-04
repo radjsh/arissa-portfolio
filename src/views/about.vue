@@ -1,17 +1,17 @@
 <template>
     <section :class="[mobileView ? 'about-div-m' : 'about-div']">
         <div :class="[mobileView ? 'img-div-m' : 'img-div']">
-            <img class="img" src="@/assets/me_temp.svg"/>
+            <img class="img" src="@/assets/me.jpg"/>
         </div>
         <div :class="[mobileView ? 'text-div-m' : 'text-div']">
             <text :class="[mobileView ? 'about-header-m' : 'about-header']">hi there,</text>
             <p :class="[mobileView ? 'body-text-m' : 'body-text']">I&#39;m arissa! I&#39;m a ui/ux and graphic designer based in Singapore, who graduated with a B.Eng (hons) in computer science and a major in ui/ux design.  
                 <br>
-                <br> I&#39;m currently working at Warner Bros. CNN Creative team as a web designer, and have worked at the Walt Disney Company doing creative marketing.
+                <br> I&#39;m currently working at Warner Bros. Discovery CNN as a web designer, and have worked at the Walt Disney Company doing creative marketing.
                 <br>
                 <br> I&#39;m empathetic and love telling stories through visual media. I&#39;m also incredibly curious and am always seeking new things to learn and try.
                 <br>
-                <br>When I&#39;m not making art, you can find me out on a run or on the football field. I also run an <b><a class="link-style" href="https://rissaartt.shop/" target="_blank">art shop</a></b> where I sell stickers, washi tape, postcards and pins! 
+                <br>When I&#39;m not making art, you can find me out on a run or on the football field. I also run an <b><a class="link-style" href="https://rissaartt.shop/" target="_blank">art shop</a></b> where I sell goodies such as socks and enamel pins! 
                 <br>
                 <br>If you&#39;re lucky, you might even catch me  <b><a class="link-style" href="https://github.com/radjsh/arissa-portfolio" target="_blank">coding</a></b>.
             </p>
@@ -59,6 +59,7 @@ export default {
     flex-direction: row;
     flex: 1;
     margin-top: 140px;
+    align-items: center;
 }
 
 .about-div-m {
@@ -80,6 +81,7 @@ export default {
 .img {
     width: 60%;
     justify-content: center;
+    border-radius: 2%;
 }
 
 .text-div {

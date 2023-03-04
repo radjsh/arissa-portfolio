@@ -71,7 +71,7 @@
         </div>
         <div class="see-more-div">
             <text :class="[mobileView ? 'sm-title-m' : 'sm-title']">See More Projects</text> 
-            <see-more-categories/>
+            <see-more-categories :pageType="category"/>
         </div>
         <contact-me/>
     </div>
@@ -94,6 +94,7 @@ export default ({
         return {
             mobileView: null,
             windowWidth: null,
+            category: "digital-illustrations",
         }
     },
 

@@ -42,6 +42,12 @@ export default {
                     path: 'hop',
                 },
                 {
+                    title: '2022 SUTD Yearbook',
+                    subheader: 'editorial design',
+                    src: require("@/assets/portfolio-categories/yearbook.jpg"),
+                    path: 'yearbook',
+                },
+                {
                     title: '30 days of UI challenge',
                     subheader: 'ui/ux design & graphic design',
                     src: require("@/assets/portfolio-categories/30daysofuichallenge.svg"),

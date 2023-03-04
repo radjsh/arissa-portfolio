@@ -11,6 +11,7 @@ import Shopee from './views/shopee.vue';
 import Disney from './views/disney.vue';
 import UIChallenge from './views/ui-challenge.vue';
 import Hop from './views/hop.vue';
+import Yearbook from './views/yearbook.vue';
 
 const routes = [
     {
@@ -83,6 +84,12 @@ const routes = [
         path: '/portfolio/hop-app',
         name: 'hop',
         component: Hop,
+        meta: {title: 'arissa\'s portfolio'}
+    },
+    {
+        path: '/portfolio/yearbook',
+        name: 'yearbook',
+        component: Yearbook,
         meta: {title: 'arissa\'s portfolio'}
     }
 ]

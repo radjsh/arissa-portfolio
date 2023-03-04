@@ -48,7 +48,7 @@
         </div>
         <div class="see-more-div">
             <text :class="[mobileView ? 'sm-title-m' : 'sm-title']">See More Projects</text> 
-            <see-more-categories/>
+            <see-more-categories :pageType="category"/>
         </div>
         <contact-me/>
     </div>
@@ -72,6 +72,7 @@ export default ({
         return {
             mobileView: null,
             windowWidth: null,
+            category: "ui-challenge",
             posters: [
                 { 
                     title: "Day 01: Sign Up / Login Page, App UI",
