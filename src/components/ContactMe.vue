@@ -3,7 +3,7 @@
     <text :class="[mobileView ? 'cm-text-m' : 'cm-text']"> Oh you're still here? </text>
     <text :class="[mobileView ? 'cm-text-m' : 'cm-text']"> Let's connect!</text>
     <div :class="[mobileView ? 'button-li-m' : 'button-li']">
-        <a href="mailto:arissa_rashid@mymail.sutd.edu.sg">
+        <a href="mailto:arissa140100@yahoo.com.sg">
             <img :class="[mobileView ? 'btn-m' : 'btn-1']" src="@/assets/email-btn.svg"/>
         </a>
         <a href="https://www.linkedin.com/in/arissarashid/" target="_blank">

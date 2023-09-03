@@ -1,6 +1,6 @@
 <template>
     <div :class="[mobileView ? 'poster-div-m' : 'poster-div']">
-        <img src="@/assets/shopee/shopee-banner.svg" :class="[mobileView ? 'banner-m' : 'banner']">
+        <img src="@/assets/shopee/shopee-banner.jpg" :class="[mobileView ? 'banner-m' : 'banner']">
         <div class="heading">
             <header :class="[mobileView ? 'header-m' : 'header']">Shopee</header>
             <p :class="[mobileView ? 'subheader-posters-m' : 'subheader-posters']">UI/UX Design Intern, Digital Payments Team</p>
@@ -151,7 +151,6 @@ export default ({
         },
 
         reveal () {
-            console.log("Scrolling")
             var reveals = document.querySelectorAll(".reveal")
 
             for (var i = 0; i < reveals.length; i++) {
@@ -179,12 +178,13 @@ export default ({
 }
 
 .banner {
-    margin-top: 20px;
+    margin-top: 49px;
+    width: 100%;
 }
 
 .banner-m {
     margin-top: 24px;
-    height: 100px;
+    height: auto;
     width: 100%;
     overflow: 0;
 }

@@ -1,6 +1,6 @@
 <template>
     <div :class="[mobileView ? 'poster-div-m' : 'poster-div']">
-        <img src="@/assets/ui-challenge/ui-challenge-banner.svg" :class="[mobileView ? 'banner-m' : 'banner']">
+        <img src="@/assets/ui-challenge/ui-challenge-banner.jpg" :class="[mobileView ? 'banner-m' : 'banner']">
         <div class="heading">
             <header :class="[mobileView ? 'header-m' : 'header']">30 Days of UI Challenge</header>
             <p :class="[mobileView ? 'subheader-posters-m' : 'subheader-posters']">UI/UX Design</p>
@@ -117,7 +117,6 @@ export default ({
         },
 
         reveal () {
-            console.log("Scrolling")
             var reveals = document.querySelectorAll(".reveal")
 
             for (var i = 0; i < reveals.length; i++) {
@@ -146,6 +145,7 @@ export default ({
 
 .banner {
     margin-top: 20px;
+    width: 100%;
 }
 
 .banner-m {

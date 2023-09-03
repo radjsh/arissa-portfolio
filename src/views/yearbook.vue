@@ -124,7 +124,6 @@ export default ({
         },
 
         reveal () {
-            console.log("Scrolling")
             var reveals = document.querySelectorAll(".reveal")
 
             for (var i = 0; i < reveals.length; i++) {

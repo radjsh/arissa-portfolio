@@ -220,7 +220,7 @@ export default ({
                 },   
                 { 
                     title: "Carousel Images",
-                    src: require("@/assets/disney/MBT_C.svg"),
+                    src: require("@/assets/disney/MBT_C.jpg"),
                 },         
                 { 
                     title: "Winter Edition",
@@ -256,7 +256,6 @@ export default ({
         },
 
         reveal () {
-            console.log("Scrolling")
             var reveals = document.querySelectorAll(".reveal")
 
             for (var i = 0; i < reveals.length; i++) {
@@ -284,7 +283,8 @@ export default ({
 }
 
 .banner {
-    margin-top: 20px;
+    margin-top: 49px;
+    width: 100%;
 }
 
 .banner-m {

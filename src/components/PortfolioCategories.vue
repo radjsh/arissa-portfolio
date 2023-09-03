@@ -24,21 +24,27 @@ export default {
         return {
             categories: [
                 {
+                    title: 'CNN Scrollytelling Sites',
+                    subheader: 'website design',
+                    src: require("@/assets/portfolio-categories/cnn.jpg"),
+                    path: 'cnn',
+                },
+                {
                     title: 'The Walt Disney Company, APAC',
                     subheader: 'graphic design & creative marketing',
-                    src: require("@/assets/portfolio-categories/disney.svg"),
+                    src: require("@/assets/portfolio-categories/disney.jpg"),
                     path: 'disney',
                 },
                 {
                     title: 'Shopee, Singapore',
                     subheader: 'ui/ux design & prototyping',
-                    src: require("@/assets/portfolio-categories/shopee.svg"),
+                    src: require("@/assets/portfolio-categories/shopee.jpg"),
                     path: 'shopee',
                 },
                 {
                     title: 'Hop App, Singapore',
                     subheader: 'ui/ux design & prototyping',
-                    src: require("@/assets/portfolio-categories/hop.svg"),
+                    src: require("@/assets/portfolio-categories/hop.jpg"),
                     path: 'hop',
                 },
                 {
@@ -62,7 +68,7 @@ export default {
                 {
                     title: 'Telegram Stickers',
                     subheader: 'illustrations, graphic design & animation',
-                    src: require("@/assets/portfolio-categories/telegram-sticker.svg"),
+                    src: require("@/assets/portfolio-categories/tele.jpg"),
                     path: 'telegram-stickers',
                 },
                 {

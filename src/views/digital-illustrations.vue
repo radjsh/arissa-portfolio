@@ -42,7 +42,7 @@
         </div>
         <div class="digi-ill">
             <div class="row1">
-                <img src="@/assets/digital-illustrations/alice.svg" class="img1"/>
+                <img src="@/assets/digital-illustrations/floating-by.jpg" class="img1"/>
                 <img src="@/assets/digital-illustrations/otgw.svg" class="img1"/>
             </div>
             <div class="row1">
@@ -50,8 +50,8 @@
                 <img src="@/assets/digital-illustrations/space-to-grow.svg" class="img1"/>                
             </div>
             <div class="row1">
-                <img src="@/assets/digital-illustrations/sutd-hoodie.svg" class="img1"/>
-                <img src="@/assets/digital-illustrations/spidey.svg" class="img1"/>                
+                <img src="@/assets/digital-illustrations/bunny.jpg" class="img1"/>
+                <img src="@/assets/digital-illustrations/spidey.jpg" class="img1"/>                
             </div>
             <div class="row1">
                 <img src="@/assets/digital-illustrations/ghost.svg" class="img1"/>

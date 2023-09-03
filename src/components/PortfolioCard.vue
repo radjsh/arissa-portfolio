@@ -68,9 +68,10 @@ export default {
 
 .title {
     font-family: 'Josefin Sans', sans-serif;
-    font-size: 18px;
-    margin-top: 12px;
+    font-size: 20px;
+    margin-top: 24px;
     text-align: left;
+    font-weight: 600;
 }
 
 

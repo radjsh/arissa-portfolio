@@ -16,7 +16,6 @@ export default {
         Navigation
     },
     created() {
-    console.log("Test");
     },
 }
 </script>

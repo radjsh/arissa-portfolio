@@ -29,7 +29,6 @@ export default {
 
     methods: {
         onClickSeeMore () {
-            console.log("CLICKED")
             window.scrollTo(0, 0);
         },
 
@@ -57,6 +56,7 @@ export default {
 .title {
     font-family: 'Josefin Sans', sans-serif;
     font-size: 18px;
+    font-weight: 400;
     margin-top: 12px;
     text-align: left;
 }

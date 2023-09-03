@@ -3,7 +3,6 @@ import Portfolio from './views/portfolio.vue';
 import About from './views/about.vue';
 import Doodleboard from './views/doodleboard.vue';
 import Posters from './views/posters.vue';
-import Paintings from './views/paintings.vue';
 import LogosAndIcons from './views/logos.vue';
 import TelegramStickers from './views/telegram-stickers.vue';
 import DigitalIllustrations from './views/digital-illustrations.vue';
@@ -12,6 +11,7 @@ import Disney from './views/disney.vue';
 import UIChallenge from './views/ui-challenge.vue';
 import Hop from './views/hop.vue';
 import Yearbook from './views/yearbook.vue';
+import CNN from './views/cnn.vue';
 
 const routes = [
     {
@@ -36,12 +36,6 @@ const routes = [
         path: '/portfolio/posters',
         name: 'posters',
         component: Posters,
-        meta: {title: 'arissa\'s portfolio'}
-    },
-    {
-        path: '/portfolio/paintings',
-        name: 'paintings',
-        component: Paintings,
         meta: {title: 'arissa\'s portfolio'}
     },
     {
@@ -90,6 +84,12 @@ const routes = [
         path: '/portfolio/yearbook',
         name: 'yearbook',
         component: Yearbook,
+        meta: {title: 'arissa\'s portfolio'}
+    },
+    {
+        path: '/portfolio/cnn',
+        name: 'cnn',
+        component: CNN,
         meta: {title: 'arissa\'s portfolio'}
     }
 ]
