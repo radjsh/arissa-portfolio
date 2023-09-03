@@ -11,5 +11,5 @@ cd dist
 git init
 git add -A
 git commit -m 'deploy'
-git push -f git@github.com:radjsh/arissa-portfolio.git
+git push -f git@github.com:radjsh/arissa-portfolio.git main:gh-pages
 cd -
