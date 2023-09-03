@@ -5,7 +5,7 @@
             <span class="site-title">{{site.title}}</span>
             <span class="site-sub">{{site.sub}}</span>
         </div>
-        <div class="image-container" >
+        <div class="image-container" id="image">
             <img v-show="site.showingImage" :src="site.src" :style="imageStyle(site)" class="site-image" />
         </div>
     </a>
@@ -152,6 +152,5 @@ hr {
   opacity: 1; /* Fade in on hover */
   transform: scale(1); /* Zoom in on hover */
 }
-
 
 </style>

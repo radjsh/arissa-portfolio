@@ -107,12 +107,6 @@ export default {
     cursor: pointer;
 }
 
-.image:hover {
-    border-width: 20px solid;
-    border-color: #F7C760;
-    cursor: pointer;
-}
-
 .image-m {
     width: 100%;
     height: auto;
@@ -126,17 +120,17 @@ export default {
     height: auto;
     padding-left: 48px;
     padding-right: 48px;
-    z-index:2;
+    z-index: 2;
     cursor: pointer;
+    transition: 0.3s ease-in-out all; /* Apply the transition here */
 }
 
 .card:hover {
-    position: relative;
-    top: -10px;
-    transition: 1s ease all ;
-    z-index:2;
-    cursor: pointer;
+    margin-top: 70px; /* Reduce the margin to move the card up */
+    z-index: 2;
 }
+
+
 
 .card-m{
     margin-top: 48px;

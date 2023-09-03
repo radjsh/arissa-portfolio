@@ -1,6 +1,6 @@
 <template>
     <header :class="{ 'scrolled-nav' : scrollPosition }">
-        <nav>
+        <nav style="background-color:white">
             <div class="branding">
                 <router-link :class="[portfolio ? 'link' : 'nolink']" :to="{name: 'portfolio'}" @click="onClickPortfolio">
                     <img src="@/assets/logo-small.svg">
@@ -18,11 +18,11 @@
             </div>
             <transition name="mobile-nav">
                 <ul v-show="mobileNav" class="dropdown-nav">
-                    <li><router-link :class="[portfolio ? 'link' : 'nolink']" :to="{name: 'portfolio'}" @click="onClickPortfolio">portfolio</router-link></li>
-                    <li><router-link :class="[about ? 'link' : 'nolink']" :to="{name: 'about'}" @click="onClickAbout">about</router-link></li>
-                    <li><router-link :class="[contact ? 'link' : 'nolink']" :to="{name: 'doodleboard'}" @click="onClickContact">doodle board</router-link></li>
-                    <li><a class="nolink" @click="onClickShop" href="https://rissaartt.shop/" target="_blank">shop</a></li>
-                    <li><a class="nolink" @click="onClickResume" href="https://drive.google.com/file/d/1sv-jbcxx37LJVLJT3MB9G3DKqRM1CHuE/view?usp=sharing" target="_blank">resume</a></li>
+                    <li><router-link :class="[portfolio ? 'link' : 'nolink']" :to="{name: 'portfolio'}" @click="onClickPortfolio; this.mobileNav = !this.mobileNav;">portfolio</router-link></li>
+                    <li><router-link :class="[about ? 'link' : 'nolink']" :to="{name: 'about'}" @click="onClickAbout; this.mobileNav = !this.mobileNav;">about</router-link></li>
+                    <li><router-link :class="[contact ? 'link' : 'nolink']" :to="{name: 'doodleboard'}" @click="onClickContact; this.mobileNav = !this.mobileNav;">doodle board</router-link></li>
+                    <li><a class="nolink" @click="onClickShop; this.mobileNav = !this.mobileNav;" href="https://rissaartt.shop/" target="_blank">shop</a></li>
+                    <li><a class="nolink" @click="onClickResume; this.mobileNav = !this.mobileNav;" href="https://drive.google.com/file/d/1sv-jbcxx37LJVLJT3MB9G3DKqRM1CHuE/view?usp=sharing" target="_blank">resume</a></li>
                 </ul>                
             </transition>
         </nav>
@@ -244,7 +244,7 @@ img {
     background-color: white;
     top: 0;
     left: 0;
-    z-index: 1;
+    z-index: -1;
 }
 
 .dd-li {
@@ -252,9 +252,12 @@ img {
     margin-top: 12px;
 }
 
-.mobile-nav-enter-active,
+.mobile-nav-enter-active {
+    transition: .8s ease-out all;
+}
+
 .mobile-nav-leave-active {
-    transition: .8s ease all;
+    transition: .8s ease-in all;
 }
 
 .mobile-nav-enter-from,

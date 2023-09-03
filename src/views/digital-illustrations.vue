@@ -137,7 +137,7 @@ export default ({
 }
 
 .banner {
-    margin-top: 20px;
+    margin-top: 56px;
 }
 
 .banner-m {
