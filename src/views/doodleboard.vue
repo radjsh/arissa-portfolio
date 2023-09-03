@@ -2,10 +2,11 @@
     <div class='bb-div'>
         <text class="bb-header">Doodle Board</text>
         <p class="subheader" v-if="!mobileView">Design is more fun when done with others, add a drawing to the doodle board!</p>
-        <p class="subheader" v-else>This feature is still a work in progress for tablets and mobile :') check back soon!</p>
+        <p class="subheader" v-else>Design is more fun when done with others, add a drawing to the doodle board! <br> Still a WIP for mobile and tablet, it's easier on desktop :)</p>
     </div>
     <bulletin-board v-if="!mobileView"/>
-    <img class="wip" src="@/assets/wip.svg" v-if="mobileView"/>
+    <bulletin-board-mobile v-else/>
+
     <div :class="[mobileView? 'gallery-m' : 'gallery']">
         <canvas :class="[mobileView ? 'image-m' : 'image']" src="@/assets/canvas-placeholder.svg" id="canvas01"/>
         <canvas :class="[mobileView ? 'image-m' : 'image']" src="@/assets/canvas-placeholder.svg" id="canvas02"/>
@@ -20,11 +21,10 @@
 import BulletinBoard from '../components/BulletinBoard.vue';
 import ContactMe from "../components/ContactMe.vue";
 import { db } from "../firebase.js";
-// import { collection, getDocs } from "firebase/firestore"; 
-// import projectFirestore from "@/services/firebase.js";
+import BulletinBoardMobile from '../components/BulletinBoardMobile.vue';
 
 export default {
-  components: { BulletinBoard, ContactMe},
+  components: { BulletinBoard, ContactMe, BulletinBoardMobile},
   created() {
     console.log("Path:" + this.$route.path); 
     window.addEventListener('resize', this.checkScreen);

@@ -2,7 +2,7 @@
     <div class="bulletin-div">
         <img class="bg" src="@/assets/bulletin-board.svg" id="bg"/>
         <text class="header">drawing prompt: funky fruits!</text>
-        <canvas class="canvas" v-if="showControls" @mousedown="startPainting" @mouseup="finishedPainting" @mousemove="keepPainting" id="canvas" width="720" height="480"></canvas>
+        <canvas class="canvas" v-if="showControls" @mousedown="startPainting" @mouseup="finishedPainting" @mousemove="keepPainting" @touchstart="startPaintingTouch" @touchend="finishedPaintingTouch" @touchmove="keepPaintingTouch" id="canvas" width="720" height="480"></canvas>
         <div class="button-row" v-if="showControls">
                 <div :class="[black ? 'btn-active' : 'btn-inactive']">
                     <img src="@/assets/colours/black-btn.svg" @click="onClickColor('black')"/> 
@@ -42,10 +42,7 @@
 </template>
 
 <script>
-// import { setCanvas } from '../config/firebase.js';
-// import { reactive } from 'vue';
 import { db } from "../firebase.js";
-// import { collection, addDoc } from "firebase/firestore"; 
 
 export default ({
     name: "bulletin-board",
@@ -230,6 +227,43 @@ export default ({
         scrollDown() {
             console.log("Scrolling Down");
             window.scrollTo({top: 700, behavior: 'smooth'});
+        },
+
+        startPaintingTouch(e) {
+            this.disablePageScroll(); 
+            if (this.drawing) {
+                this.painting = true;
+                this.x = e.offsetX || e.touches[0].clientX - e.touches[0].target.getBoundingClientRect().left;
+                this.y = e.offsetY || e.touches[0].clientY - e.touches[0].target.getBoundingClientRect().top;
+                this.disablePageScroll(); // Disable page scrolling
+            }
+        },
+
+        keepPaintingTouch(e) {
+            // var rect = this.canvas.getBoundingClientRect();
+            if (this.painting) {
+                const rect = this.canvas.getBoundingClientRect();
+                const x = e.offsetX || e.touches[0].clientX - rect.left;
+                const y = e.offsetY || e.touches[0].clientY - rect.top;
+                this.drawLine(this.x, this.y, x, y);
+                this.x = x;
+                this.y = y;
+            }
+        },
+
+        finishedPaintingTouch() {
+            this.painting = false;
+            this.x = 0;
+            this.y = 0;
+            this.enablePageScroll();
+        },
+
+        disablePageScroll() {
+            document.body.style.overflow = "hidden";
+            },
+
+        enablePageScroll() {
+            document.body.style.overflow = "auto";
         },
 
     },

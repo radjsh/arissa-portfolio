@@ -1,50 +1,50 @@
 <template>
     <div class="bulletin-mobile-div">
-        <text class="header">drawing prompt: funky fruits!</text>
-        <canvas class="canvas-bbm" @mousedown="startPainting" @mouseup="finishedPainting" @mousemove="keepPainting" id="canvas-bbm" width="300px" height="400px"></canvas>
-        <div class="button-row">
-                <div :class="[black ? 'btn-active' : 'btn-inactive']">
+        <img class="bg-m" src="@/assets/bulletin-board-m.svg" id="bg-m"/>
+        <text class="header-bbm">drawing prompt: funky fruits!</text>
+        <canvas class="canvas-bbm" @touchstart="startPainting" @touchend="finishedPainting" @touchmove="keepPainting" id="canvas-bbm"></canvas>
+        <div class="button-row-m">
+                <div :class="[black ? 'btn-m-active' : 'btn-m-inactive']">
                     <img src="@/assets/colours/black-btn.svg" @click="onClickColor('black')"/> 
-                    </div>
-                    <div :class="[red ? 'btn-active' : 'btn-inactive']" @click="onClickColor('red')">
+                </div>
+                <div :class="[red ? 'btn-m-active' : 'btn-m-inactive']" @click="onClickColor('red')">
                     <img src="@/assets/colours/red-btn.svg"/> 
-                    </div>
-                    <div :class="[yellow ? 'btn-active' : 'btn-inactive']" @click="onClickColor('yellow')">
+                </div>
+                <div :class="[yellow ? 'btn-m-active' : 'btn-m-inactive']" @click="onClickColor('yellow')">
                     <img src="@/assets/colours/yellow-btn.svg"/> 
-                    </div>
-                    <div :class="[green ? 'btn-active' : 'btn-inactive']" @click="onClickColor('green')">
+                </div>
+                <div :class="[green ? 'btn-m-active' : 'btn-m-inactive']" @click="onClickColor('green')">
                     <img src="@/assets/colours/green-btn.svg"/> 
-                    </div>
-                    <div :class="[blue ? 'btn-active' : 'btn-inactive']" @click="onClickColor('blue')">
+                </div>
+                <div :class="[blue ? 'btn-m-active' : 'btn-m-inactive']" @click="onClickColor('blue')">
                     <img src="@/assets/colours/blue-btn.svg"/> 
-                    </div>
-                    <div :class="[brown ? 'btn-active' : 'btn-inactive']" @click="onClickColor('brown')">
+                </div>
+                <div :class="[brown ? 'btn-m-active' : 'btn-m-inactive']" @click="onClickColor('brown')">
                     <img src="@/assets/colours/brown-btn.svg"/> 
-                    </div>
-                    <div :class="[skin ? 'btn-active' : 'btn-inactive']" @click="onClickColor('skin')">
+                </div>
+                <div :class="[skin ? 'btn-m-active' : 'btn-m-inactive']" @click="onClickColor('skin')">
                     <img src="@/assets/colours/skin-btn.svg"/> 
-                    </div>
-                    <div :class="[pencil ? 'btn-active' : 'btn-inactive']" @click="onClickControl('pencil')">
-                        <img src="@/assets/pencil-btn.svg"/>
-                    </div>
-                    <div :class="[eraser ? 'btn-active' : 'btn-inactive']" @click="onClickControl('eraser')">
-                        <img src="@/assets/eraser-btn.svg"/>
-                    </div>
-                    <div :class="[trash ? 'btn-active' : 'btn-inactive']" @click="onClickControl('trash')">
-                        <img src="@/assets/trash-btn.svg"/>
-                    </div>
-                    <div class="btn-inactive" @click="onClickDone">
-                        <img src="@/assets/done-btn.svg"/>
-                    </div>
+                </div>
+        </div>   
+        <div class="button-row-m-2">
+                <div :class="[pencil ? 'btn-m-active' : 'btn-m-inactive']" @click="onClickControl('pencil')">
+                    <img src="@/assets/pencil-btn.svg"/>
+                </div>
+                <div :class="[eraser ? 'btn-m-active' : 'btn-m-inactive']" @click="onClickControl('eraser')">
+                    <img src="@/assets/eraser-btn.svg"/>
+                </div>
+                <div :class="[trash ? 'btn-m-active' : 'btn-m-inactive']" @click="onClickControl('trash')">
+                    <img src="@/assets/trash-btn.svg"/>
+                </div>
+                <div class="btn-m-inactive" @click="onClickDone">
+                    <img src="@/assets/done-btn.svg"/>
+                </div>
         </div>   
     </div>
 </template>
 
 <script>
-// import { setCanvas } from '../config/firebase.js';
-// import { reactive } from 'vue';
 import { db } from "../firebase.js";
-// import { collection, addDoc } from "firebase/firestore"; 
 
 export default ({
     name: "bulletin-board-mobile",
@@ -179,9 +179,9 @@ export default ({
         drawLine(x1, y1, x2, y2) {
             this.ctx.beginPath();
             this.ctx.strokeStyle = this.color_now
-            this.ctx.lineWidth = 10;
+            this.ctx.lineWidth = 5;
             if (this.eraser == true) {
-                this.ctx.lineWidth = 30;
+                this.ctx.lineWidth = 20;
             }
             this.ctx.lineCap ="round" 
             this.ctx.moveTo(x1, y1);
@@ -191,27 +191,31 @@ export default ({
         },
 
         startPainting(e) {
-            if (this.drawing == true) {
+            if (this.drawing) {
                 this.painting = true;
-                this.x = e.offsetX
-                this.y = e.offsetY
+                this.x = e.offsetX || e.touches[0].clientX - e.touches[0].target.getBoundingClientRect().left;
+                this.y = e.offsetY || e.touches[0].clientY - e.touches[0].target.getBoundingClientRect().top;
+                this.disablePageScroll(); // Disable page scrolling
             }
         },
 
         keepPainting(e) {
-            var rect = this.canvas.getBoundingClientRect();
-                if (this.painting === true) {
-                    this.drawLine(this.x, this.y, e.offsetX, e.offsetY);
-                    this.x = (e.clientX - rect.left)
-                    this.y = (e.clientY - rect.top)
+            // var rect = this.canvas.getBoundingClientRect();
+            if (this.painting) {
+                const rect = this.canvas.getBoundingClientRect();
+                const x = e.offsetX || e.touches[0].clientX - rect.left;
+                const y = e.offsetY || e.touches[0].clientY - rect.top;
+                this.drawLine(this.x, this.y, x, y);
+                this.x = x;
+                this.y = y;
             }
         },
 
-        finishedPainting(e) {
+        finishedPainting() {
             this.painting = false;
-            this.drawLine(this.x, this.y, e.offsetX, e.offsetY);
             this.x = 0;
             this.y = 0;
+            this.enablePageScroll();
         },
 
         checkScreen() {
@@ -231,19 +235,21 @@ export default ({
             window.scrollTo({top: 700, behavior: 'smooth'});
         },
 
+        disablePageScroll() {
+            document.body.style.overflow = "hidden";
+            },
+
+        enablePageScroll() {
+            document.body.style.overflow = "auto";
+        },
+
     },
     mounted() {
         this.canvas = document.getElementById("canvas-bbm");
         this.ctx = this.canvas.getContext("2d");  
         this.vueCanvas = this.ctx;
 
-
     },
-    // setup() {
-    //     const obj = reactive({canvas: ''})
-    //     const onSubmit = async () => {}
-    //     return { obj, onSubmit }
-    // }
 });
 </script>
 
@@ -254,19 +260,12 @@ export default ({
     grid-template-rows: 3;
     align-content: center;
     justify-items: center;
-    margin-left: 24px;
-    margin-right: 24px;
-    width: 300px;
-    height: 200px;
-    background-image: url("../assets/bulletin-board.svg");
-    background-position: center;
-    background-repeat: no-repeat;
 }
 
-.bg-bbm {
+.bg-m {
     position: relative;
     z-index: 1;
-    width: 300px;
+    width: 100%;
     height: auto;
 }
 
@@ -274,17 +273,17 @@ export default ({
     position: relative;
     background-color: #F1E8E6;
     z-index: 3;
-    margin-top: -50%;
-    /* bottom: 160px;
-    left: 300px; */
+    margin-top: -80%;
+    height: 160px;
+    width: 80%;
 }
 
-.header {
+.header-bbm {
     font-family: "Futura-Med";
-    font-size: 20px;
+    font-size: 16px;
     position: relative;
     color: #F1E8E6;
-    margin-top: -55%;
+    margin-top: -100%;
     z-index: 2;
 }
 
@@ -293,53 +292,54 @@ export default ({
     margin-left: 200%;
 }
 
-.button-row {
+.button-row-m {
     position: relative;
     z-index: 3;
     left: 0;
     width: 100%;
-    height: 60px;
+    margin-bottom: 8px;
     background-color: none;
     display: flex;
     flex-direction: row;
     flex: 1;
     justify-content: center;
-    margin-top: -12%;
+    margin-top: -30%;
 }
 
-.btn-inactive {
-    width: 54px;
-    cursor: pointer;
-    margin-left: 24px;
-}
-
-.btn-inactive:hover {
-    width: 54px;
-    cursor: pointer;
+.button-row-m-2 {
     position: relative;
-    top: -4px;
-    transition: 1s ease all ;
+    z-index: 3;
+    left: 0;
+    width: 100%;
+    margin-bottom: 8px;
+    background-color: none;
+    display: flex;
+    flex-direction: row;
+    flex: 1;
+    justify-content: center;
+    margin-top: -20%;
 }
 
-.btn-active {
-    position: relative;
-    width: 54px;
-    height: 54px;
+.btn-m-inactive {
+    width: 24px;
     cursor: pointer;
-    margin-left: 24px;
+    margin-left: 6px;
+    margin-right: 6px;
+}
+
+.btn-m-active {
+    position: relative;
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
     border-style: solid;
     border-color: #F7C760;
     border-width: 4px;
     border-radius: 54px;
     border-spacing: 0pt;
     top: -10px;
+    margin-left: 6px;
+    margin-right: 6px;
 }
-@media screen and (max-width: 890px) {
-  .button-active, .button-inactive {
-    height: 36px;
-    border-radius: 36px;
-  }
-}
-
 
 </style>
