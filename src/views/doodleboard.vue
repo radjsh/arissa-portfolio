@@ -26,7 +26,6 @@ import BulletinBoardMobile from '../components/BulletinBoardMobile.vue';
 export default {
   components: { BulletinBoard, ContactMe, BulletinBoardMobile},
   created() {
-    console.log("Path:" + this.$route.path); 
     window.addEventListener('resize', this.checkScreen);
     this.checkScreen();
     this.retrieveCanvases();
@@ -73,7 +72,6 @@ export default {
 
     convertURLToImageData(URL) {
       var name = "canvas0" + this.elementCount
-      console.log("NAME: " + name)
       this.elementCount += 1
       if (this.elementCount == 6){
         this.elementCount = 1

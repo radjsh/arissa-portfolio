@@ -18,11 +18,11 @@
             </div>
             <transition name="mobile-nav">
                 <ul v-show="mobileNav" class="dropdown-nav">
-                    <li><router-link :class="[portfolio ? 'link' : 'nolink']" :to="{name: 'portfolio'}" @click="onClickPortfolio; this.mobileNav = !this.mobileNav;">portfolio</router-link></li>
-                    <li><router-link :class="[about ? 'link' : 'nolink']" :to="{name: 'about'}" @click="onClickAbout; this.mobileNav = !this.mobileNav;">about</router-link></li>
-                    <li><router-link :class="[contact ? 'link' : 'nolink']" :to="{name: 'doodleboard'}" @click="onClickContact; this.mobileNav = !this.mobileNav;">doodle board</router-link></li>
-                    <li><a class="nolink" @click="onClickShop; this.mobileNav = !this.mobileNav;" href="https://rissaartt.shop/" target="_blank">shop</a></li>
-                    <li><a class="nolink" @click="onClickResume; this.mobileNav = !this.mobileNav;" href="https://drive.google.com/file/d/1sv-jbcxx37LJVLJT3MB9G3DKqRM1CHuE/view?usp=sharing" target="_blank">resume</a></li>
+                    <li><router-link :class="[portfolio ? 'link' : 'nolink']" :to="{name: 'portfolio'}" @click="onClickPortfolio">portfolio</router-link></li>
+                    <li><router-link :class="[about ? 'link' : 'nolink']" :to="{name: 'about'}" @click="onClickAbout">about</router-link></li>
+                    <li><router-link :class="[contact ? 'link' : 'nolink']" :to="{name: 'doodleboard'}" @click="onClickContact">doodle board</router-link></li>
+                    <li><a class="nolink" @click="onClickShop" href="https://rissaartt.shop/" target="_blank">shop</a></li>
+                    <li><a class="nolink" @click="onClickResume" href="https://drive.google.com/file/d/1sv-jbcxx37LJVLJT3MB9G3DKqRM1CHuE/view?usp=sharing" target="_blank">resume</a></li>
                 </ul>                
             </transition>
         </nav>
@@ -67,15 +67,13 @@ export default {
         },
 
         onClickPortfolio () {
-            console.log("onClickPortfolio");
             console.log(this.portfolio);
             this.portfolio = true;
             this.about = false;
             this.contact = false;
             this.resume = false;
             this.shop = false;
-            console.log(this.portfolio);
-            console.log("RESUME: " + this.resume);
+            this.mobileNav = !this.mobileNav;
             window.scrollTo(0, 0);
         },
 
@@ -85,6 +83,7 @@ export default {
             this.contact = false;
             this.resume = false;
             this.shop = false;
+            this.mobileNav = !this.mobileNav
             window.scrollTo(0, 0);
         },
         
@@ -94,6 +93,7 @@ export default {
             this.contact = true;
             this.resume = false;
             this.shop = false;
+            this.mobileNav = !this.mobileNav
             window.scrollTo(0, 0);
         },
 
@@ -103,7 +103,7 @@ export default {
             this.contact = false;
             this.resume = false;
             this.shop = false;
-            console.log("RESUME FROM OCR: " + this.resume);
+            this.mobileNav = !this.mobileNav
             window.scrollTo(0, 0);
         },
 
@@ -113,7 +113,7 @@ export default {
             this.contact = false;
             this.resume = false;
             this.shop = true;
-            console.log("RESUME FROM OCR: " + this.resume);
+            this.mobileNav = !this.mobileNav
             window.scrollTo(0, 0);
         },
     },
