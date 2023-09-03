@@ -149,7 +149,7 @@ export default ({
         },
 
         isCanvasBlank() {
-            var canvas = document.getElementById("canvas")
+            var canvas = document.getElementById("canvas-bbm")
             return !canvas.getContext('2d').getImageData(0, 0, canvas.width, canvas.height).data.some(channel => channel !== 0)
         },
 
