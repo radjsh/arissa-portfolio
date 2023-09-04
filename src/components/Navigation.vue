@@ -73,7 +73,9 @@ export default {
             this.contact = false;
             this.resume = false;
             this.shop = false;
-            this.mobileNav = !this.mobileNav;
+            if (this.mobile) {
+                this.mobileNav = !this.mobileNav;
+            }
             window.scrollTo(0, 0);
         },
 
@@ -83,7 +85,9 @@ export default {
             this.contact = false;
             this.resume = false;
             this.shop = false;
-            this.mobileNav = !this.mobileNav
+            if (this.mobile) {
+                this.mobileNav = !this.mobileNav;
+            }
             window.scrollTo(0, 0);
         },
         
@@ -93,7 +97,9 @@ export default {
             this.contact = true;
             this.resume = false;
             this.shop = false;
-            this.mobileNav = !this.mobileNav
+            if (this.mobile) {
+                this.mobileNav = !this.mobileNav;
+            }
             window.scrollTo(0, 0);
         },
 
@@ -103,7 +109,9 @@ export default {
             this.contact = false;
             this.resume = false;
             this.shop = false;
-            this.mobileNav = !this.mobileNav
+            if (this.mobile) {
+                this.mobileNav = !this.mobileNav;
+            }
             window.scrollTo(0, 0);
         },
 
@@ -113,7 +121,9 @@ export default {
             this.contact = false;
             this.resume = false;
             this.shop = true;
-            this.mobileNav = !this.mobileNav
+            if (this.mobile) {
+                this.mobileNav = !this.mobileNav;
+            }
             window.scrollTo(0, 0);
         },
     },
