@@ -233,14 +233,6 @@ export default ({
                     title: "Landscape Key Visual",
                     src: require("@/assets/disney/LN_L.png"),  
                 },
-                {
-                    title: "Character Adaptations",
-                    src: require("@/assets/disney/LN_2.svg"),  
-                },
-                {
-                    title: "Green Background for Retail Execution",
-                    src: require("@/assets/disney/LN_G_2.svg"),  
-                }
             ]
         }
     },

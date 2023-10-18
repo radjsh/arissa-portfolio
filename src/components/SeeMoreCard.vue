@@ -86,5 +86,12 @@ export default {
     height: auto;
     padding-left: 12px;
     padding-right: 12px;
+    padding-top: 12px;
+    transition: 0.3s ease-in-out all;
+    z-index: 5;
+}
+
+.card:hover {
+    transform: translateY(-12px);
 }
 </style>

@@ -115,18 +115,18 @@ export default {
 }
 
 .card {
-    margin-top: 100px;
+    margin-top: 120px;
     width: 550px;
     height: auto;
     padding-left: 48px;
     padding-right: 48px;
     z-index: 2;
     cursor: pointer;
-    transition: 0.3s ease-in-out all; /* Apply the transition here */
+    transition: 0.6s ease-in-out all; /* Apply the transition here */
 }
 
 .card:hover {
-    margin-top: 70px; /* Reduce the margin to move the card up */
+    margin-top: 80px; /* Reduce the margin to move the card up */
     z-index: 2;
 }
 

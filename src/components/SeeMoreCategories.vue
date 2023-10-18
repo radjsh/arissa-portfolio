@@ -36,7 +36,7 @@ export default {
                     path: 'disney',
                 },
                 {
-                    title: 'Shopee UI/UX Design',
+                    title: 'Shopee UI/UX',
                     src: require("@/assets/portfolio-categories/shopee.jpg"),
                     path: 'shopee',
                 },

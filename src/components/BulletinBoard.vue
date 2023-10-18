@@ -339,14 +339,11 @@ export default ({
     width: 54px;
     cursor: pointer;
     margin-left: 24px;
+    transition: 0.3s ease all ;
 }
 
 .btn-inactive:hover {
-    width: 54px;
-    cursor: pointer;
-    position: relative;
-    top: -4px;
-    transition: 1s ease all ;
+    transform: translateY(-10px);
 }
 
 .btn-active {

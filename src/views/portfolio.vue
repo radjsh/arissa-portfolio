@@ -275,6 +275,10 @@
       </svg>
 
       </div>
+      <div v-if="mobileView" class="scroll-down-div">
+          <text>scroll down to view projects</text>
+          <img class="arrow" src="@/assets/arrow-down.svg">
+      </div>
     </div>
   <portfolio-categories/>
   <contact-me/>
@@ -709,5 +713,29 @@ export default {
   opacity: 0
 }
 
+.scroll-down-div {
+  font-family: "Futura-Book";
+  font-size: 12px;
+  margin-top: 48px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.arrow {
+  width: 16px;
+  height: auto;
+  margin-top: 24px;
+  animation: arrow-bounce ease-in-out 1s alternate infinite;
+}
+
+@keyframes arrow-bounce {
+  from {
+    transform: translateY(2px)
+  }
+  to {
+    transform: translateY(-2px)
+  }
+}
 </style>
 

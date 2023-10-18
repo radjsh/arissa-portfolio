@@ -4,19 +4,19 @@
     <text :class="[mobileView ? 'cm-text-m' : 'cm-text']"> Let's connect!</text>
     <div :class="[mobileView ? 'button-li-m' : 'button-li']">
         <a href="mailto:arissa140100@yahoo.com.sg">
-            <img :class="[mobileView ? 'btn-m' : 'btn-1']" src="@/assets/email-btn.svg"/>
+            <img :class="[mobileView ? 'btn-m' : 'contact-btn-1']" src="@/assets/email-btn.svg"/>
         </a>
         <a href="https://www.linkedin.com/in/arissarashid/" target="_blank">
-            <img :class="[mobileView ? 'btn-m' : 'btn']" src="@/assets/linkedin-btn.svg"/>
+            <img :class="[mobileView ? 'btn-m' : 'contact-btn']" src="@/assets/linkedin-btn.svg"/>
         </a>
         <a href="https://www.instagram.com/rissaartt/" target="_blank">
-            <img :class="[mobileView ? 'btn-m' : 'btn']" src="@/assets/ig-btn.svg"/>
+            <img :class="[mobileView ? 'btn-m' : 'contact-btn']" src="@/assets/ig-btn.svg"/>
         </a>
         <a href="https://www.dribbble.com/arissa/" target="_blank">
-            <img :class="[mobileView ? 'btn-m' : 'btn']" src="@/assets/dribbble-btn.svg"/>
+            <img :class="[mobileView ? 'btn-m' : 'contact-btn']" src="@/assets/dribbble-btn.svg"/>
         </a>
     </div>
-    <svg v-if="!mobileView" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1366 139.4" style="enable-background:new 0 0 1366 139.4;" xml:space="preserve" @click="backToTop">
+    <svg v-if="!mobileView" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1366 139.4" style="enable-background:new 0 0 1366 139.4;" xml:space="preserve" @click="backToTop" class="graphic">
         <path class="st0" d="M738,136.9c8.2,0,15.2-4.9,18.3-12h-36.6C722.8,131.9,729.8,136.9,738,136.9z"/>
         <path class="st0" d="M636,136.9c8.2,0,15.2-4.9,18.3-12h-36.6C620.8,131.9,627.8,136.9,636,136.9z"/>
         <g>
@@ -310,27 +310,28 @@ export default {
     margin-top: 48px;
 }
 
-.btn-1 {
+.contact-btn-1 {
     width: 80px;
     cursor: pointer;
+    top: 0px;
+    transition: 0.3s ease-in-out all ;
 }
 
-.btn-1:hover {
+.contact-btn-1:hover {
     position: relative;
-    top: -4px;
-    transition: 1s ease all ;
+    transform: translateY(-10px);
 }
 
-.btn {
+.contact-btn {
     width: 80px;
     margin-left: 60px;
     cursor: pointer;
+    transition: 0.3s ease-in-out all ;
 }
 
-.btn:hover {
+.contact-btn:hover {
     position: relative;
-    top: -4px;
-    transition: 1s ease all ;
+    transform: translateY(-10px);
 }
 
 .btn-m {
@@ -355,6 +356,10 @@ html {
   to {
     transform: translateY(-8px)
   }
+}
+
+.graphic {
+    cursor: pointer;
 }
 
 .st0{fill:#EDB498;}
