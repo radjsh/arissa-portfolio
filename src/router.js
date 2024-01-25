@@ -12,6 +12,7 @@ import UIChallenge from './views/ui-challenge.vue';
 import Hop from './views/hop.vue';
 import Yearbook from './views/yearbook.vue';
 import CNN from './views/cnn.vue';
+import Samsung from './views/samsung.vue';
 
 const routes = [
     {
@@ -90,6 +91,12 @@ const routes = [
         path: '/portfolio/cnn',
         name: 'cnn',
         component: CNN,
+        meta: {title: 'arissa\'s portfolio'}
+    },
+    {
+        path: '/portfolio/samsung-casetify',
+        name: 'samsung',
+        component: Samsung,
         meta: {title: 'arissa\'s portfolio'}
     }
 ]

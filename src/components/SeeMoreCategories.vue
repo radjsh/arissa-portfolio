@@ -36,6 +36,11 @@ export default {
                     path: 'disney',
                 },
                 {
+                    title: 'Samsung x Casetify',
+                    src: require("@/assets/portfolio-categories/samsungxcasetify.jpg"),
+                    path: 'samsung',
+                },
+                {
                     title: 'Shopee UI/UX',
                     src: require("@/assets/portfolio-categories/shopee.jpg"),
                     path: 'shopee',

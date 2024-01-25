@@ -1,59 +1,50 @@
 <template>
     <div :class="[mobileView ? 'poster-div-m' : 'poster-div']">
-        <img src="@/assets/tele-stickers/telesticker-banner.jpg" :class="[mobileView ? 'banner-m' : 'banner']">
+        <img src="@/assets/samsung-casetify/header.jpg" :class="[mobileView ? 'banner-m' : 'banner']">
         <div class="heading">
-            <header :class="[mobileView ? 'header-m' : 'header']">Telegram Stickers</header>
-            <p :class="[mobileView ? 'subheader-posters-m' : 'subheader-posters']">Personal Project, Illustration and Animation</p>
+            <header :class="[mobileView ? 'header-m' : 'header']">Samsung x Casetify</header>
+            <p :class="[mobileView ? 'subheader-posters-m' : 'subheader-posters']">Freelance Illustrator</p>
         </div>
         <div class="row specs-row" v-if="!mobileView">
             <div class="col l3 offset-l1 m3" >
                 <ul class="specs">
-                    <li><p class="specs-title">Project Type:</p></li>
-                    <li><p class="specs-list">Personal</p></li>
+                    <li><p class="specs-title">Company:</p></li>
+                    <li><p class="specs-list">Samsung x Casetify</p></li>
                 </ul>
             </div>
             <div class="col l3 offset-l1 m3">
                 <ul class="specs">
                     <li><p class="specs-title">Strategies:</p></li>
-                    <li><p class="specs-list">Illustrations and Animation</p></li>
+                    <li><p class="specs-list">Digital Illustration</p></li>
                 </ul>
             </div>
             <div class="col l3 offset-l1 m3">
                 <ul class="specs">
                     <li><p class="specs-title">Timeline:</p></li>
-                    <li><p class="specs-list">September 2020 - Present</p></li>
+                    <li><p class="specs-list">Dec 2023 - Jan 2024</p></li>
                 </ul>
             </div>
             <div class="col l3 offset-l1 m3">
                 <ul class="specs">
                     <li><p class="specs-title">Tools Used:</p></li>
-                    <li><p class="specs-list">Procreate, Adobe Illustrator and After Effects</p></li>
+                    <li><p class="specs-list">Procreate</p></li>
                 </ul>
             </div>
         </div>
         <div v-else class="col s12 col-list">
-            <p class="specs-list-m"><text class="specs-title-m">Project Type:</text> Personal</p>
-            <p class="specs-list-m"><text class="specs-title-m">Strategies:</text> Illustrations and Animation</p>
-            <p class="specs-list-m"><text class="specs-title-m">Timeline:</text> September 2020 - Present</p>
-            <p class="specs-list-m"><text class="specs-title-m">Tools used:</text> Procreate, Adobe Illustrator and After Effects</p>
+            <p class="specs-list-m"><text class="specs-title-m">Company:</text> Samsung x Casetify</p>
+            <p class="specs-list-m"><text class="specs-title-m">Strategies:</text> Digital Illustration</p>
+            <p class="specs-list-m"><text class="specs-title-m">Timeline:</text> Dec 2023 - Jan 2024</p>
+            <p class="specs-list-m"><text class="specs-title-m">Tools used:</text> Procreate</p>
         </div>
-        <header :class="[mobileView ? 'header-2-m' : 'header-2']">Static Telegram Sticker Pack</header>
-        <div :class="[mobileView ? 'introduction-m' : 'introduction']">I believe that there is no better way to express yourself over text, than to use the stickers that you have created yourself. I created bonk (yes, I named my sticker pack bonk without knowing that I couldn’t change it later), for fun. It has now grown into a collaborative sticker pack, with friends sharing me emojis and expressions that they would like to see. 
-            <br><br>Bonk consists of <b>93</b> digitally drawn expressive stickers, used <b>5.8 million</b> times among <b>70,000</b> telegram users to date.
-            <br><br>Save Bonk to your device here: <b><a class="link-style" href="https://t.me/addstickers/rissaartt" target="_blank">https://t.me/addstickers/rissaartt</a></b>
+        <div :class="[mobileView ? 'introduction-m' : 'introduction']">
+            As part of Samsung’s new S24 Galaxy launch, I was one of the 11 local artists invited to be part of "Epic Playground" and design casetify phone covers inspired by local Singapore elements. My designs draw inspiration from the simple yet extraordinary moments of everyday life. Additionally, I adapted the designs into Galaxy Themes and sticker sheets. Check out the entire Casetify collection <b><a class="link-style" href="https://cdn.casetify.com/collection/epic-galaxy-singapore-edition?" target="_blank">here</a></b>.
         </div>
-        <section class="posters">
-            <poster v-for="logo in logos" :key="logo.title" :poster="logo"></poster>
-        </section>
-        <header :class="[mobileView ? 'header-2-m' : 'header-2']">Animated Telegram Sticker Pack</header>
-        <div :class="[mobileView ? 'introduction-m' : 'introduction']">I have always been interested in motion graphics and animation. With Bonk as a basis, I decided to challenge myself and animate a telegram sticker pack that captures the joys and tribulations of everyday life. Hence, the birth of Bonky. <br>
-        <br>Bonky consists of <b>20</b> vector animations, used <b>1 million</b> times among <b>23,000</b> telegram users to date.
-        <br><br>Save Bonky to your device here: <b><a class="link-style" href="https://t.me/addstickers/rissaartt-animated" target="_blank">https://t.me/addstickers/rissaartt</a></b>
 
-        </div>
         <section class="posters">
-            <poster v-for="icon in icons" :key="icon.title" :poster="icon"></poster>
+            <poster v-for="sxc in sxcs" :key="sxc.title" :poster="sxc"></poster>
         </section>
+
         <div class="see-more-div">
             <text :class="[mobileView ? 'sm-title-m' : 'sm-title']">See More Projects</text> 
             <see-more-categories :pageType="category"/>
@@ -68,7 +59,7 @@ import SeeMoreCategories from "../components/SeeMoreCategories.vue";
 import ContactMe from "../components/ContactMe.vue";
 
 export default ({
-    name: "telegram-stickers",
+    name: "samsung",
     components: { Poster, SeeMoreCategories, ContactMe },
     created() {
         window.addEventListener('resize', this.checkScreen);
@@ -80,20 +71,16 @@ export default ({
         return {
             mobileView: null,
             windowWidth: null,
-            category: "telegram-stickers",
-            logos: [
+            category: "samsung",
+            sxcs: [
                 { 
-                    title: "",
-                    src: require("@/assets/tele-stickers/telesticker-all.jpg"),
-                }                                                                        
-            ],
-
-            icons: [
+                    title: "Image Credits: Casetify",
+                    src: require("@/assets/samsung-casetify/phone-cases.png"),
+                },     
                 { 
-                    title: "",
-                    src: require("@/assets/tele-stickers/ats-1.gif"),
-                },
-                                                                                                    
+                    title: "Sticker Sheet Designs",
+                    src: require("@/assets/samsung-casetify/stickers.png"),
+                },                                                                   
             ],
         }
     },
@@ -136,7 +123,8 @@ export default ({
 }
 
 .banner {
-    margin-top: 20px;
+    margin-top: 49px;
+    width: 100%;
 }
 
 .banner-m {
@@ -166,11 +154,14 @@ export default ({
     margin-left: 148px;
 }
 
-.header-m-2 {
+.header-2-m {
     font-family: "Futura-Med";
     font-size: 24px;
     margin-top: 36px;   
+    text-align: left;
+    margin-left: 24px;
 }
+
 .subheader-posters {
     font-family: "Futura-Book";
     margin-top: 12px;
@@ -198,9 +189,27 @@ ul {
     justify-content: center;
 }
 
+.specs-row-2 {
+    margin-top: 48px;
+    display: flex;
+    justify-content: start;
+    margin-left: 84px;
+}
+
 .specs {
     margin-left: 24px;
     margin-right: 24px;
+    text-align: start;
+}
+.specs {
+    margin-left: 24px;
+    margin-right: 24px;
+    text-align: start;
+}
+
+.specs-2 {
+    margin-left: 24px;
+    margin-right: 120px;
     text-align: start;
 }
 
@@ -285,17 +294,17 @@ p {
     margin-left: 24px;
 }
 
+.link-style {
+    text-underline-offset: 2px;
+    text-decoration-color: #F7C760;
+    text-decoration-thickness: 3px;
+}
+
 a {
     color: #7287B2;
 }
 
 a:hover {
    color: #B1BCD5; 
-}
-
-.link-style {
-    text-underline-offset: 2px;
-    text-decoration-color: #F7C760;
-    text-decoration-thickness: 3px;
 }
 </style>

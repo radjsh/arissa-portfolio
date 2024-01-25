@@ -145,12 +145,14 @@ hr {
   border-radius: 10px;
   filter: drop-shadow(0px 0px 10px rgba(0, 0, 0, 0.1));
   opacity: 0; /* Initially hidden */
-  transition: opacity 0.4s ease-in-out
+  transform: scale(1.2);
+  transition: opacity 0.5s ease-in-out, transform 0.4s ease-in-out;
+  transform-origin: center;
 }
 
-.image-container:hover .site-image {
+
+.image-container:hover .site-image:hover {
   opacity: 1; /* Fade in on hover */
   transform: scale(1); /* Zoom in on hover */
 }
-
 </style>

@@ -127,6 +127,7 @@ export default {
 
 .card:hover {
     margin-top: 80px; /* Reduce the margin to move the card up */
+    margin-bottom: 40px;
     z-index: 2;
 }
 

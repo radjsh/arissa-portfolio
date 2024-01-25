@@ -41,10 +41,10 @@
             At CNN Create Brand Studio, we create scrollytelling websites with third party clients to tell their story in an informative and engaging way. As a digital designer, I design the visuals and interactions of the websites and collaborate with developers to bring the vision to life. 
         </div>
         <div v-if="!mobileView" class="browse-title">
-            Browse Projects:
+            Browse Live Projects:
         </div>
         <div v-else class="browse-title-m reveal">
-            Click on project to view:
+            Click on project to view live:
         </div>
         <section v-if="!mobileView">
             <site v-for="site in sites" :key="site.title" :site="site"></site>
@@ -84,6 +84,15 @@ export default ({
             windowWidth: null,
             category: "cnn",
             sites: [
+                {
+                    title: "From Ocean to Plate",
+                    sub: "JFOODO | 2024",
+                    link: "https://sponsorcontent.cnn.com/edition/2024/jfoodo/en/ocean-to-plate/",
+                    src: require("@/assets/cnn/JFOODO.jpg"),
+                    showingImage: false,
+                    mouseX: 0,
+                    mouseY: 0,
+                },
                 {
                     title: "Booming Bangladesh",
                     sub: "Federation of Bangladesh Business Chamber | 2023",
