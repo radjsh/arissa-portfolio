@@ -13,6 +13,7 @@ import Hop from './views/hop.vue';
 import Yearbook from './views/yearbook.vue';
 import CNN from './views/cnn.vue';
 import Samsung from './views/samsung.vue';
+import Sandbox from './views/sandbox.vue';
 
 const routes = [
     {
@@ -98,6 +99,12 @@ const routes = [
         name: 'samsung',
         component: Samsung,
         meta: {title: 'arissa\'s portfolio'}
+    },
+    {
+        path: '/sandbox',
+        name: 'sandbox',
+        component: Sandbox,
+        meta: {title: 'sandbox'}
     }
 ]
 

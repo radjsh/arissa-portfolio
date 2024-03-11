@@ -38,12 +38,30 @@
             <p class="specs-list-m"><text class="specs-title-m">Tools used:</text> Procreate</p>
         </div>
         <div :class="[mobileView ? 'introduction-m' : 'introduction']">
-            As part of Samsung’s new S24 Galaxy launch, I was one of the 11 local artists invited to be part of "Epic Playground" and design casetify phone covers inspired by local Singapore elements. My designs draw inspiration from the simple yet extraordinary moments of everyday life. Additionally, I adapted the designs into Galaxy Themes and sticker sheets. Check out the entire Casetify collection <b><a class="link-style" href="https://cdn.casetify.com/collection/epic-galaxy-singapore-edition?" target="_blank">here</a></b>.
+            As part of Samsung’s new S24 Galaxy launch, I was one of the 11 local artists invited to be part of the Epic Playground and design casetify phone covers inspired by local Singapore elements. Additionally, the designs were adapted into Galaxy themes and marketing material on the trains. 
+            <br>
+            <br>
+            In crafting this collection, I drew inspiration from life’s subtle yet profound moments, illuminating the simple yet exciting moments of everyday life that are often overlooked. Check out the entire Casetify collection <b><a class="link-style" href="https://cdn.casetify.com/collection/epic-galaxy-singapore-edition?" target="_blank">here</a></b>.
         </div>
 
-        <section class="posters">
-            <poster v-for="sxc in sxcs" :key="sxc.title" :poster="sxc"></poster>
-        </section>
+        <div class="digi-ill">
+            <div class="sc-row1">
+                <img src="@/assets/samsung-casetify/c1.png" class="img1"/>
+                <img src="@/assets/samsung-casetify/c2.png" class="img1"/>
+                <img src="@/assets/samsung-casetify/c3.png" class="img1"/>
+            </div>
+        </div>
+
+        <div :class="[mobileView ? 'introduction-m' : 'introduction']">
+            The highlight of this project was getting to see my design on the train. It was such a blessing to have my own EPIC experience on the commute to work!
+        </div>
+
+        <div class="digi-ill">
+            <div class="sc-row1">
+                <img src="@/assets/samsung-casetify/c4.jpg" class="img2"/>
+                <img src="@/assets/samsung-casetify/c5.jpg" class="img2"/>
+            </div>
+        </div>
 
         <div class="see-more-div">
             <text :class="[mobileView ? 'sm-title-m' : 'sm-title']">See More Projects</text> 
@@ -54,13 +72,12 @@
 </template>
 
 <script>
-import Poster from "../components/Poster.vue";
 import SeeMoreCategories from "../components/SeeMoreCategories.vue";
 import ContactMe from "../components/ContactMe.vue";
 
 export default ({
     name: "samsung",
-    components: { Poster, SeeMoreCategories, ContactMe },
+    components: { SeeMoreCategories, ContactMe },
     created() {
         window.addEventListener('resize', this.checkScreen);
         this.checkScreen();
@@ -72,16 +89,6 @@ export default ({
             mobileView: null,
             windowWidth: null,
             category: "samsung",
-            sxcs: [
-                { 
-                    title: "Image Credits: Casetify",
-                    src: require("@/assets/samsung-casetify/phone-cases.png"),
-                },     
-                { 
-                    title: "Sticker Sheet Designs",
-                    src: require("@/assets/samsung-casetify/stickers.png"),
-                },                                                                   
-            ],
         }
     },
 
@@ -265,8 +272,8 @@ p {
     font-size: 18px;
     margin-top: 48px;
     text-align: start;
-    margin-left: 148px;
-    margin-right: 148px;
+    margin-left: 180px;
+    margin-right: 180px;
     line-height: 26px;
 }
 
@@ -306,5 +313,31 @@ a {
 
 a:hover {
    color: #B1BCD5; 
+}
+
+.digi-ill {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-top: 48px;
+}
+
+.sc-row1 {
+    display: flex;
+    flex-direction: row;
+    flex: 1;
+    justify-content: center;
+}
+
+.img1 {
+    width: 25%;
+    margin: 1% 1% 1% 1%;
+    border-radius: 10px;
+}
+
+.img2 {
+    width: 37%;
+    margin: 1% 1% 1% 1%;
+    border-radius: 10px;
 }
 </style>
