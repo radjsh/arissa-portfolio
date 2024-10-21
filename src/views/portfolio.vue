@@ -408,11 +408,6 @@ export default {
   margin-bottom: 120px;
 }
 
-.poster-div{
-  margin-left: 24px;
-  margin-right: 24px;
-}
-
 .lp {
   text-align: center;
   margin-top: 10px;
