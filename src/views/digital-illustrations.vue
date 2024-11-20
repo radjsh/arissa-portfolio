@@ -141,8 +141,7 @@ export default ({
 }
 
 .banner-m {
-    margin-top: 24px;
-    height: 100px;
+    margin-top: 56px;
     width: 100%;
     overflow: 0;
 }
