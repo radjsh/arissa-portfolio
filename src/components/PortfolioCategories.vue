@@ -56,6 +56,13 @@ export default {
                     cat: 'cw',
                 },
                 {
+                    title: 'LTA Move Lite Campaign',
+                    subheader: 'illustration',
+                    src: require("@/assets/portfolio-categories/lta.jpg"),
+                    path: 'lta',
+                    cat: 'fi',
+                },
+                {
                     title: 'Samsung x Casetify',
                     subheader: 'illustration',
                     src: require("@/assets/portfolio-categories/samsungxcasetify.jpg"),

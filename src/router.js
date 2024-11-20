@@ -14,6 +14,7 @@ import Yearbook from './views/yearbook.vue';
 import CNN from './views/cnn.vue';
 import Samsung from './views/samsung.vue';
 import Sandbox from './views/sandbox.vue';
+import LTA from './views/lta.vue';
 
 const routes = [
     {
@@ -105,6 +106,12 @@ const routes = [
         name: 'sandbox',
         component: Sandbox,
         meta: {title: 'sandbox'}
+    },
+    {
+        path: '/lta-movelite-campaign',
+        name: 'lta',
+        component: LTA,
+        meta: {title: 'lta'}
     }
 ]
 

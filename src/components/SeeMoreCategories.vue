@@ -36,6 +36,11 @@ export default {
                     path: 'disney',
                 },
                 {
+                    title: 'LTA Move Lite Campaign',
+                    src: require("@/assets/portfolio-categories/lta.jpg"),
+                    path: 'lta',
+                },
+                {
                     title: 'Samsung x Casetify',
                     src: require("@/assets/portfolio-categories/samsungxcasetify.jpg"),
                     path: 'samsung',
