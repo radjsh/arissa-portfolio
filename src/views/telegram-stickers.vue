@@ -39,7 +39,7 @@
         </div>
         <header :class="[mobileView ? 'header-2-m' : 'header-2']">Static Telegram Sticker Pack</header>
         <div :class="[mobileView ? 'introduction-m' : 'introduction']">I believe that there is no better way to express yourself over text, than to use the stickers that you have created yourself. I created bonk (yes, I named my sticker pack bonk without knowing that I couldn’t change it later), for fun. It has now grown into a collaborative sticker pack, with friends sharing me emojis and expressions that they would like to see. 
-            <br><br>Bonk consists of <b>93</b> digitally drawn expressive stickers, used <b>5.8 million</b> times among <b>70,000</b> telegram users to date.
+            <br><br>Bonk consists of <b>93</b> digitally drawn expressive stickers, used <b>7 million</b> times among <b>80,000</b> telegram users to date.
             <br><br>Save Bonk to your device here: <b><a class="link-style" href="https://t.me/addstickers/rissaartt" target="_blank">https://t.me/addstickers/rissaartt</a></b>
         </div>
         <section class="posters">
@@ -47,7 +47,7 @@
         </section>
         <header :class="[mobileView ? 'header-2-m' : 'header-2']">Animated Telegram Sticker Pack</header>
         <div :class="[mobileView ? 'introduction-m' : 'introduction']">I have always been interested in motion graphics and animation. With Bonk as a basis, I decided to challenge myself and animate a telegram sticker pack that captures the joys and tribulations of everyday life. Hence, the birth of Bonky. <br>
-        <br>Bonky consists of <b>20</b> vector animations, used <b>1 million</b> times among <b>23,000</b> telegram users to date.
+        <br>Bonky consists of <b>20</b> vector animations, used <b>1.2 million</b> times among <b>28,000</b> telegram users to date.
         <br><br>Save Bonky to your device here: <b><a class="link-style" href="https://t.me/addstickers/rissaartt-animated" target="_blank">https://t.me/addstickers/rissaartt</a></b>
 
         </div>
@@ -128,6 +128,14 @@ export default ({
 </script>
 
 <style scoped>
+
+@font-face {
+  font-family: "Josefin Sans";
+  src: local("Josefin Sans"),
+   url("../fonts/JosefinSans-VariableFont_wght.ttf") format("truetype");
+  color: #2F2A1B;
+}
+
 @font-face {
   font-family: "Futura-Med";
   src: local("Futura-Med"),
@@ -150,6 +158,7 @@ export default ({
     font-family: "Josefin Sans", sans-serif;
     font-size: 36px;
     margin-top: 64px;
+    font-weight: 600;
 }
 
 .header-m {
@@ -234,6 +243,7 @@ p {
 .specs-title {
     font-family: "Josefin Sans", sans-serif;
     font-size: 18px;
+    font-weight: 600;
 }
 
 .specs-title-m {

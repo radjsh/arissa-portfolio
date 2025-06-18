@@ -93,7 +93,7 @@ export default ({
 
 .desc {
     font-family: "Futura-Book";
-    margin: 8px 200px 0px 200px;
+    margin: 8px 280px 0px 280px;
     line-height: 24px;
 }
 

@@ -66,9 +66,16 @@ export default {
   color: #2F2A1B;
 }
 
+@font-face {
+  font-family: "Josefin Sans";
+  src: local("Josefin Sans"),
+   url("../fonts/JosefinSans-VariableFont_wght.ttf") format("truetype");
+  color: #2F2A1B;
+}
+
 .title {
     font-family: 'Josefin Sans', sans-serif;
-    font-size: 20px;
+    font-size: 22px;
     margin-top: 24px;
     text-align: left;
     font-weight: 600;
@@ -85,7 +92,7 @@ export default {
 
 .description {
     font-family:"Futura-Book";
-    font-size: 16px;
+    font-size: 18px;
     margin-top: 4px;
     text-align: left;
 }

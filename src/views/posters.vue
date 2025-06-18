@@ -149,6 +149,13 @@ export default ({
   color: #2F2A1B;
 }
 
+@font-face {
+  font-family: "Josefin Sans";
+  src: local("Josefin Sans"),
+   url("../fonts/JosefinSans-VariableFont_wght.ttf") format("truetype");
+  color: #2F2A1B;
+}
+
 .banner {
     margin-top: 56px;
 }
@@ -164,6 +171,7 @@ export default ({
     font-family: "Josefin Sans", sans-serif;
     font-size: 36px;
     margin-top: 64px;
+    font-weight: 600;
 }
 
 .header-m {
@@ -235,6 +243,7 @@ p {
 .specs-title {
     font-family: "Josefin Sans", sans-serif;
     font-size: 18px;
+    font-weight: 600;
 }
 
 .specs-title-m {
@@ -257,7 +266,7 @@ p {
     font-size: 18px;
     margin-top: 48px;
     text-align: start;
-    margin-left: 148px;
+    margin-left: 180px;
 }
 
 .introduction-m {

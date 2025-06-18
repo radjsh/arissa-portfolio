@@ -237,6 +237,13 @@ export default {
 </script>
 
 <style scoped>
+@font-face {
+  font-family: "Josefin Sans";
+  src: local("Josefin Sans"),
+   url("../fonts/JosefinSans-VariableFont_wght.ttf") format("truetype");
+  color: #2F2A1B;
+}
+
 .category {
     display: flex;
     flex-wrap: wrap;

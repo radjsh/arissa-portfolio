@@ -1,19 +1,19 @@
 <template>
     <section :class="[mobileView ? 'about-div-m' : 'about-div']">
         <div :class="[mobileView ? 'img-div-m' : 'img-div']">
-            <img class="img" src="@/assets/me.jpg"/>
+            <img class="img" src="@/assets/me.png"/>
         </div>
         <div :class="[mobileView ? 'text-div-m' : 'text-div']">
             <text :class="[mobileView ? 'about-header-m' : 'about-header']">hi there,</text>
             <p :class="[mobileView ? 'body-text-m' : 'body-text']">I&#39;m arissa! I&#39;m a ui/ux and graphic designer based in Singapore, who graduated with a B.Eng (hons) in computer science and a major in ui/ux design.  
                 <br>
-                <br> I&#39;m currently working at CNN International as a web designer, and have worked at the Walt Disney Company doing creative marketing.
+                <br>I&#39;m currently working at CNN International as a web designer, and have worked at the Walt Disney Company doing creative marketing.
                 <br>
-                <br> I&#39;m empathetic and love telling stories through visual media. I&#39;m also incredibly curious and am always seeking new things to learn and try.
+                <br>I love telling stories through visual media and turning my designs and creations to life. I&#39;m also incredibly curious and am always seeking new things to learn and try.
                 <br>
-                <br>When I&#39;m not making art, you can find me out on a run or on the football field. I also run an <b><a class="link-style" href="https://rissaartt.shop/" target="_blank">art shop</a></b> where I sell goodies such as socks and claw clips! 
+                <br>When I&#39;m not designing things, you can find me out on a run or on the football field. I also run an <b><a class="link-style" href="https://rissaartt.shop/" target="_blank">art shop</a></b> where I sell goodies such as socks and claw clips! 
                 <br>
-                <br>If you&#39;re lucky, you might even catch me  <b><a class="link-style" href="https://github.com/radjsh/arissa-portfolio" target="_blank">coding</a></b>.
+                <br>If you&#39;re lucky, you might even catch me coding.
             </p>
         </div>
     </section>
@@ -54,6 +54,14 @@ export default {
 </script>
 
 <style scoped>
+
+@font-face {
+  font-family: "Josefin Sans";
+  src: local("Josefin Sans"),
+   url("../fonts/JosefinSans-VariableFont_wght.ttf") format("truetype");
+  color: #2F2A1B;
+}
+
 .about-div {
     display: flex;
     flex-direction: row;

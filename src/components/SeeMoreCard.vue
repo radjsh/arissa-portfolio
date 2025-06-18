@@ -53,6 +53,13 @@ export default {
   color: #2F2A1B;
 }
 
+@font-face {
+  font-family: "Josefin Sans";
+  src: local("Josefin Sans"),
+   url("../fonts/JosefinSans-VariableFont_wght.ttf") format("truetype");
+  color: #2F2A1B;
+}
+
 .title {
     font-family: 'Josefin Sans', sans-serif;
     font-size: 18px;

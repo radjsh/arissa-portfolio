@@ -191,6 +191,7 @@ export default ({
     font-family: "Josefin Sans", sans-serif;
     font-size: 36px;
     margin-top: 64px;
+    font-weight: 600;
 }
 
 .header-m {
@@ -204,7 +205,7 @@ export default ({
     font-size: 36px;
     margin-top: 64px;
     text-align: left;
-    margin-left: 148px;
+    margin-left: 180px;
 }
 
 .header-2-m {
@@ -296,6 +297,7 @@ p {
 .specs-title {
     font-family: "Josefin Sans", sans-serif;
     font-size: 18px;
+    font-weight: 600;
 }
 
 .specs-title-m {

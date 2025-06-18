@@ -85,6 +85,15 @@ export default ({
             category: "cnn",
             sites: [
                 {
+                    title: "Voices of Change",
+                    sub: "Cartier Women's Pavilion| 2025",
+                    link: "https://sponsorcontent.cnn.com/edition/2025/cartier/expo-womens-pavilion/",
+                    src: require("@/assets/cnn/cartier.jpg"),
+                    showingImage: false,
+                    mouseX: 0,
+                    mouseY: 0,
+                },
+                {
                     title: "Experiencing World Class",
                     sub: "Singapore Airlines | 2024",
                     link: "https://sponsorcontent.cnn.com/edition/2024/sia/experiencingworldclass/",
@@ -207,6 +216,14 @@ export default ({
   color: #2F2A1B;
 }
 
+@font-face {
+  font-family: "Futura-Heavy";
+  src: local("Futura-Heavy"),
+   url("../fonts/Futura Heavy font.ttf") format("truetype");
+  color: #2F2A1B;
+}
+
+
 .banner {
     margin-top: 49px;
     width: 100%;
@@ -222,6 +239,7 @@ export default ({
     font-family: "Josefin Sans", sans-serif;
     font-size: 36px;
     margin-top: 64px;
+    font-weight: 600;
     font-weight: 600;
 }
 
@@ -292,8 +310,9 @@ p {
 }
 
 .specs-title {
-    font-family: "Josefin Sans", sans-serif;
+    font-family: "Josefin Sans", "Futura Heavy";
     font-size: 18px;
+    font-weight: 600;
 }
 
 .specs-title-m {
@@ -346,7 +365,7 @@ p {
 
 .browse-title {
     font-family: "Josefin Sans", sans-serif;
-    font-size: 18px;
+    font-size: 24px;
     margin-top: 64px;
     text-align: start;
     margin-left: 148px;
