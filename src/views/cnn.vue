@@ -85,8 +85,17 @@ export default ({
             category: "cnn",
             sites: [
                 {
+                    title: "This World is a Treasure",
+                    sub: "Equatorial Guinea Ministry of Information | 2025",
+                    link: "https://sponsorcontent.cnn.com/edition/2025/equatorial-guinea/this-world-is-a-treasure/",
+                    src: require("@/assets/cnn/EG.jpg"),
+                    showingImage: false,
+                    mouseX: 0,
+                    mouseY: 0,
+                },
+                {
                     title: "Voices of Change",
-                    sub: "Cartier Women's Pavilion| 2025",
+                    sub: "Cartier Women's Pavilion | 2025",
                     link: "https://sponsorcontent.cnn.com/edition/2025/cartier/expo-womens-pavilion/",
                     src: require("@/assets/cnn/cartier.jpg"),
                     showingImage: false,
