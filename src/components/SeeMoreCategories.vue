@@ -41,6 +41,11 @@ export default {
                     path: 'lta',
                 },
                 {
+                    title: 'Worm Squirm Typeface',
+                    src: require("@/assets/portfolio-categories/worm-squirm.jpg"),
+                    path: 'wormsquirm',
+                },
+                {
                     title: 'Samsung x Casetify',
                     src: require("@/assets/portfolio-categories/samsungxcasetify.jpg"),
                     path: 'samsung',
@@ -74,11 +79,6 @@ export default {
                     title: 'Telegram Stickers',
                     src: require("@/assets/portfolio-categories/tele.jpg"),
                     path: 'telegram-stickers',
-                },
-                {
-                    title: 'Posters',
-                    src: require("@/assets/portfolio-categories/posters.svg"),
-                    path: 'posters',
                 },
                 {
                     title: 'Digital Illustrations',

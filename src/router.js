@@ -15,6 +15,7 @@ import CNN from './views/cnn.vue';
 import Samsung from './views/samsung.vue';
 import Sandbox from './views/sandbox.vue';
 import LTA from './views/lta.vue';
+import wormSquirm from './views/worm-squirm.vue';
 
 const routes = [
     {
@@ -112,6 +113,12 @@ const routes = [
         name: 'lta',
         component: LTA,
         meta: {title: 'lta'}
+    },
+        {
+        path: '/worm-squirm',
+        name: 'wormsquirm',
+        component: wormSquirm,
+        meta: {title: 'wormsquirm'}
     }
 ]
 

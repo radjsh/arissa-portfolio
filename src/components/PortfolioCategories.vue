@@ -63,6 +63,13 @@ export default {
                     cat: 'fi',
                 },
                 {
+                    title: 'Worm Squirm Typeface',
+                    subheader: 'typeface design',
+                    src: require("@/assets/portfolio-categories/worm-squirm.jpg"),
+                    path: 'wormsquirm',
+                    cat: 'pp',
+                },
+                {
                     title: 'Samsung x Casetify',
                     subheader: 'illustration',
                     src: require("@/assets/portfolio-categories/samsungxcasetify.jpg"),
@@ -109,13 +116,6 @@ export default {
                     subheader: 'illustrations, graphic design & animation',
                     src: require("@/assets/portfolio-categories/tele.jpg"),
                     path: 'telegram-stickers',
-                    cat: 'pp',
-                },
-                {
-                    title: 'Posters',
-                    subheader: 'graphic design',
-                    src: require("@/assets/portfolio-categories/posters.svg"),
-                    path: 'posters',
                     cat: 'pp',
                 },
                 {
