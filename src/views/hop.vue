@@ -114,7 +114,7 @@ export default ({
                 src: require("@/assets/hop/competitor-analysis.svg")
             },
             lofi: {
-                src: require("@/assets/hop/lofi.svg")
+                src: require("@/assets/hop/lofi.jpg")
             },
             designLibrary: {
                 src: require("@/assets/hop/design-library.jpg")
