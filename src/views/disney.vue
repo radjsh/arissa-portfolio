@@ -365,7 +365,7 @@ export default ({
     font-size: 36px;
     margin-top: 64px;
     text-align: left;
-    margin-left: 180px;
+    margin-left: 200px;
 }
 
 .header-2-m {
@@ -477,12 +477,12 @@ p {
 
 .introduction {
     font-family: "Futura-Book";
-    font-size: 18px;
+    font-size: 20px;
     margin-top: 48px;
     text-align: start;
-    margin-left: 180px;
-    margin-right: 180px;
-    line-height: 26px;
+    margin-left: 200px;
+    margin-right: 200px;
+    line-height: 28px;
 }
 
 .introduction-m {

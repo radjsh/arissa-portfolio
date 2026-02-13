@@ -37,45 +37,51 @@
             <p class="specs-list-m"><text class="specs-title-m">Timeline:</text> May 2021 - July 2021</p>
             <p class="specs-list-m"><text class="specs-title-m">Tools used:</text> Adobe Illustrator and Figma</p>
         </div>
-        <div :class="[mobileView ? 'introduction-m reveal' : 'introduction reveal']">
-            I was approached by ME Tech and Hop to research, ideate and design a mobile application for <b>parents to easily find and book enrichment classes for their children</b>. The project deliverable included UX research on the target audience, a high fidelity mobile application prototype, complementary admin and partner terminals protoype and the hop website design.
+        <header :class="[mobileView ? 'header-2-m reveal' : 'header-2 reveal']">Overview</header>
+    
+        <div :class="[mobileView ? 'overview-m reveal' : 'overview reveal']">
+            Hop is a mobile application designed to <b>help parents discover, compare, and book enrichment classes for their children</b>. 
+            
+            I worked with ME Tech and Hop as the product UI/UX designer, owning research, end-to-end experience design, and prototyping for the parent-facing app, as well as partner and admin interfaces. 
+
+            <br><br> The goal was to simplify a fragmented and time-consuming process into a single, centralised service that parents could trust.
         </div>
         <header :class="[mobileView ? 'header-2-m reveal' : 'header-2 reveal']">The Problem</header>
-        <div :class="[mobileView ? 'introduction-m reveal' : 'introduction reveal']">More and more parents are investing in enrichment classes for children in their early development ages. However, information about the different enrichment classes are scattered across the internet, with a <b>lack of a centralised platform</b> to consolidate and streamline the searching and booking process.</div>
+        <div :class="[mobileView ? 'introduction-m reveal' : 'introduction reveal']">More and more parents investing in enrichment classes for their children, especially in their early-development stages. However, information about the different enrichment classes are fragmented across blogs, search results and individual providers' websites, with a <b>lack of a centralised platform</b> to consolidate and streamline the searching and booking process. This makes it tedious and timeconsuming to compare options, book classes and manage schedules.</div>
         <header :class="[mobileView ? 'header-2-m reveal' : 'header-2 reveal']">User Journey</header>
-        <div :class="[mobileView ? 'introduction-m reveal' : 'introduction reveal']">After the initial brief from Hop, we finalised our target audience to be <b>millennial parents</b>, with children of age 1 - 12 years old. To better understand the users, I spoke to a group of the target users, and created a user journey to identify the key stages in the user's decision making process, as well as to identify their motivations, pain points and areas of opportunities.</div>
+        <div :class="[mobileView ? 'introduction-m reveal' : 'introduction reveal']">We defined our target audience to be <b>millennial parents with children of age 1 - 12 years old</b>. To better understand their needs and decision-making process, I spoke to a group of the target users, mapped out their user journey, and identified their motivations, pain points and potential areas of opportunities.</div>
         <poster key="userJourney" :poster="userJourney"></poster>
         <header :class="[mobileView ? 'header-2-m reveal' : 'header-2 reveal']">Identifying User Needs</header>
-        <div :class="[mobileView ? 'introduction-m reveal' : 'introduction reveal']">From my research and analysis, I identified user's key problems, and proposed the following improvements to tackle them.</div>
+        <div :class="[mobileView ? 'introduction-m reveal' : 'introduction reveal']">From my research and analysis, I identified user's key problems, and proposed the following improvements to tackle them:</div>
         <poster key="userJourney" :poster="userNeeds"></poster>
 
         <header :class="[mobileView ? 'header-2-m reveal' : 'header-2 reveal']">Competitive Analysis</header>
-        <div :class="[mobileView ? 'introduction-m reveal' : 'introduction reveal']">Before diving into the design, we looked at existing solutions in the market and evaluated their design based on Nielsen's Usability Hieuristics. The main competitors we looked into were ClassPass and KidsPass.</div>
+        <div :class="[mobileView ? 'introduction-m reveal' : 'introduction reveal']">I analysed existing platforms such as ClassPass and KidsPass, evaluating them against Nielsen’s Usability Heuristics. This highlighted issues in clarity and user control, which helped in informing my decisions when designing navigation, feedback, and error prevention features.</div>
         <poster key="competitorAnalysis" :poster="competitorAnalysis"></poster>
 
         <header :class="[mobileView ? 'header-2-m reveal' : 'header-2 reveal']">Low Fidelity Wireframe</header>
-        <div :class="[mobileView ? 'introduction-m reveal' : 'introduction reveal']">I worked closely with the Hop team to ideate on the low fidelity wireframe. We came up with rough sketches of the prototype first before committing to a high fidelity prototype.</div>
+        <div :class="[mobileView ? 'introduction-m reveal' : 'introduction reveal']">I worked closely with the Hop team to explore early concepts and through low fidelity wireframe. This allowed us to quickly test layout ideas, user flows and information hierarchy before committing to higher-fidelity designs.</div>
         <poster key="lofi" :poster="lofi"></poster>
 
         <header :class="[mobileView ? 'header-2-m reveal' : 'header-2 reveal']">Design Library</header>
-        <div :class="[mobileView ? 'introduction-m reveal' : 'introduction reveal']">I created a design components library to ensure that the high fidelity prototype would be consistent and stick to the brand identity. This included the colour scheme and usage, typography, and commonly used elements such as buttons, toasts and tabs. I also included technical documentation at this stage for the developers to easily refer to.</div>
+        <div :class="[mobileView ? 'introduction-m reveal' : 'introduction reveal']">To support consistency and developer handoff, I created a design components library which included the colour scheme and usages, typography, and commonly used elements such as buttons, toasts and tabs. I also documented interaction and usage guidelines for developers to easily refer to.</div>
         <poster key="designLibrary" :poster="designLibrary"></poster>
 
         <header :class="[mobileView ? 'header-2-m reveal' : 'header-2 reveal']">High Fidelity Protoype</header>
-        <div :class="[mobileView ? 'introduction-m reveal' : 'introduction reveal']">After finalising the wireframes and the overall look of the app, it was time to dive into the high fidelity prototype (yay finally)! I used Figma to create the different interfaces, and worked feature by feature. Throughout the process, I found myself creating multiple options of the same feature / flow. Creating different ways of doing a task helped to find the best possible way to achieve an outcome. What's not shown here is the countless reviews and disscussions made with the developers and client to ensure that the application covered all the essential features, and that the interactions were all as desired. An interactive prototype was created for testing within the team, and to help the developers visualise the transitions between the elements.</div>
+        <div :class="[mobileView ? 'introduction-m reveal' : 'introduction reveal']">I designed the high-fidelity mobile prototype in Figma, working feature by feature and iterating through multiple flow options to evaluate which option provides the best ease and clarity. Throughout the process, I collaborated closely with developers and the client to ensure feasibility, edge case coverage and smooth interactions. 
+            
+            <br><br>An interactive prototype was used for internal testing and stakeholder alignment, helping the team visualise transitions and validate assumptions before development.</div>
         <poster key="classBottom" :poster="classBottom"></poster>
         <poster key="schedule" :poster="schedule"></poster>
         <div class="prototype">
         <div id="figma"><iframe style="border: 1px solid rgba(255, 255, 255);" width="375" height="667" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FwxtRWpAfyTPrmmrFAe9xsa%2Fhop-app%3Fnode-id%3D735%253A934%26scaling%3Dcontain%26page-id%3D0%253A1%26starting-point-node-id%3D735%253A1032%26show-proto-sidebar%3D1" allowfullscreen></iframe></div>
         </div>
-
-        <header :class="[mobileView ? 'header-2-m reveal' : 'header-2 reveal']">Live Product</header>
-        <div :class="[mobileView ? 'introduction-m reveal' : 'introduction reveal']">After months of hardwork and improvements, I am pleased to share that the mobile application is available for download on the <b><a class="link-style" href="https://apps.apple.com/sg/app/hop-app-sg/id1622379908" target="_blank">App Store</a></b> and on <b><a class="link-style" href="https://play.google.com/store/apps/details?id=com.hoptech.hopapp2" target="_blank">Google Play</a></b>.</div>
-
+        
         <header :class="[mobileView ? 'header-2-m reveal' : 'header-2 reveal']">Conclusion</header>
         <div :class="[mobileView ? 'introduction-m reveal' : 'introduction reveal']">
-            It was a thoroughly enjoyable experience to delve deeper into centralised children booking platforms, and to understand the perspectives of parents when finding classes for their children. The iterative process of creating options and refining them allowed me to get creative with my solutions, while also seeing how I can balance them to be simply understood by the users. Special thanks to Mike and Eugene, developers from ME Tech, and Germaine, client from Hop, for the opportunity to work on this project. To view the live website, check out <b><a class="link-style" href="https://www.hopapp.sg/" target="_blank">hopapp.sg</a></b>!
-        </div>
+            This project strengthened my experience in designing <b>transactional, service-oriented products</b> that require careful organisation of information, clarity and trust. Through balancing user needs, technical constraints and business goals, I was reminded about the importance of strong information architecture and iterative decision-making.
+
+            If this product were to continue updating, I would focus on longitudinal user feedback, accessibility considerations, and deeper personalisation as parents’ needs change over time.</div>
         <div class="see-more-div">
             <text :class="[mobileView ? 'sm-title-m' : 'sm-title']">See More Projects</text> 
             <see-more-categories :pageType="category"/>
@@ -201,7 +207,7 @@ export default ({
     font-size: 36px;
     margin-top: 64px;
     text-align: left;
-    margin-left: 148px;
+    margin-left: 240px;
 }
 
 .header-2-m {
@@ -295,12 +301,22 @@ p {
 
 .introduction {
     font-family: "Futura-Book";
-    font-size: 18px;
+    font-size: 20px;
     margin-top: 48px;
     text-align: start;
-    margin-left: 148px;
-    margin-right: 148px;
+    margin-left: 240px;
+    margin-right: 240px;
     line-height: 28px;
+}
+
+.overview {
+    font-family: "Futura-Book";
+    font-size: 24px;
+    margin-top: 48px;
+    text-align: start;
+    margin-left: 240px;
+    margin-right: 240px;
+    line-height: 36px;
 }
 
 .introduction-m {
@@ -308,6 +324,13 @@ p {
     margin: 24px 24px 0px 24px;
     text-align: start;
     font-size: 14px;
+}
+
+.overview-m {
+    font-family: "Futura-Book";
+    margin: 24px 24px 0px 24px;
+    text-align: start;
+    font-size: 18px;
 }
 
 .see-more-div{

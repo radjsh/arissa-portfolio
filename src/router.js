@@ -16,6 +16,7 @@ import Samsung from './views/samsung.vue';
 import Sandbox from './views/sandbox.vue';
 import LTA from './views/lta.vue';
 import wormSquirm from './views/worm-squirm.vue';
+import cnnSia from './views/cnn-sia.vue';
 
 const routes = [
     {
@@ -109,17 +110,24 @@ const routes = [
         meta: {title: 'sandbox'}
     },
     {
-        path: '/lta-movelite-campaign',
+        path: '/portfolio/lta-movelite-campaign',
         name: 'lta',
         component: LTA,
         meta: {title: 'lta'}
     },
-        {
-        path: '/worm-squirm',
+    {
+        path: '/portfolio/worm-squirm',
         name: 'wormsquirm',
         component: wormSquirm,
         meta: {title: 'wormsquirm'}
+    },
+    {
+        path: '/portfolio/cnn-sia',
+        name: 'cnn-sia',
+        component: cnnSia,
+        meta: {title: 'cnn-sia'}
     }
+    
 ]
 
 const router = createRouter({

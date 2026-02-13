@@ -7,7 +7,7 @@
             <text :class="[mobileView ? 'about-header-m' : 'about-header']">hi there,</text>
             <p :class="[mobileView ? 'body-text-m' : 'body-text']">I&#39;m arissa! I&#39;m a ui/ux and graphic designer based in Singapore, who graduated with a B.Eng (hons) in computer science and a major in ui/ux design.  
                 <br>
-                <br>I&#39;m currently working at CNN International as a web designer, and have worked at the Walt Disney Company doing creative marketing.
+                <br>I&#39;m currently working at CNN International as a digital designer, and have worked at the Walt Disney Company doing creative marketing.
                 <br>
                 <br>I love telling stories through visual media and turning my designs and creations to life. I&#39;m also incredibly curious and am always seeking new things to learn and try.
                 <br>

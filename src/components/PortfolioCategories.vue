@@ -42,17 +42,17 @@ export default {
         return {
             categories: [
                 {
-                    title: 'CNN Scrollytelling Sites',
-                    subheader: 'website design',
-                    src: require("@/assets/portfolio-categories/cnn.jpg"),
-                    path: 'cnn',
+                    title: 'CNN x Singapore Airlines: Experiencing World Class',
+                    subheader: 'website design case study',
+                    src: require("@/assets/portfolio-categories/cnn-sia.jpg"),
+                    path: 'cnn-sia',
                     cat: 'cw',
                 },
                 {
-                    title: 'Shopee, Singapore',
-                    subheader: 'ui/ux design & prototyping',
-                    src: require("@/assets/portfolio-categories/shopee.jpg"),
-                    path: 'shopee',
+                    title: 'CNN Scrollytelling Sites',
+                    subheader: 'website design – live sites',
+                    src: require("@/assets/portfolio-categories/cnn.jpg"),
+                    path: 'cnn',
                     cat: 'cw',
                 },
                 {
@@ -60,6 +60,13 @@ export default {
                     subheader: 'ui/ux design & prototyping',
                     src: require("@/assets/portfolio-categories/hop.jpg"),
                     path: 'hop',
+                    cat: 'cw',
+                },
+                {
+                    title: 'Shopee, Singapore',
+                    subheader: 'ui/ux design & prototyping',
+                    src: require("@/assets/portfolio-categories/shopee.jpg"),
+                    path: 'shopee',
                     cat: 'cw',
                 },
                 {
@@ -105,26 +112,12 @@ export default {
                     cat: 'pp',
                 },
                 {
-                    title: 'Logos & Icons',
-                    subheader: 'graphic design',
-                    src: require("@/assets/portfolio-categories/logos.svg"),
-                    path: 'logos-and-icons',
-                    cat: 'fi',
-                },
-                {
                     title: 'Telegram Stickers',
                     subheader: 'illustrations, graphic design & animation',
                     src: require("@/assets/portfolio-categories/tele.jpg"),
                     path: 'telegram-stickers',
                     cat: 'pp',
-                },
-                {
-                    title: 'Digital Illustrations',
-                    subheader: 'graphic design & digital illustration',
-                    src: require("@/assets/portfolio-categories/digital-illustrations.svg"),
-                    path: 'digital-illustrations',
-                    cat: 'pp',
-                },
+                }
             ],
             mobileView: null,
             windowWidth: null,

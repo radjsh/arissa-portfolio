@@ -26,9 +26,24 @@ export default {
         return {
             categories: [
                 {
+                    title: 'CNN x Singapore Airlines',
+                    src: require("@/assets/portfolio-categories/cnn.jpg"),
+                    path: 'cnn-sia',
+                },
+                {
                     title: 'CNN Scrollytelling Sites',
                     src: require("@/assets/portfolio-categories/cnn.jpg"),
                     path: 'cnn',
+                },
+                {
+                    title: 'Hop App',
+                    src: require("@/assets/portfolio-categories/hop.jpg"),
+                    path: 'hop',
+                },
+                {
+                    title: 'Shopee UI/UX',
+                    src: require("@/assets/portfolio-categories/shopee.jpg"),
+                    path: 'shopee',
                 },
                 {
                     title: 'The Walt Disney Company',
@@ -51,16 +66,6 @@ export default {
                     path: 'samsung',
                 },
                 {
-                    title: 'Shopee UI/UX',
-                    src: require("@/assets/portfolio-categories/shopee.jpg"),
-                    path: 'shopee',
-                },
-                {
-                    title: 'Hop App',
-                    src: require("@/assets/portfolio-categories/hop.jpg"),
-                    path: 'hop',
-                },
-                {
                     title: '2022 SUTD Yearbook',
                     src: require("@/assets/portfolio-categories/yearbook.jpg"),
                     path: 'yearbook',
@@ -69,11 +74,6 @@ export default {
                     title: '30 days of UI challenge',
                     src: require("@/assets/portfolio-categories/30daysofuichallenge.svg"),
                     path: 'ui-challenge',
-                },
-                {
-                    title: 'Logos & Icons',
-                    src: require("@/assets/portfolio-categories/logos.svg"),
-                    path: 'logos-and-icons',
                 },
                 {
                     title: 'Telegram Stickers',
