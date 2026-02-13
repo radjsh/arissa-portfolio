@@ -78,7 +78,7 @@
             ></video>
     </div>
 
-        <header :class="[mobileView ? 'header-2-m reveal' : 'header-2 reveal']">What we built #3: Immersive Cabin Experience</header>
+        <header :class="[mobileView ? 'header-2-m reveal' : 'header-2 reveal']">Immersive Cabin Experience</header>
         <div :class="[mobileView ? 'introduction-m reveal' : 'introduction reveal']">
             To simulate the feeling of moving through a cabin, we used a horizontal scroll interaction, allowing users to "stroll" down the aisle of a Premium Economy or Business Class cabin. 
             <br><br>
