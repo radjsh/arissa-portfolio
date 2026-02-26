@@ -27,7 +27,7 @@ export default {
             categories: [
                 {
                     title: 'CNN x Singapore Airlines',
-                    src: require("@/assets/portfolio-categories/cnn.jpg"),
+                    src: require("@/assets/portfolio-categories/cnn-sia.jpg"),
                     path: 'cnn-sia',
                 },
                 {

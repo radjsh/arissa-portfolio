@@ -15,113 +15,64 @@
             <div class="col l3 offset-l1 m3">
                 <ul class="specs">
                     <li><p class="specs-title">Strategies:</p></li>
-                    <li><p class="specs-list">Research, UI/UX Design and Prototyping</p></li>
+                    <li><p class="specs-list">Research, UI/UX Design, Prototyping and Graphic Design</p></li>
                 </ul>
             </div>
             <div class="col l3 offset-l1 m3">
                 <ul class="specs">
                     <li><p class="specs-title">Timeline:</p></li>
-                    <li><p class="specs-list">2021 (Revisited in 2026)</p></li>
+                    <li><p class="specs-list">May 2021 - July 2021</p></li>
                 </ul>
             </div>
             <div class="col l3 offset-l1 m3">
                 <ul class="specs">
                     <li><p class="specs-title">Tools Used:</p></li>
-                    <li><p class="specs-list">Figma and Adobe Illustrator</p></li>
+                    <li><p class="specs-list">Adobe Illustrator and Figma</p></li>
                 </ul>
             </div>
         </div>
         <div v-else class="col s12 col-list">
             <p class="specs-list-m"><text class="specs-title-m">Project Type:</text> Freelance</p>
-            <p class="specs-list-m"><text class="specs-title-m">Strategies:</text>Research, UI/UX Design and Prototyping</p>
-            <p class="specs-list-m"><text class="specs-title-m">Timeline:</text> 2021 (Revisited in 2026) </p>
-            <p class="specs-list-m"><text class="specs-title-m">Tools used:</text> Figma and Adobe Illustrator</p>
+            <p class="specs-list-m"><text class="specs-title-m">Strategies:</text>Research, UI/UX Design, Prototyping and Graphic Design</p>
+            <p class="specs-list-m"><text class="specs-title-m">Timeline:</text> May 2021 - July 2021</p>
+            <p class="specs-list-m"><text class="specs-title-m">Tools used:</text> Adobe Illustrator and Figma</p>
         </div>
-        <header :class="[mobileView ? 'header-2-m reveal' : 'header-2 reveal']">Context</header>
+        <header :class="[mobileView ? 'header-2-m reveal' : 'header-2 reveal']">Overview</header>
     
         <div :class="[mobileView ? 'overview-m reveal' : 'overview reveal']">
             Hop is a mobile application designed to <b>help parents discover, compare, and book enrichment classes for their children</b>. 
             
-             <br><br>In 2021, I worked with ME Tech as the product UI/UX designer, owning research, end-to-end experience design, and prototyping for the parent-facing app, partner dashboard and admin dashboard. 
+            I worked with ME Tech and Hop as the product UI/UX designer, owning research, end-to-end experience design, and prototyping for the parent-facing app, as well as partner and admin interfaces. 
 
-            <br><br> The original goal was to simplify a fragmented and time-consuming process into a single, centralised platform where parents could search and book classes more easily.
+            <br><br> The goal was to simplify a fragmented and time-consuming process into a single, centralised service that parents could trust.
         </div>
-        <header :class="[mobileView ? 'header-2-m reveal' : 'header-2 reveal']">Original Problem Framing</header>
-        <div :class="[mobileView ? 'introduction-m reveal' : 'introduction reveal']">At that time, we framed the problem as: 
-            <br><br>Information about enrichment classes is fragmented across blogs, search results and individual providers’ websites, making it <b>tedious and time-consuming</b> for parents to search, compare and book classes.
-
-            <br><br>This was correct — but incomplete.
-        </div>
-        <header :class="[mobileView ? 'header-2-m reveal' : 'header-2 reveal']">Original Approach</header>
-        <div :class="[mobileView ? 'introduction-m reveal' : 'introduction reveal']">
-            In 2021, we defined our target audience as <b>millennial parents with children aged 1–12</b>. I conducted interviews, mapped out the user journey, and identified key pain points in the discovery and booking flow.
-        </div>
+        <header :class="[mobileView ? 'header-2-m reveal' : 'header-2 reveal']">The Problem</header>
+        <div :class="[mobileView ? 'introduction-m reveal' : 'introduction reveal']">More and more parents investing in enrichment classes for their children, especially in their early-development stages. However, information about the different enrichment classes are fragmented across blogs, search results and individual providers' websites, with a <b>lack of a centralised platform</b> to consolidate and streamline the searching and booking process. This makes it tedious and timeconsuming to compare options, book classes and manage schedules.</div>
+        <header :class="[mobileView ? 'header-2-m reveal' : 'header-2 reveal']">User Journey</header>
+        <div :class="[mobileView ? 'introduction-m reveal' : 'introduction reveal']">We defined our target audience to be <b>millennial parents with children of age 1 - 12 years old</b>. To better understand their needs and decision-making process, I spoke to a group of the target users, mapped out their user journey, and identified their motivations, pain points and potential areas of opportunities.</div>
         <poster key="userJourney" :poster="userJourney"></poster>
-        <div :class="[mobileView ? 'introduction-m reveal' : 'introduction reveal']">
-            The initial focus was on <b>reducing fragmentation across platforms</b>, making <b>search and filtering efficient </b> and <b>streamlining booking and schedule management</b>. 
+        <header :class="[mobileView ? 'header-2-m reveal' : 'header-2 reveal']">Identifying User Needs</header>
+        <div :class="[mobileView ? 'introduction-m reveal' : 'introduction reveal']">From my research and analysis, I identified user's key problems, and proposed the following improvements to tackle them:</div>
+        <poster key="userJourney" :poster="userNeeds"></poster>
 
-            <br><br> The solution emphasised task completion and reducing booking friction.
-        </div>
+        <header :class="[mobileView ? 'header-2-m reveal' : 'header-2 reveal']">Competitive Analysis</header>
+        <div :class="[mobileView ? 'introduction-m reveal' : 'introduction reveal']">I analysed existing platforms such as ClassPass and KidsPass, evaluating them against Nielsen’s Usability Heuristics. This highlighted issues in clarity and user control, which helped in informing my decisions when designing navigation, feedback, and error prevention features.</div>
+        <poster key="competitorAnalysis" :poster="competitorAnalysis"></poster>
 
-        <header :class="[mobileView ? 'header-2-m reveal' : 'header-2 reveal']">Where It Fell Short</header>
-        <div :class="[mobileView ? 'introduction-m reveal' : 'introduction reveal']">
-            After revisiting the project and re-examining the original journey map, I realised that the experience focused heavily on task completion – searching, filtering, booking – but not the emotional weight behind decision-making.
-
-            <br><br>Choosing enrichment classes, especially for young children, is not simply a booking problem, but rather a huge trust decision. Parents are evaluating <b>credibility, safety and the long-term impact on their child</b>. It is not just simply a transactional problem.
-
-            <br><br>While the product helped parents complete actions, it did not sufficiently <b>reduce anxiety or build confidence</b>.
-        </div>
-
-        <header :class="[mobileView ? 'header-2-m reveal' : 'header-2 reveal']">A Shift in Insights</header>
-        <div :class="[mobileView ? 'introduction-m reveal' : 'introduction reveal']">
-            Through additional interviews with parents, and secondary research across blogs and forums, a clearer pattern emerged: Parents are not just comparing prices or locations, they are making <b>high-stake decisions about their child's development</b>.
-
-            <br><br>Here are some themes that surfaced:
-
-        </div>
-        <poster key="themes" :poster="themes"></poster>
-        <div :class="[mobileView ? 'introduction-m reveal' : 'introduction reveal']">
-            This shifted the focus of the product from: <b>“Helping parents find classes”</b> to <b>“Helping parents feel confident and safe in their decision.”</b>
-        </div>
-
-        <header :class="[mobileView ? 'header-2-m reveal' : 'header-2 reveal']">Emotional Journey Map</header>
-        <div :class="[mobileView ? 'introduction-m reveal' : 'introduction reveal']">
-            I reconstructed the customer journey map, this time mapping not just actions, but emotional states, doubts and decision triggers.
-            <br><br>What became clear was that the highest friction points were not during filtering down classes, but rather <b>shortlisting and deciding which classes to choose</b>.
-        </div>
-        <poster key="ejm" :poster="ejm"></poster>
-
-        <header :class="[mobileView ? 'header-2-m reveal' : 'header-2 reveal']">Revised Problem Statement</header>
-        <div :class="[mobileView ? 'overview-m reveal' : 'overview reveal']">
-            Hop aims to reduce the <b>cognitive and emotional burden</b> parents face when choosing enrichment classes, by providing <b>structured comparison tools, trusted reviews, and streamlined booking</b> in one centralised platform.
-        </div> 
-        <header :class="[mobileView ? 'header-2-m reveal' : 'header-2 reveal']">Design Evolution</header>
-        <div :class="[mobileView ? 'introduction-m reveal' : 'introduction reveal']">
-        After identifying that trust and confidence were core to parents’ decision-making, I ran a short prioritisation survey with parents of young children to understand what factors mattered most when choosing between similar classes.
-
-        <br><br><b>Distance</b> and <b>reviews</b> consistently ranked highest, followed by <b>cost</b> and <b>schedule fit</b>.
-
-        Rather than directly mirroring the ranking, I did a deeper analysis on what these factors represented and how they can fit in the filtering and sorting system.
-        </div>
-        <poster key="factors" :poster="factors"></poster>
-        <div :class="[mobileView ? 'introduction-m reveal' : 'introduction reveal']">
-        I first tested this structure through a low-fidelity prototype to validate hierarchy and information grouping before committing to visual design.
-        </div>
+        <header :class="[mobileView ? 'header-2-m reveal' : 'header-2 reveal']">Low Fidelity Wireframe</header>
+        <div :class="[mobileView ? 'introduction-m reveal' : 'introduction reveal']">I worked closely with the Hop team to explore early concepts and through low fidelity wireframe. This allowed us to quickly test layout ideas, user flows and information hierarchy before committing to higher-fidelity designs.</div>
         <poster key="lofi" :poster="lofi"></poster>
 
-        <header :class="[mobileView ? 'header-2-m reveal' : 'header-2 reveal']">Components Library</header>
-        <div :class="[mobileView ? 'introduction-m reveal' : 'introduction reveal']">
-            Back in 2021, I built a component library to ensure consistency across the parent, partner, and admin interfaces. It included color systems, main buttons, and reusable UI components.
-
-            <br><br> For this revamp, I built upon this design system rather than starting from scratch. This allowed me to maintain brand familiarity, speed up iteration and focus on improving interaction logic instead of reinventing a visual language.
-        </div>
+        <header :class="[mobileView ? 'header-2-m reveal' : 'header-2 reveal']">Design Library</header>
+        <div :class="[mobileView ? 'introduction-m reveal' : 'introduction reveal']">To support consistency and developer handoff, I created a design components library which included the colour scheme and usages, typography, and commonly used elements such as buttons, toasts and tabs. I also documented interaction and usage guidelines for developers to easily refer to.</div>
         <poster key="designLibrary" :poster="designLibrary"></poster>
 
         <header :class="[mobileView ? 'header-2-m reveal' : 'header-2 reveal']">High Fidelity Protoype</header>
-        <div :class="[mobileView ? 'introduction-m reveal' : 'introduction reveal']">I focused on four high-impact areas that directly influenced parental confidence:
-        </div>
-        <poster key="filter" :poster="filter"></poster>
-        <poster key="classListing" :poster="classListing"></poster>
+        <div :class="[mobileView ? 'introduction-m reveal' : 'introduction reveal']">I designed the high-fidelity mobile prototype in Figma, working feature by feature and iterating through multiple flow options to evaluate which option provides the best ease and clarity. Throughout the process, I collaborated closely with developers and the client to ensure feasibility, edge case coverage and smooth interactions. 
+            
+            <br><br>An interactive prototype was used for internal testing and stakeholder alignment, helping the team visualise transitions and validate assumptions before development.</div>
+        <poster key="classBottom" :poster="classBottom"></poster>
+        <poster key="schedule" :poster="schedule"></poster>
         <div class="prototype">
         <div id="figma"><iframe style="border: 1px solid rgba(255, 255, 255);" width="375" height="667" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FwxtRWpAfyTPrmmrFAe9xsa%2Fhop-app%3Fnode-id%3D735%253A934%26scaling%3Dcontain%26page-id%3D0%253A1%26starting-point-node-id%3D735%253A1032%26show-proto-sidebar%3D1" allowfullscreen></iframe></div>
         </div>
@@ -174,23 +125,12 @@ export default ({
             designLibrary: {
                 src: require("@/assets/hop/design-library.jpg")
             },
-            classListing: {
-                src: require("@/assets/hop/class-listing.jpg")
+            classBottom: {
+                src: require("@/assets/hop/class-bottom.jpg")
             },
-            filter: {
-                src: require("@/assets/hop/filter.jpg")
-            },
-            themes: {
-                src: require("@/assets/hop/activity-diagram.svg")
-            },            
-            ejm: {
-                src: require("@/assets/hop/ejm.jpg")
-            },            
-            factors: {
-                src: require("@/assets/hop/factors.svg")
-            },
-                  
-
+            schedule: {
+                src: require("@/assets/hop/scheduled.jpg")
+            }                                             
         }
     },
 
@@ -361,7 +301,7 @@ p {
 
 .introduction {
     font-family: "Futura-Book";
-    font-size: 22px;
+    font-size: 20px;
     margin-top: 48px;
     text-align: start;
     margin-left: 240px;

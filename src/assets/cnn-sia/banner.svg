@@ -18,13 +18,17 @@
     <clipPath id="clippath">
       <rect class="cls-2" y="0" width="2048" height="360"/>
     </clipPath>
-    <image id="image-3" width="1583" height="2617" xlink:href="Flower.png"/>
+    <image id="image-2" width="1583" height="2617" xlink:href="Flower.png"/>
   </defs>
   <g class="cls-1">
     <g>
       <image class="cls-3" width="5472" height="3648" transform="translate(0 -298.6) scale(.4)" xlink:href="volodymyr-anikeiev-IM8ZyYaSW6g-unsplash.jpg"/>
-      <use id="image" class="cls-3" transform="translate(1700.3 -48.5) scale(.1)" xlink:href="#image-3"/>
-      <use id="image-2" data-name="image" class="cls-3" transform="translate(309.3 650.2) rotate(-180) scale(.2)" xlink:href="#image-3"/>
+      <g id="image">
+        <use id="image-3" class="cls-3" transform="translate(1706.3 -68.3) scale(.2)" xlink:href="#image-2"/>
+      </g>
+      <g id="image-2">
+        <use id="image-3-2" data-name="image-3" class="cls-3" transform="translate(382.8 676.4) rotate(-180) scale(.2)" xlink:href="#image-2"/>
+      </g>
     </g>
   </g>
   <image class="cls-3" width="853" height="100" transform="translate(693.8 151.3) scale(.8)" xlink:href="Asset 1.png"/>
