@@ -97,7 +97,7 @@ import SeeMoreCategories from "../components/SeeMoreCategories.vue";
 import ContactMe from "../components/ContactMe.vue";
 
 export default ({
-    name: "hop",
+    name: "hop-old",
     components: { Poster, SeeMoreCategories, ContactMe },
     created() {
         window.addEventListener('resize', this.checkScreen);

@@ -111,7 +111,7 @@
 
         <header :class="[mobileView ? 'header-2-m reveal' : 'header-2 reveal']">Components Library</header>
         <div :class="[mobileView ? 'introduction-m reveal' : 'introduction reveal']">
-            Back in 2021, I built a component library to ensure consistency across the parent, partner, and admin interfaces. It included color systems, main buttons, and reusable UI components.
+            Back in 2021, I built a component library to ensure consistency across the parent, partner, and admin interfaces. It included color systems, typography, and commonly used elements such as buttons, toasts and tabs.
 
             <br><br> For this revamp, I built upon this design system rather than starting from scratch. This allowed me to maintain brand familiarity, speed up iteration and focus on improving interaction logic instead of reinventing a visual language.
         </div>
@@ -120,17 +120,44 @@
         <header :class="[mobileView ? 'header-2-m reveal' : 'header-2 reveal']">High Fidelity Protoype</header>
         <div :class="[mobileView ? 'introduction-m reveal' : 'introduction reveal']">I focused on four high-impact areas that directly influenced parental confidence:
         </div>
-        <poster key="filter" :poster="filter"></poster>
-        <poster key="classListing" :poster="classListing"></poster>
-        <div class="prototype">
-        <div id="figma"><iframe style="border: 1px solid rgba(255, 255, 255);" width="375" height="667" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FwxtRWpAfyTPrmmrFAe9xsa%2Fhop-app%3Fnode-id%3D735%253A934%26scaling%3Dcontain%26page-id%3D0%253A1%26starting-point-node-id%3D735%253A1032%26show-proto-sidebar%3D1" allowfullscreen></iframe></div>
-        </div>
-        
-        <header :class="[mobileView ? 'header-2-m reveal' : 'header-2 reveal']">Conclusion</header>
+        <poster key="hifi" :poster="hifi"></poster>
         <div :class="[mobileView ? 'introduction-m reveal' : 'introduction reveal']">
-            This project strengthened my experience in designing <b>transactional, service-oriented products</b> that require careful organisation of information, clarity and trust. Through balancing user needs, technical constraints and business goals, I was reminded about the importance of strong information architecture and iterative decision-making.
+            For the filter, I reordered the factors based on my defined hierarchy and focused on elimination first and refinement second.
+        </div>
+        <poster key="filter" :poster="filter"></poster>
+        <div :class="[mobileView ? 'introduction-m reveal' : 'introduction reveal']">
+            For the list of classes, I decluttered the top tab to prioritise showing 'filters', 'sort by' and 'date'. I also rearranged the information on class cards to prioritise key information.
+        </div>
+        <poster key="classListing" :poster="classListing"></poster>
+        <div :class="[mobileView ? 'introduction-m reveal' : 'introduction reveal']">
+            I added a new 'Sort By' tab that allows users to sort based on reviews, distance, cost and start time.
+        </div>
+        <poster key="sort" :poster="sort"></poster>
+        <div :class="[mobileView ? 'introduction-m reveal' : 'introduction reveal']">
+            I redesigned the leave a review component from a pop-up toast to a full-screen UI, with purposeful prompts and examples to help parents leave substantial reviews.
+        </div>
+        <poster key="leaveReviews" :poster="leaveReviews"></poster>
+        <div :class="[mobileView ? 'introduction-m reveal' : 'introduction reveal']">
+            Previously, 'Reviews' were just an afterthought and did not reflect much on each class's listing page. I've updated the Reviews segment to highlight keywords mentioned and to show a few parents' testimonies.
+        </div>
+        <poster key="reviews" :poster="reviews"></poster>
+        <div :class="[mobileView ? 'introduction-m reveal' : 'introduction reveal']">
+            Here are the overall updated flows to help reduce the <b>cognitive and emotional burden</b> parents face when choosing enrichment classes, through <b>structured comparison tools, trusted reviews, and streamlined booking</b> in one centralised platform.
+        </div>
+        <poster key="updatedFlows" :poster="updatedFlows"></poster>
 
-            If this product were to continue updating, I would focus on longitudinal user feedback, accessibility considerations, and deeper personalisation as parents’ needs change over time.</div>
+
+
+        <header :class="[mobileView ? 'header-2-m reveal' : 'header-2 reveal']">Reflections</header>
+        <div :class="[mobileView ? 'introduction-m reveal' : 'introduction reveal']">
+            Revisiting this project five years later, I realised that my initial approach focused heavily on the transactional aspect of booking a class – optimising the steps needed to complete the task efficiently. While functional clarity is important, I had overlooked the emotional weight behind parents' decision-making process.
+
+            <br><br>Through further research, it became clear that parents are not simply evaluating logistics such as distance or schedule. They are making high-stakes decisions about their children's development, and rely heavily on reviews, credibility signals and reassuarance before feeling confident enough to commit.
+
+            <br><br>With this shift in insight, the redesign focuses not only on <b>improving filtering and sorting mechanics</b>, but on <b>reducing anxiety through stronger trust signals and a more intentional review system</b>.
+
+            <br><br>Revisiting older work has reminded me that good product design is not just about usability, but about understanding the emotional context in which decisions are made, and continuously refining solutions as our perspective evolves.
+        </div>
         <div class="see-more-div">
             <text :class="[mobileView ? 'sm-title-m' : 'sm-title']">See More Projects</text> 
             <see-more-categories :pageType="category"/>
@@ -188,9 +215,22 @@ export default ({
             },            
             factors: {
                 src: require("@/assets/hop/factors.svg")
+            },            
+            hifi: {
+                src: require("@/assets/hop/hifi.svg")
             },
-                  
-
+            sort: {
+                src: require("@/assets/hop/sort.jpg")
+            },
+            leaveReviews: {
+                src: require("@/assets/hop/leave-review.jpg")
+            },    
+            reviews: {
+                src: require("@/assets/hop/reviews.jpg")
+            },
+            updatedFlows: {
+                src: require("@/assets/hop/updated-flows.jpg")
+            },
         }
     },
 
