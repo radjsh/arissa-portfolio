@@ -40,21 +40,15 @@
         <header :class="[mobileView ? 'header-2-m reveal' : 'header-2 reveal']">Context</header>
     
         <div :class="[mobileView ? 'overview-m reveal' : 'overview reveal']">
-            Hop is a mobile application designed to <b>help parents discover, compare, and book enrichment classes for their children</b>. 
+            Hop is a mobile application designed to <b>help parents discover, compare, and book enrichment classes for their children with confidence</b>. 
             
-             <br><br>In 2021, I worked with ME Tech as the product UI/UX designer, owning research, end-to-end experience design, and prototyping for the parent-facing app, partner dashboard and admin dashboard. 
+             <br><br>In 2021, I worked with ME Tech and Hop's founder as the product UI/UX designer, owning research, end-to-end experience design, and prototyping for the parent-facing app. 
 
-            <br><br> The original goal was to simplify a fragmented and time-consuming process into a single, centralised platform where parents could search and book classes more easily.
-        </div>
-        <header :class="[mobileView ? 'header-2-m reveal' : 'header-2 reveal']">Original Problem Framing</header>
-        <div :class="[mobileView ? 'introduction-m reveal' : 'introduction reveal']">At that time, we framed the problem as: 
-            <br><br>Information about enrichment classes is fragmented across blogs, search results and individual providers’ websites, making it <b>tedious and time-consuming</b> for parents to search, compare and book classes.
-
-            <br><br>This was correct — but incomplete.
+            <br><br>I revisited the project in 2026 to see how my thinking has evolved, reflect critically on my work, and redesign with new insights.
         </div>
         <header :class="[mobileView ? 'header-2-m reveal' : 'header-2 reveal']">Original Approach</header>
         <div :class="[mobileView ? 'introduction-m reveal' : 'introduction reveal']">
-            In 2021, we defined our target audience as <b>millennial parents with children aged 1–12</b>. I conducted interviews, mapped out the user journey, and identified key pain points in the discovery and booking flow.
+            In 2021, we defined our target audience as <b>millennial parents with children aged 1–12</b>. The founder had previously conducted exploratory interviews to validate the demand for children's enrichment bookings. Given the tight product launch timeline, I synthesised those early insights, mapped out the end-to-end user journey, and identified key pain points to prioritise what we could ship for the MVP.
         </div>
         <poster key="userJourney" :poster="userJourney"></poster>
         <div :class="[mobileView ? 'introduction-m reveal' : 'introduction reveal']">
@@ -62,22 +56,17 @@
 
             <br><br> The solution emphasised task completion and reducing booking friction.
         </div>
+        <header :class="[mobileView ? 'header-2-m reveal' : 'header-2 reveal']">Original Problem Framing</header>
+        <div :class="[mobileView ? 'introduction-m reveal' : 'introduction reveal']">At that time, we framed the problem as: 
+            <br><br>Information about enrichment classes is fragmented across the internet, making it <b>tedious and time-consuming</b> for parents to search, compare and book classes.        </div>
 
         <header :class="[mobileView ? 'header-2-m reveal' : 'header-2 reveal']">Where It Fell Short</header>
         <div :class="[mobileView ? 'introduction-m reveal' : 'introduction reveal']">
-            After revisiting the project and re-examining the original journey map, I realised that the experience focused heavily on task completion – searching, filtering, booking – but not the emotional weight behind decision-making.
+            After revisiting the project and conducting secondary research across parenting forums and blogs, I recognised a critical gap in the product's framing.
+            
+            <br><br>The initial designfocused heavily on task completion – searching, filtering, booking – but not the emotional weight behind decision-making. Choosing enrichment classes, especially for young children, is not simply a booking problem, but rather a huge trust decision. Parents are evaluating <b>credibility, safety and the long-term impact on their child</b>. While the product helped parents complete actions, it did not sufficiently <b>reduce anxiety or build confidence</b>.
 
-            <br><br>Choosing enrichment classes, especially for young children, is not simply a booking problem, but rather a huge trust decision. Parents are evaluating <b>credibility, safety and the long-term impact on their child</b>. It is not just simply a transactional problem.
-
-            <br><br>While the product helped parents complete actions, it did not sufficiently <b>reduce anxiety or build confidence</b>.
-        </div>
-
-        <header :class="[mobileView ? 'header-2-m reveal' : 'header-2 reveal']">A Shift in Insights</header>
-        <div :class="[mobileView ? 'introduction-m reveal' : 'introduction reveal']">
-            Through additional interviews with parents, and secondary research across blogs and forums, a clearer pattern emerged: Parents are not just comparing prices or locations, they are making <b>high-stake decisions about their child's development</b>.
-
-            <br><br>Here are some themes that surfaced:
-
+            <br><br>From my research, here are some of the concerns that surfaced:
         </div>
         <poster key="themes" :poster="themes"></poster>
         <div :class="[mobileView ? 'introduction-m reveal' : 'introduction reveal']">
@@ -86,7 +75,7 @@
 
         <header :class="[mobileView ? 'header-2-m reveal' : 'header-2 reveal']">Emotional Journey Map</header>
         <div :class="[mobileView ? 'introduction-m reveal' : 'introduction reveal']">
-            I reconstructed the customer journey map, this time mapping not just actions, but emotional states, doubts and decision triggers.
+            I reconstructed the customer journey map, this time mapping not just actions, but also their emotional states and doubts.
             <br><br>What became clear was that the highest friction points were not during filtering down classes, but rather <b>shortlisting and deciding which classes to choose</b>.
         </div>
         <poster key="ejm" :poster="ejm"></poster>
@@ -97,7 +86,7 @@
         </div> 
         <header :class="[mobileView ? 'header-2-m reveal' : 'header-2 reveal']">Design Evolution</header>
         <div :class="[mobileView ? 'introduction-m reveal' : 'introduction reveal']">
-        After identifying that trust and confidence were core to parents’ decision-making, I ran a short prioritisation survey with parents of young children to understand what factors mattered most when choosing between similar classes.
+        After identifying that trust and confidence were core to parents’ decision-making, I ran a short prioritisation survey with 8 parents of young children to understand what factors mattered most when choosing between similar classes.
 
         <br><br><b>Distance</b> and <b>reviews</b> consistently ranked highest, followed by <b>cost</b> and <b>schedule fit</b>.
 
@@ -111,7 +100,7 @@
 
         <header :class="[mobileView ? 'header-2-m reveal' : 'header-2 reveal']">Components Library</header>
         <div :class="[mobileView ? 'introduction-m reveal' : 'introduction reveal']">
-            Back in 2021, I built a component library to ensure consistency across the parent, partner, and admin interfaces. It included color systems, typography, and commonly used elements such as buttons, toasts and tabs.
+            Back in 2021, I built a component library to ensure consistency in design, and efficiency in development. It included color systems, typography, and commonly used elements such as buttons, toasts and tabs.
 
             <br><br> For this revamp, I built upon this design system rather than starting from scratch. This allowed me to maintain brand familiarity, speed up iteration and focus on improving interaction logic instead of reinventing a visual language.
         </div>
@@ -146,7 +135,17 @@
         </div>
         <poster key="updatedFlows" :poster="updatedFlows"></poster>
 
+        <header :class="[mobileView ? 'header-2-m reveal' : 'header-2 reveal']">Constraints & Measures of Success</header>
+        <div :class="[mobileView ? 'introduction-m reveal' : 'introduction reveal']">
+            Hop was discontinued in 2024 when the founder decided not to continue the product. As a result, I did not have access to the original user base or live product data to validate the design.
 
+            <br><br>To test my updated approach, I conducted short interviews with 8 parents to gather directional feedback on the redesigned flows and priotisation logic. Participants highlighted that:
+        </div>
+        <poster key="feedback" :poster="feedback"></poster>
+        <div :class="[mobileView ? 'introduction-m reveal' : 'introduction reveal']">
+            While this was qualitative validation, I also defined clear product metrics that would determine success if implemented:
+        </div>
+        <poster key="metrics" :poster="metrics"></poster>
 
         <header :class="[mobileView ? 'header-2-m reveal' : 'header-2 reveal']">Reflections</header>
         <div :class="[mobileView ? 'introduction-m reveal' : 'introduction reveal']">
@@ -230,6 +229,12 @@ export default ({
             },
             updatedFlows: {
                 src: require("@/assets/hop/updated-flows.jpg")
+            },
+            feedback: {
+                src: require("@/assets/hop/feedback.svg")
+            },
+            metrics: {
+                src: require("@/assets/hop/metrics.svg")
             },
         }
     },
