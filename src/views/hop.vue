@@ -48,23 +48,16 @@
         </div>
         <header :class="[mobileView ? 'header-2-m reveal' : 'header-2 reveal']">Original Approach</header>
         <div :class="[mobileView ? 'introduction-m reveal' : 'introduction reveal']">
-            In 2021, we defined our target audience as <b>millennial parents with children aged 1–12</b>. The founder had previously conducted exploratory interviews to validate the demand for children's enrichment bookings. Given the tight product launch timeline, I synthesised those early insights, mapped out the end-to-end user journey, and identified key pain points to prioritise what we could ship for the MVP.
+            We defined our target audience as <b>millennial parents with children aged 1–12</b>. The founder had previously conducted exploratory interviews to validate the demand for children's enrichment bookings. Given the tight product launch timeline, I synthesised those early insights, mapped out the end-to-end user journey, and identified key pain points to prioritise what we could ship for the MVP.
         </div>
         <poster key="userJourney" :poster="userJourney"></poster>
         <div :class="[mobileView ? 'introduction-m reveal' : 'introduction reveal']">
-            The initial focus was on <b>reducing fragmentation across platforms</b>, making <b>search and filtering efficient </b> and <b>streamlining booking and schedule management</b>. 
-
-            <br><br> The solution emphasised task completion and reducing booking friction.
-        </div>
-        <header :class="[mobileView ? 'header-2-m reveal' : 'header-2 reveal']">Original Problem Framing</header>
-        <div :class="[mobileView ? 'introduction-m reveal' : 'introduction reveal']">At that time, we framed the problem as: 
-            <br><br>Information about enrichment classes is fragmented across the internet, making it <b>tedious and time-consuming</b> for parents to search, compare and book classes.        </div>
-
+            Information about enrichment classes is fragmented across the internet, making it <b>tedious and time-consuming</b> for parents to search, compare and book classes.        </div>
         <header :class="[mobileView ? 'header-2-m reveal' : 'header-2 reveal']">Where It Fell Short</header>
         <div :class="[mobileView ? 'introduction-m reveal' : 'introduction reveal']">
             After revisiting the project and conducting secondary research across parenting forums and blogs, I recognised a critical gap in the product's framing.
             
-            <br><br>The initial designfocused heavily on task completion – searching, filtering, booking – but not the emotional weight behind decision-making. Choosing enrichment classes, especially for young children, is not simply a booking problem, but rather a huge trust decision. Parents are evaluating <b>credibility, safety and the long-term impact on their child</b>. While the product helped parents complete actions, it did not sufficiently <b>reduce anxiety or build confidence</b>.
+            <br><br>The initial design focused heavily on task completion, but not the emotional weight behind decision-making. Choosing enrichment classes, especially for young children, is not simply a booking problem, but rather a huge trust decision. Parents are evaluating <b>credibility, safety and the long-term impact on their child</b>. While the product helped parents complete actions, it did not sufficiently <b>reduce anxiety or build confidence</b>.
 
             <br><br>From my research, here are some of the concerns that surfaced:
         </div>
@@ -82,7 +75,7 @@
 
         <header :class="[mobileView ? 'header-2-m reveal' : 'header-2 reveal']">Revised Problem Statement</header>
         <div :class="[mobileView ? 'overview-m reveal' : 'overview reveal']">
-            Hop aims to reduce the <b>cognitive and emotional burden</b> parents face when choosing enrichment classes, by providing <b>structured comparison tools, trusted reviews, and streamlined booking</b> in one centralised platform.
+            How might we reduce the <b>cognitive and emotional burden</b> parents face when choosing enrichment classes?
         </div> 
         <header :class="[mobileView ? 'header-2-m reveal' : 'header-2 reveal']">Design Evolution</header>
         <div :class="[mobileView ? 'introduction-m reveal' : 'introduction reveal']">
