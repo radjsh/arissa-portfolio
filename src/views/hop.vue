@@ -42,7 +42,7 @@
         <div :class="[mobileView ? 'overview-m reveal' : 'overview reveal']">
             Hop is a mobile application designed to <b>help parents discover, compare, and book enrichment classes for their children with confidence</b>. 
             
-             <br><br>In 2021, I worked with ME Tech and Hop's founder as the product UI/UX designer, owning research, end-to-end experience design, and prototyping for the parent-facing app. 
+             <br><br>In 2021, I worked with ME Techd devlopers and Hop's founder as the sole product UI/UX designer, owning research, end-to-end experience design, and building interactive prototypes for dev handoff.
 
             <br><br>I revisited the project in 2026 to see how my thinking has evolved, reflect critically on my work, and redesign with new insights.
         </div>
@@ -76,7 +76,7 @@
         <header :class="[mobileView ? 'header-2-m reveal' : 'header-2 reveal']">Emotional Journey Map</header>
         <div :class="[mobileView ? 'introduction-m reveal' : 'introduction reveal']">
             I reconstructed the customer journey map, this time mapping not just actions, but also their emotional states and doubts.
-            <br><br>What became clear was that the highest friction points were not during filtering down classes, but rather <b>shortlisting and deciding which classes to choose</b>.
+            <br><br>What became clear was that the highest friction points were not during searching for classes, but rather <b>shortlisting and deciding which classes to choose</b>.
         </div>
         <poster key="ejm" :poster="ejm"></poster>
 
@@ -135,7 +135,7 @@
         </div>
         <poster key="updatedFlows" :poster="updatedFlows"></poster>
 
-        <header :class="[mobileView ? 'header-2-m reveal' : 'header-2 reveal']">Constraints & Measures of Success</header>
+        <header :class="[mobileView ? 'header-2-m reveal' : 'header-2 reveal']">Measures of Success</header>
         <div :class="[mobileView ? 'introduction-m reveal' : 'introduction reveal']">
             Hop was discontinued in 2024 when the founder decided not to continue the product. As a result, I did not have access to the original user base or live product data to validate the design.
 
@@ -146,6 +146,17 @@
             While this was qualitative validation, I also defined clear product metrics that would determine success if implemented:
         </div>
         <poster key="metrics" :poster="metrics"></poster>
+
+        <header :class="[mobileView ? 'header-2-m reveal' : 'header-2 reveal']">Constraints & Trade-Offs</header>
+        <div :class="[mobileView ? 'introduction-m reveal' : 'introduction reveal']">
+            <b>2021 MVP Constraints</b>
+            <br>Due to launch timelines, the team prioritised building the booking infrastructure and calendar management. Features such as reviews and advanced sorting logic were simplified and depriotised. 
+
+            <br><br>
+            <b>2026 Redesign Trade-offs</b>
+            <br>In this revisit, I prioritised <b>filtering, sorting and review credibility</b> as they addressed the core emotional pain-points. Features such as <b>instructor verification badges, smart recommendations and sentiment tagging</b> were intentionally scoped out to maintain focus on the highest trust-impact levers.
+
+        </div>
 
         <header :class="[mobileView ? 'header-2-m reveal' : 'header-2 reveal']">Reflections</header>
         <div :class="[mobileView ? 'introduction-m reveal' : 'introduction reveal']">
