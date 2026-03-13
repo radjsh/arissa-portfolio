@@ -3,46 +3,50 @@
         <img class="bg-m" src="@/assets/bulletin-board-m.svg" id="bg-m"/>
         <!-- To change the drawing prompt, edit the text below -->
         <text class="header-bbm">drawing prompt: funky fruits!</text>
-        <!-- touch-action: none on .canvas-bbm prevents the page from scrolling while drawing -->
-        <canvas class="canvas-bbm" @touchstart="startPainting" @touchend="finishedPainting" @touchmove="keepPainting" id="canvas-bbm"></canvas>
-        <!-- Row 1: colour buttons. To add a new colour, add a div here + a corresponding entry in onClickColor() and data() -->
-        <div class="button-row-m">
-                <div :class="[black ? 'btn-m-active' : 'btn-m-inactive']">
-                    <img src="@/assets/colours/black-btn.svg" @click="onClickColor('black')"/>
-                </div>
-                <div :class="[red ? 'btn-m-active' : 'btn-m-inactive']" @click="onClickColor('red')">
-                    <img src="@/assets/colours/red-btn.svg"/>
-                </div>
-                <div :class="[yellow ? 'btn-m-active' : 'btn-m-inactive']" @click="onClickColor('yellow')">
-                    <img src="@/assets/colours/yellow-btn.svg"/>
-                </div>
-                <div :class="[green ? 'btn-m-active' : 'btn-m-inactive']" @click="onClickColor('green')">
-                    <img src="@/assets/colours/green-btn.svg"/>
-                </div>
-                <div :class="[blue ? 'btn-m-active' : 'btn-m-inactive']" @click="onClickColor('blue')">
-                    <img src="@/assets/colours/blue-btn.svg"/>
-                </div>
-                <div :class="[brown ? 'btn-m-active' : 'btn-m-inactive']" @click="onClickColor('brown')">
-                    <img src="@/assets/colours/brown-btn.svg"/>
-                </div>
-                <div :class="[skin ? 'btn-m-active' : 'btn-m-inactive']" @click="onClickColor('skin')">
-                    <img src="@/assets/colours/skin-btn.svg"/>
-                </div>
-        </div>
-        <!-- Row 2: tool buttons (pencil, eraser, trash, done) -->
-        <div class="button-row-m-2">
-                <div :class="[pencil ? 'btn-m-active' : 'btn-m-inactive']" @click="onClickControl('pencil')">
-                    <img src="@/assets/pencil-btn.svg"/>
-                </div>
-                <div :class="[eraser ? 'btn-m-active' : 'btn-m-inactive']" @click="onClickControl('eraser')">
-                    <img src="@/assets/eraser-btn.svg"/>
-                </div>
-                <div :class="[trash ? 'btn-m-active' : 'btn-m-inactive']" @click="onClickControl('trash')">
-                    <img src="@/assets/trash-btn.svg"/>
-                </div>
-                <div class="btn-m-inactive" @click="onClickDone">
-                    <img src="@/assets/done-btn.svg"/>
-                </div>
+        <!-- Wrapper pulls the canvas + buttons up together over the SVG background.
+             If the SVG background changes, adjust margin-top on .canvas-controls-wrapper -->
+        <div class="canvas-controls-wrapper">
+            <!-- touch-action: none on .canvas-bbm prevents the page from scrolling while drawing -->
+            <canvas class="canvas-bbm" @touchstart="startPainting" @touchend="finishedPainting" @touchmove="keepPainting" id="canvas-bbm"></canvas>
+            <!-- Row 1: colour buttons. To add a new colour, add a div here + a corresponding entry in onClickColor() and data() -->
+            <div class="button-row-m">
+                    <div :class="[black ? 'btn-m-active' : 'btn-m-inactive']">
+                        <img src="@/assets/colours/black-btn.svg" @click="onClickColor('black')"/>
+                    </div>
+                    <div :class="[red ? 'btn-m-active' : 'btn-m-inactive']" @click="onClickColor('red')">
+                        <img src="@/assets/colours/red-btn.svg"/>
+                    </div>
+                    <div :class="[yellow ? 'btn-m-active' : 'btn-m-inactive']" @click="onClickColor('yellow')">
+                        <img src="@/assets/colours/yellow-btn.svg"/>
+                    </div>
+                    <div :class="[green ? 'btn-m-active' : 'btn-m-inactive']" @click="onClickColor('green')">
+                        <img src="@/assets/colours/green-btn.svg"/>
+                    </div>
+                    <div :class="[blue ? 'btn-m-active' : 'btn-m-inactive']" @click="onClickColor('blue')">
+                        <img src="@/assets/colours/blue-btn.svg"/>
+                    </div>
+                    <div :class="[brown ? 'btn-m-active' : 'btn-m-inactive']" @click="onClickColor('brown')">
+                        <img src="@/assets/colours/brown-btn.svg"/>
+                    </div>
+                    <div :class="[skin ? 'btn-m-active' : 'btn-m-inactive']" @click="onClickColor('skin')">
+                        <img src="@/assets/colours/skin-btn.svg"/>
+                    </div>
+            </div>
+            <!-- Row 2: tool buttons (pencil, eraser, trash, done) -->
+            <div class="button-row-m-2">
+                    <div :class="[pencil ? 'btn-m-active' : 'btn-m-inactive']" @click="onClickControl('pencil')">
+                        <img src="@/assets/pencil-btn.svg"/>
+                    </div>
+                    <div :class="[eraser ? 'btn-m-active' : 'btn-m-inactive']" @click="onClickControl('eraser')">
+                        <img src="@/assets/eraser-btn.svg"/>
+                    </div>
+                    <div :class="[trash ? 'btn-m-active' : 'btn-m-inactive']" @click="onClickControl('trash')">
+                        <img src="@/assets/trash-btn.svg"/>
+                    </div>
+                    <div class="btn-m-inactive" @click="onClickDone">
+                        <img src="@/assets/done-btn.svg"/>
+                    </div>
+            </div>
         </div>
     </div>
 </template>
@@ -288,11 +292,20 @@ export default ({
     height: auto;
 }
 
-.canvas-bbm {
+/* Groups the canvas + buttons so they move up together over the SVG as one unit.
+   To adjust vertical position within the corkboard, change margin-top here. */
+.canvas-controls-wrapper {
     position: relative;
-    background-color: #F1E8E6; /* canvas background — keep in sync with eraser colour if you change this */
     z-index: 3;
-    margin-top: -80%; /* overlaps the bulletin board SVG — adjust if the SVG background changes */
+    margin-top: -80%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.canvas-bbm {
+    background-color: #F1E8E6; /* canvas background — keep in sync with eraser colour if you change this */
     width: 80%;
     aspect-ratio: 3 / 2; /* matches desktop canvas ratio (720×480) — change both together if resizing */
     touch-action: none; /* prevents page scroll while drawing on mobile */
@@ -314,32 +327,21 @@ export default ({
 
 /* Colour buttons row */
 .button-row-m {
-    position: relative;
-    z-index: 3;
-    left: 0;
     width: 100%;
-    margin-bottom: 8px;
-    background-color: none;
+    margin-top: 8px;
+    margin-bottom: 4px;
     display: flex;
     flex-direction: row;
-    flex: 1;
     justify-content: center;
-    margin-top: 8px;
 }
 
 /* Tool buttons row (pencil, eraser, trash, done) */
 .button-row-m-2 {
-    position: relative;
-    z-index: 3;
-    left: 0;
     width: 100%;
     margin-bottom: 8px;
-    background-color: none;
     display: flex;
     flex-direction: row;
-    flex: 1;
     justify-content: center;
-    margin-top: 0;
 }
 
 /* Inactive button state */
