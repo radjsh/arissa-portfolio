@@ -324,7 +324,7 @@ export default ({
     flex-direction: row;
     flex: 1;
     justify-content: center;
-    margin-top: -30%; /* overlaps the bulletin board SVG — adjust if the SVG background changes */
+    margin-top: 8px;
 }
 
 /* Tool buttons row (pencil, eraser, trash, done) */
@@ -339,7 +339,7 @@ export default ({
     flex-direction: row;
     flex: 1;
     justify-content: center;
-    margin-top: -20%; /* overlaps the bulletin board SVG — adjust if the SVG background changes */
+    margin-top: 0;
 }
 
 /* Inactive button state */
