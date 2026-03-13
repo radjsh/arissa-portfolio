@@ -2,7 +2,7 @@
     <div class='bb-div'>
         <text class="bb-header">Doodle Board</text>
         <p class="subheader" v-if="!mobileView">Design is more fun when done with others, add a drawing to the doodle board!</p>
-        <p class="subheader" v-else>Design is more fun when done with others, add a drawing to the doodle board! <br> Still a WIP for mobile and tablet, it's easier on desktop :)</p>
+        <p class="subheader" v-else>Design is more fun when done with others, add a drawing to the doodle board!</p>
     </div>
     <bulletin-board v-if="!mobileView"/>
     <bulletin-board-mobile v-else/>

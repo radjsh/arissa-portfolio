@@ -170,59 +170,17 @@ export default ({
 </script>
 
 <style scoped>
-@font-face {
-  font-family: "Futura-Med";
-  src: local("Futura-Med"),
-   url("../fonts/Futura-medium-bt.ttf") format("truetype");
-  color: #2F2A1B;
-}
-
-@font-face {
-  font-family: "Josefin Sans";
-  src: local("Josefin Sans"),
-   url("../fonts/JosefinSans-VariableFont_wght.ttf") format("truetype");
-  color: #2F2A1B;
-}
-
 .banner {
     margin-top: 49px;
     width: 100%;
 }
 
 .banner-m {
-    margin-top: 56px;
     height: auto;
-    width: 100%;
-    overflow: 0;
-}
-
-.header {
-    font-family: "Josefin Sans", sans-serif;
-    font-size: 36px;
-    margin-top: 64px;
-    font-weight: 600;
-}
-
-.header-m {
-    font-family: "Futura-Med";
-    font-size: 24px;
-    margin-top: 36px;   
 }
 
 .header-2 {
-    font-family: "Josefin Sans", sans-serif;
-    font-size: 36px;
-    margin-top: 64px;
-    text-align: left;
     margin-left: 180px;
-}
-
-.header-2-m {
-    font-family: "Futura-Med";
-    font-size: 24px;
-    margin-top: 36px;   
-    text-align: left;
-    margin-left: 24px;
 }
 
 .header-3 {
@@ -236,135 +194,15 @@ export default ({
 .header-3-m {
     font-family: "Futura-Med";
     font-size: 20px;
-    margin-top: 36px;   
+    margin-top: 36px;
     text-align: left;
     margin-left: 24px;
-}
-
-.subheader-posters {
-    font-family: "Futura-Book";
-    margin-top: 12px;
-}
-
-.subheader-posters-m {
-    font-family: "Futura-Book";
-    font-size: 14px;
-    margin-top: 12px;
-}
-
-ul {
-    display: block;
-    list-style-type: none;
-    margin-block-start: 1em;
-    margin-block-end: 1em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
-    padding-inline-start: 40px;
-}
-
-.specs-row {
-    margin-top: 48px;
-    display: flex;
-    justify-content: center;
-}
-
-.specs {
-    margin-left: 24px;
-    margin-right: 24px;
-    text-align: start;
-}
-
-li {
-    display: list-item;
-    text-align: -webkit-match-parent;
-}
-
-col {
-    text-align: left;
-}
-
-.col-list {
-    margin-top: 24px;
-    text-align: start;
-    margin-left: 24px;
-}
-
-p {
-    display: block;
-    margin-block-start: 1em;
-    margin-block-end: 1em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
-}
-
-.specs-title, .specs-list {
-    margin: 12px 0;
-}
-
-.specs-title {
-    font-family: "Josefin Sans", sans-serif;
-    font-size: 18px;
-    font-weight: 600;
-}
-
-.specs-title-m {
-    font-family: "Futura-Med";
-    font-size: 14px;
-}
-
-.specs-list {
-    font-family: "Futura-Book";
-    font-size: 18px;
-}
-
-.specs-list-m {
-    font-family: "Futura-Book";
-    font-size: 14px;
 }
 
 .introduction {
-    font-family: "Futura-Book";
     font-size: 18px;
-    margin-top: 48px;
-    text-align: start;
     margin-left: 180px;
     margin-right: 180px;
     line-height: 26px;
-}
-
-.introduction-m {
-    font-family: "Futura-Book";
-    margin: 24px 24px 0px 24px;
-    text-align: start;
-    font-size: 14px;
-}
-
-.see-more-div{
-    text-align: start;
-    margin-top: 100px;
-}
-
-.sm-title {
-    font-family: 'Josefin Sans', sans-serif;
-    font-size: 24px;
-    margin-left: 48px;
-}
-
-.sm-title-m {
-    font-family: 'Futura-Med';
-    font-size: 16px;
-    margin-left: 24px;
-}
-
-.reveal {
-    position: relative;
-    transform: translateY(100px);
-    opacity: 0;
-    transition: 1s all ease;
-}
-
-.reveal.active{
-  transform: translateY(0);
-  opacity: 1;
 }
 </style>
