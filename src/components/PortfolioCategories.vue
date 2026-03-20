@@ -77,6 +77,13 @@ export default {
                     cat: 'cw',
                 },
                 {
+                    title: 'Stick it with Robert',
+                    subheader: 'product design',
+                    src: require("@/assets/portfolio-categories/stick-it-robert.jpg"),
+                    path: 'stick-it-robert',
+                    cat: 'pp',
+                },
+                {
                     title: '30 days of UI challenge',
                     subheader: 'ui/ux design & graphic design',
                     src: require("@/assets/portfolio-categories/30daysofuichallenge.svg"),

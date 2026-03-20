@@ -1,6 +1,5 @@
 /* =====================================================
    Shared View Styles
-   Based on hop.vue — all project/case study pages use these.
    Override in <style scoped> only when a page genuinely differs.
    ===================================================== */
 
@@ -22,6 +21,30 @@
   font-family: "Josefin Sans";
   src: local("Josefin Sans"),
    url("../fonts/JosefinSans-VariableFont_wght.ttf") format("truetype");
+  color: #2F2A1B;
+}
+
+@font-face {
+  font-family: "Lexend";
+  font-weight: 400;
+  src: local("Lexend"),
+   url("../fonts/Lexend-Regular.ttf") format("truetype");
+  color: #2F2A1B;
+}
+
+@font-face {
+  font-family: "Lexend";
+  font-weight: 500;
+  src: local("Lexend"),
+   url("../fonts/Lexend-Medium.ttf") format("truetype");
+  color: #2F2A1B;
+}
+
+@font-face {
+  font-family: "Lexend";
+  font-weight: 600;
+  src: local("Lexend"),
+   url("../fonts/Lexend-SemiBold.ttf") format("truetype");
   color: #2F2A1B;
 }
 

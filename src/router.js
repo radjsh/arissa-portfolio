@@ -17,6 +17,7 @@ import Sandbox from './views/sandbox.vue';
 import LTA from './views/lta.vue';
 import wormSquirm from './views/worm-squirm.vue';
 import cnnSia from './views/cnn-sia.vue';
+import stickItRobert from './views/stick-it-robert.vue';
 
 const routes = [
     {
@@ -125,7 +126,13 @@ const routes = [
         path: '/portfolio/cnn-sia',
         name: 'cnn-sia',
         component: cnnSia,
-        meta: {title: 'cnn-sia'}
+        meta: {title: 'cnn sia'}
+    },
+    {
+        path: '/portfolio/stick-it-with-robert',
+        name: 'stick-it-robert',
+        component: stickItRobert,
+        meta: {title: 'stick it with robert'}
     }
     
 ]

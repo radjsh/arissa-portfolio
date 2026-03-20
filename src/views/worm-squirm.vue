@@ -142,20 +142,6 @@ export default ({
     line-height: 26px;
 }
 
-a {
-    color: #7287B2;
-}
-
-a:hover {
-    color: #B1BCD5;
-}
-
-.link-style {
-    text-underline-offset: 2px;
-    text-decoration-color: #F7C760;
-    text-decoration-thickness: 3px;
-}
-
 .digi-ill {
     display: flex;
     flex-direction: column;
