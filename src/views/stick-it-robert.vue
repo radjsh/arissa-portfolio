@@ -12,7 +12,7 @@
             <div :class="[mobileView ? 'main-header-m' : 'main-header']">
                 <header>stick it with robert</header>
                 <div :class="[mobileView ? 'introduction-m' : 'introduction']">
-                    a simple way to focus on what matters with a tiny desk companion
+                    a simple way to focus on what matters
                 </div>
                 <button @click="openWidget" class="open-button">open your desk</button>
             </div>
@@ -97,10 +97,15 @@ export default ({
         },
 
         openWidget() {
+            // Read ?for= param from current page URL and forward it to the widget
+            const forParam = new URLSearchParams(window.location.search).get('for');
+            const url = forParam
+                ? `https://stick-it-with-robert.vercel.app?for=${encodeURIComponent(forParam)}`
+                : 'https://stick-it-with-robert.vercel.app';
             window.open(
-            'https://stick-it-with-robert.vercel.app',
-            'roberts-desk',
-            'width=360,height=480,resizable=no,scrollbars=no,toolbar=no,menubar=no,location=no,status=no'
+                url,
+                'roberts-desk',
+                'width=360,height=480,resizable=no,scrollbars=no,toolbar=no,menubar=no,location=no,status=no'
             )
         },
 
