@@ -51,6 +51,11 @@ export default {
                     path: 'disney',
                 },
                 {
+                    title: 'Stick it with Robert',
+                    src: require("@/assets/portfolio-categories/stick-it-robert.jpg"),
+                    path: 'stick-it-robert',
+                },
+                {
                     title: 'LTA Move Lite Campaign',
                     src: require("@/assets/portfolio-categories/lta.jpg"),
                     path: 'lta',
