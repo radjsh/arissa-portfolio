@@ -573,6 +573,7 @@ export default ({
 
 .sn-card {
     flex: 1;
+    min-width: 0;
     cursor: pointer;
     perspective: 1000px;
 }
