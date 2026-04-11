@@ -565,10 +565,10 @@ export default ({
 }
 
 .sn-row-m {
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
     gap: 12px;
     margin: 32px 24px;
-    justify-content: center;
 }
 
 .sn-card {
