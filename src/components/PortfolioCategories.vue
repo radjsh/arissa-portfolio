@@ -56,6 +56,13 @@ export default {
                     cat: 'cw',
                 },
                 {
+                    title: 'Stick it with Robert',
+                    subheader: 'product design',
+                    src: require("@/assets/portfolio-categories/stick-it-robert.jpg"),
+                    path: 'stick-it-robert',
+                    cat: 'pp',
+                },
+                {
                     title: 'Hop App, Singapore',
                     subheader: 'ui/ux design & prototyping',
                     src: require("@/assets/portfolio-categories/hop.jpg"),
@@ -75,13 +82,6 @@ export default {
                     src: require("@/assets/portfolio-categories/disney.jpg"),
                     path: 'disney',
                     cat: 'cw',
-                },
-                {
-                    title: 'Stick it with Robert',
-                    subheader: 'product design',
-                    src: require("@/assets/portfolio-categories/stick-it-robert.jpg"),
-                    path: 'stick-it-robert',
-                    cat: 'pp',
                 },
                 {
                     title: '30 days of UI challenge',

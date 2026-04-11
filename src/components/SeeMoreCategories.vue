@@ -36,6 +36,11 @@ export default {
                     path: 'cnn',
                 },
                 {
+                    title: 'Stick it with Robert',
+                    src: require("@/assets/portfolio-categories/stick-it-robert.jpg"),
+                    path: 'stick-it-robert',
+                },
+                {
                     title: 'Hop App',
                     src: require("@/assets/portfolio-categories/hop.jpg"),
                     path: 'hop',
@@ -49,11 +54,6 @@ export default {
                     title: 'The Walt Disney Company',
                     src: require("@/assets/portfolio-categories/disney.jpg"),
                     path: 'disney',
-                },
-                {
-                    title: 'Stick it with Robert',
-                    src: require("@/assets/portfolio-categories/stick-it-robert.jpg"),
-                    path: 'stick-it-robert',
                 },
                 {
                     title: 'LTA Move Lite Campaign',
