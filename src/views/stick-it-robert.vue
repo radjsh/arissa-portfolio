@@ -209,6 +209,21 @@
         My main focus this round was to <b>focus on pain points, rather than feature requests</b>. Many users asked for timers, a downloadable app, and account creation. But these would've turned Robert into just another productivity tool. At this stage, I decided to focus on making the web experience as accessible as possible with as little friction.
     </div>
 
+    <header :class="[mobileView ? 'header-2-m reveal' : 'header-2 reveal']">Technical Implementation</header>
+    <div :class="[mobileView ? 'overview-m reveal' : 'overview reveal']">
+        To bring Robert's Desk to life, I built a custom React application optimized for a fixed <b>360×480px popup window</b> as I wanted it to be small and unobtrusive. 
+
+        <br><br><b>Architecture Decisions:</b>
+        <ul>
+            <li>• <b>React + TypeScript + Vite</b> for type safety and fast iteration</li>
+            <li>• <b>Custom hooks</b> (useTasks, usePinnedCell) to encapsulate logic and keep components clean</li>
+            <li>• <b>localStorage</b> for persistence — no backend, instant load times</li>
+            <li>• Inline styles with CSS variables for theming consistency</li>
+        </ul>
+
+    </div>
+
+
     <header :class="[mobileView ? 'header-2-m reveal' : 'header-2 reveal']">Key Takeaways</header>
     <div :class="[mobileView ? 'overview-m reveal' : 'overview reveal']">
         By the end of this iteration cycle, Stick it with Robert had evolved from a polished MVP into a genuinely flexible tool. I was able to stay true to its <b>core philosophy of simplicity, while adapting to real-world use cases</b>.
