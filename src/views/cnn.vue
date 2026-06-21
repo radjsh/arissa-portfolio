@@ -37,7 +37,7 @@
             <p class="specs-list-m"><text class="specs-title-m">Timeline:</text> Sept 2022 - Present</p>
             <p class="specs-list-m"><text class="specs-title-m">Tools used:</text> Figma, Adobe Illustrator, Photoshop, After Effects</p>
         </div>
-        <div :class="[mobileView ? 'introduction-m' : 'introduction']">
+        <div :class="[mobileView ? 'overview-m' : 'overview']">
             At CNN Create Brand Studio, we create scrollytelling websites with third party clients to tell their story in an informative and engaging way. As a digital designer, I design the visuals and interactions of the websites and collaborate with developers to bring the vision to life. 
         </div>
         <div v-if="!mobileView" class="browse-title">
@@ -223,12 +223,11 @@ export default ({
     width: 100%;
 }
 
-.introduction {
-    font-size: 20px;
-    margin-left: 148px;
-    margin-right: 148px;
-    line-height: 28px;
+.overview{
+    margin-top:100px;
+    margin-bottom: 120px;
 }
+
 
 .browse-title {
     font-family: "Josefin Sans", sans-serif;

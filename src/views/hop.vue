@@ -47,14 +47,14 @@
             <br><br>I revisited the project in 2026 to see how my thinking has evolved, reflect critically on my work, and redesign with new insights.
         </div>
         <header :class="[mobileView ? 'header-2-m reveal' : 'header-2 reveal']">Original Approach</header>
-        <div :class="[mobileView ? 'introduction-m reveal' : 'introduction reveal']">
+        <div :class="[mobileView ? 'overview-m reveal' : 'overview reveal']">
             We defined our target audience as <b>millennial parents with children aged 1–12</b>. The founder had previously conducted exploratory interviews to validate the demand for children's enrichment bookings. Given the tight product launch timeline, I synthesised those early insights, mapped out the end-to-end user journey, and identified key pain points to prioritise what we could ship for the MVP.
         </div>
         <poster key="userJourney" :poster="userJourney"></poster>
-        <div :class="[mobileView ? 'introduction-m reveal' : 'introduction reveal']">
+        <div :class="[mobileView ? 'overview-m reveal' : 'overview reveal']">
             Information about enrichment classes is fragmented across the internet, making it <b>tedious and time-consuming</b> for parents to search, compare and book classes.        </div>
         <header :class="[mobileView ? 'header-2-m reveal' : 'header-2 reveal']">Where It Fell Short</header>
-        <div :class="[mobileView ? 'introduction-m reveal' : 'introduction reveal']">
+        <div :class="[mobileView ? 'overview-m reveal' : 'overview reveal']">
             After revisiting the project and conducting secondary research across parenting forums and blogs, I recognised a critical gap in the product's framing.
             
             <br><br>The initial design focused heavily on task completion, but not the emotional weight behind decision-making. Choosing enrichment classes, especially for young children, is not simply a booking problem, but rather a huge trust decision. Parents are evaluating <b>credibility, safety and the long-term impact on their child</b>. While the product helped parents complete actions, it did not sufficiently <b>reduce anxiety or build confidence</b>.
@@ -62,12 +62,12 @@
             <br><br>From my research, here are some of the concerns that surfaced:
         </div>
         <poster key="themes" :poster="themes"></poster>
-        <div :class="[mobileView ? 'introduction-m reveal' : 'introduction reveal']">
+        <div :class="[mobileView ? 'overview-m reveal' : 'overview reveal']">
             This shifted the focus of the product from: <b>“Helping parents find classes”</b> to <b>“Helping parents feel confident and safe in their decision.”</b>
         </div>
 
         <header :class="[mobileView ? 'header-2-m reveal' : 'header-2 reveal']">Emotional Journey Map</header>
-        <div :class="[mobileView ? 'introduction-m reveal' : 'introduction reveal']">
+        <div :class="[mobileView ? 'overview-m reveal' : 'overview reveal']">
             I reconstructed the customer journey map, this time mapping not just actions, but also their emotional states and doubts.
             <br><br>What became clear was that the highest friction points were not during searching for classes, but rather <b>shortlisting and deciding which classes to choose</b>.
         </div>
@@ -78,7 +78,7 @@
             How might we reduce the <b>cognitive and emotional burden</b> parents face when choosing enrichment classes?
         </div> 
         <header :class="[mobileView ? 'header-2-m reveal' : 'header-2 reveal']">Design Evolution</header>
-        <div :class="[mobileView ? 'introduction-m reveal' : 'introduction reveal']">
+        <div :class="[mobileView ? 'overview-m reveal' : 'overview reveal']">
         After identifying that trust and confidence were core to parents’ decision-making, I ran a short prioritisation survey with 8 parents of young children to understand what factors mattered most when choosing between similar classes.
 
         <br><br><b>Distance</b> and <b>reviews</b> consistently ranked highest, followed by <b>cost</b> and <b>schedule fit</b>.
@@ -86,13 +86,13 @@
         Rather than directly mirroring the ranking, I did a deeper analysis on what these factors represented and how they can fit in the filtering and sorting system.
         </div>
         <poster key="factors" :poster="factors"></poster>
-        <div :class="[mobileView ? 'introduction-m reveal' : 'introduction reveal']">
+        <div :class="[mobileView ? 'overview-m reveal' : 'overview reveal']">
         I first tested this structure through a low-fidelity prototype to validate hierarchy and information grouping before committing to visual design.
         </div>
         <poster key="lofi" :poster="lofi"></poster>
 
         <header :class="[mobileView ? 'header-2-m reveal' : 'header-2 reveal']">Components Library</header>
-        <div :class="[mobileView ? 'introduction-m reveal' : 'introduction reveal']">
+        <div :class="[mobileView ? 'overview-m reveal' : 'overview reveal']">
             Back in 2021, I built a component library to ensure consistency in design, and efficiency in development. It included color systems, typography, and commonly used elements such as buttons, toasts and tabs.
 
             <br><br> For this revamp, I built upon this design system rather than starting from scratch. This allowed me to maintain brand familiarity, speed up iteration and focus on improving interaction logic instead of reinventing a visual language.
@@ -100,48 +100,48 @@
         <poster key="designLibrary" :poster="designLibrary"></poster>
 
         <header :class="[mobileView ? 'header-2-m reveal' : 'header-2 reveal']">High Fidelity Protoype</header>
-        <div :class="[mobileView ? 'introduction-m reveal' : 'introduction reveal']">I focused on four high-impact areas that directly influenced parental confidence:
+        <div :class="[mobileView ? 'overview-m reveal' : 'overview reveal']">I focused on four high-impact areas that directly influenced parental confidence:
         </div>
         <poster key="hifi" :poster="hifi"></poster>
-        <div :class="[mobileView ? 'introduction-m reveal' : 'introduction reveal']">
+        <div :class="[mobileView ? 'overview-m reveal' : 'overview reveal']">
             For the filter, I reordered the factors based on my defined hierarchy and focused on elimination first and refinement second.
         </div>
         <poster key="filter" :poster="filter"></poster>
-        <div :class="[mobileView ? 'introduction-m reveal' : 'introduction reveal']">
+        <div :class="[mobileView ? 'overview-m reveal' : 'overview reveal']">
             For the list of classes, I decluttered the top tab to prioritise showing 'filters', 'sort by' and 'date'. I also rearranged the information on class cards to prioritise key information.
         </div>
         <poster key="classListing" :poster="classListing"></poster>
-        <div :class="[mobileView ? 'introduction-m reveal' : 'introduction reveal']">
+        <div :class="[mobileView ? 'overview-m reveal' : 'overview reveal']">
             I added a new 'Sort By' tab that allows users to sort based on reviews, distance, cost and start time.
         </div>
         <poster key="sort" :poster="sort"></poster>
-        <div :class="[mobileView ? 'introduction-m reveal' : 'introduction reveal']">
+        <div :class="[mobileView ? 'overview-m reveal' : 'overview reveal']">
             I redesigned the leave a review component from a pop-up toast to a full-screen UI, with purposeful prompts and examples to help parents leave substantial reviews.
         </div>
         <poster key="leaveReviews" :poster="leaveReviews"></poster>
-        <div :class="[mobileView ? 'introduction-m reveal' : 'introduction reveal']">
+        <div :class="[mobileView ? 'overview-m reveal' : 'overview reveal']">
             Previously, 'Reviews' were just an afterthought and did not reflect much on each class's listing page. I've updated the Reviews segment to highlight keywords mentioned and to show a few parents' testimonies.
         </div>
         <poster key="reviews" :poster="reviews"></poster>
-        <div :class="[mobileView ? 'introduction-m reveal' : 'introduction reveal']">
+        <div :class="[mobileView ? 'overview-m reveal' : 'overview reveal']">
             Here are the overall updated flows to help reduce the <b>cognitive and emotional burden</b> parents face when choosing enrichment classes, through <b>structured comparison tools, trusted reviews, and streamlined booking</b> in one centralised platform.
         </div>
         <poster key="updatedFlows" :poster="updatedFlows"></poster>
 
         <header :class="[mobileView ? 'header-2-m reveal' : 'header-2 reveal']">Measures of Success</header>
-        <div :class="[mobileView ? 'introduction-m reveal' : 'introduction reveal']">
+        <div :class="[mobileView ? 'overview-m reveal' : 'overview reveal']">
             Hop was discontinued in 2024 when the founder decided not to continue the product. As a result, I did not have access to the original user base or live product data to validate the design.
 
             <br><br>To test my updated approach, I conducted short interviews with 8 parents to gather directional feedback on the redesigned flows and priotisation logic. Participants highlighted that:
         </div>
         <poster key="feedback" :poster="feedback"></poster>
-        <div :class="[mobileView ? 'introduction-m reveal' : 'introduction reveal']">
+        <div :class="[mobileView ? 'overview-m reveal' : 'overview reveal']">
             While this was qualitative validation, I also defined clear product metrics that would determine success if implemented:
         </div>
         <poster key="metrics" :poster="metrics"></poster>
 
         <header :class="[mobileView ? 'header-2-m reveal' : 'header-2 reveal']">Constraints & Trade-Offs</header>
-        <div :class="[mobileView ? 'introduction-m reveal' : 'introduction reveal']">
+        <div :class="[mobileView ? 'overview-m reveal' : 'overview reveal']">
             <b>2021 MVP Constraints</b>
             <br>Due to launch timelines, the team prioritised building the booking infrastructure and calendar management. Features such as reviews and advanced sorting logic were simplified and depriotised. 
 
@@ -152,7 +152,7 @@
         </div>
 
         <header :class="[mobileView ? 'header-2-m reveal' : 'header-2 reveal']">Reflections</header>
-        <div :class="[mobileView ? 'introduction-m reveal' : 'introduction reveal']">
+        <div :class="[mobileView ? 'overview-m reveal' : 'overview reveal']">
             Revisiting this project five years later, I realised that my initial approach focused heavily on the transactional aspect of booking a class – optimising the steps needed to complete the task efficiently. While functional clarity is important, I had overlooked the emotional weight behind parents' decision-making process.
 
             <br><br>Through further research, it became clear that parents are not simply evaluating logistics such as distance or schedule. They are making high-stakes decisions about their children's development, and rely heavily on reviews, credibility signals and reassuarance before feeling confident enough to commit.

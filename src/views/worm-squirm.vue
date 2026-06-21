@@ -37,19 +37,19 @@
             <p class="specs-list-m"><text class="specs-title-m">Timeline:</text> Dec 2025</p>
             <p class="specs-list-m"><text class="specs-title-m">Tools used:</text> Procreate, Photoshop</p>
         </div>
-        <div :class="[mobileView ? 'introduction-m' : 'introduction']">
+        <div :class="[mobileView ? 'overview-m' : 'overview']">
            What started out as doodles for journal stickers in my sketchbook snowballed into exploring how the flexible form of a worm can be twisted & curled into a typeface.
         </div>
 
         <header :class="[mobileView ? 'header-2-m' : 'header-2']">The Design Process</header>
 
-        <div :class="[mobileView ? 'introduction-m' : 'introduction']">
+        <div :class="[mobileView ? 'overview-m' : 'overview']">
             My first consideration was to ensure that the thickness of the worm was consistent across the design of the characters and symbols. To do so, I used an outline brush set to a fixed size on procreate. I hand-drew all the characters and avoided any smart snapping or lines that were too straight, to stay true to the organic nature of a worm.
         </div>
 
         <img src="@/assets/worm-squirm/ws-4.jpg" class="img3"/>
 
-        <div :class="[mobileView ? 'introduction-m' : 'introduction']">
+        <div :class="[mobileView ? 'overview-m' : 'overview']">
             I then filled in the outline for the glyphs and started marking out the worm's lines. My plan was to have the eyes and lines of the worm in negative space. My considerations for the lines were to (1) use the lines to clearly show any overlapping areas, (2) try and make them as evenly spaced as possible in each worm, and (3) use them as intentionally as possible so that each glyph is still legible, while still being clear that it's a worm. The following glyphs below showcase some of my design considerations. For glyphs A and H, I struggled to find a way to bend the worm without it being too thick compared to the other glyphs, so for only these 2, I added a "chunk" in the middle. 
         </div>
 
@@ -61,7 +61,7 @@
             </div>
         </div>
 
-        <div :class="[mobileView ? 'introduction-m' : 'introduction']">
+        <div :class="[mobileView ? 'overview-m' : 'overview']">
             Worm Squirm Typeface contains 75 hand-drawn worm characters. They are bubbly and bold, perfect to give strong headers a wiggly personality. If you would like to download the typeface for personal use, feel free to drop me a message! <br>
         </div>
 
@@ -131,16 +131,6 @@ export default ({
     width: 100%;
 }
 
-.header-2 {
-    margin-left: 180px;
-}
-
-.introduction {
-    font-size: 18px;
-    margin-left: 180px;
-    margin-right: 180px;
-    line-height: 26px;
-}
 
 .digi-ill {
     display: flex;

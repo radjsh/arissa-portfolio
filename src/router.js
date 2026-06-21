@@ -18,6 +18,7 @@ import LTA from './views/lta.vue';
 import wormSquirm from './views/worm-squirm.vue';
 import cnnSia from './views/cnn-sia.vue';
 import stickItRobert from './views/stick-it-robert.vue';
+import collabs from './views/collabs.vue';
 
 const routes = [
     {
@@ -133,6 +134,12 @@ const routes = [
         name: 'stick-it-robert',
         component: stickItRobert,
         meta: {title: 'stick it with robert'}
+    },
+    {
+        path: '/portfolio/collabs',
+        name: 'collabs',
+        component: collabs,
+        meta: {title: 'collabs'}
     }
     
 ]

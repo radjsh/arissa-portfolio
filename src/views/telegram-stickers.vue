@@ -38,7 +38,7 @@
             <p class="specs-list-m"><text class="specs-title-m">Tools used:</text> Procreate, Adobe Illustrator and After Effects</p>
         </div>
         <header :class="[mobileView ? 'header-2-m' : 'header-2']">Static Telegram Sticker Pack</header>
-        <div :class="[mobileView ? 'introduction-m' : 'introduction']">I believe that there is no better way to express yourself over text, than to use the stickers that you have created yourself. I created bonk (yes, I named my sticker pack bonk without knowing that I couldn’t change it later), for fun. It has now grown into a collaborative sticker pack, with friends sharing me emojis and expressions that they would like to see. 
+        <div :class="[mobileView ? 'overview-m' : 'overview']">I believe that there is no better way to express yourself over text, than to use the stickers that you have created yourself. I created bonk (yes, I named my sticker pack bonk without knowing that I couldn’t change it later), for fun. It has now grown into a collaborative sticker pack, with friends sharing me emojis and expressions that they would like to see. 
             <br><br>Bonk consists of <b>93</b> digitally drawn expressive stickers, used <b>7.2 million</b> times among <b>82,000</b> telegram users to date.
             <br><br>Save Bonk to your device here: <b><a class="link-style" href="https://t.me/addstickers/rissaartt" target="_blank">https://t.me/addstickers/rissaartt</a></b>
         </div>
@@ -46,7 +46,7 @@
             <poster v-for="logo in logos" :key="logo.title" :poster="logo"></poster>
         </section>
         <header :class="[mobileView ? 'header-2-m' : 'header-2']">Animated Telegram Sticker Pack</header>
-        <div :class="[mobileView ? 'introduction-m' : 'introduction']">I have always been interested in motion graphics and animation. With Bonk as a basis, I decided to challenge myself and animate a telegram sticker pack that captures the joys and tribulations of everyday life. Hence, the birth of Bonky. <br>
+        <div :class="[mobileView ? 'overview-m' : 'overview']">I have always been interested in motion graphics and animation. With Bonk as a basis, I decided to challenge myself and animate a telegram sticker pack that captures the joys and tribulations of everyday life. Hence, the birth of Bonky. <br>
         <br>Bonky consists of <b>20</b> vector animations, used <b>1.2 million</b> times among <b>28,000</b> telegram users to date.
         <br><br>Save Bonky to your device here: <b><a class="link-style" href="https://t.me/addstickers/rissaartt-animated" target="_blank">https://t.me/addstickers/rissaartt</a></b>
 
@@ -136,21 +136,10 @@ export default ({
     height: 100px;
 }
 
-.header-2 {
-    margin-left: 148px;
-}
-
 .header-m-2 {
     font-family: "Futura-Med";
     font-size: 24px;
     margin-top: 36px;
-}
-
-.introduction {
-    font-size: 18px;
-    margin-left: 148px;
-    margin-right: 148px;
-    line-height: 26px;
 }
 
 a {

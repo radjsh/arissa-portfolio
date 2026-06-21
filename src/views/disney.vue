@@ -37,12 +37,12 @@
             <p class="specs-list-m"><text class="specs-title-m">Timeline:</text> Feb 2021 - June 2022</p>
             <p class="specs-list-m"><text class="specs-title-m">Tools used:</text> Adobe Photoshop, Illustrator and After Effects</p>
         </div>
-        <div :class="[mobileView ? 'introduction-m' : 'introduction']">
+        <div :class="[mobileView ? 'overview-m' : 'overview add-margin']">
             At Disney, I interned in the CPGP (Consumer Products, Games and Publishing) APAC team as a creative marketing intern, where I created graphic, retail and digital toolkits for Disney, Marvel and Pixar marketing campaigns. I also had the opportunity to lead the design direction and execution of the Mickey and Friends campaigns Mickey Better Together and Love Nature.
         </div>
 
         <header :class="[mobileView ? 'header-2-m' : 'header-2']">Mickey Better Together</header>
-        <div :class="[mobileView ? 'introduction-m' : 'introduction']">Mickey Better Together celebrates going out and doing good with the people around you. The campaign follows Mickey and Friends as they busk in the great outdoors, while taking care of each other. I had the honour of leading this project, setting the design direction and creating the key visual.</div>
+        <div :class="[mobileView ? 'overview-m' : 'overview']">Mickey Better Together celebrates going out and doing good with the people around you. The campaign follows Mickey and Friends as they busk in the great outdoors, while taking care of each other. I had the honour of leading this project, setting the design direction and creating the key visual.</div>
         <div class="row specs-row" v-if="!mobileView">
             <div class="col-2 l3 offset-l1 m3" >
                 <ul class="specs">
@@ -80,7 +80,7 @@
         </section>
 
         <header :class="[mobileView ? 'header-2-m' : 'header-2']">Marvel Heroes Unite 2021</header>
-        <div :class="[mobileView ? 'introduction-m' : 'introduction']">Marvel Heroes Unite brings together heroes across the multiverse. It celebrates each individuals’ strength and prowess, while emphasing the importance of banding together. I assisted in the adaptation of the Key Visual across different orientations and formats, and developed the design for the influencer box.
+        <div :class="[mobileView ? 'overview-m' : 'overview']">Marvel Heroes Unite brings together heroes across the multiverse. It celebrates each individuals’ strength and prowess, while emphasing the importance of banding together. I assisted in the adaptation of the Key Visual across different orientations and formats, and developed the design for the influencer box.
         </div>
         <div class="row specs-row" v-if="!mobileView">
             <div class="col-2 l3 offset-l1 m3" >
@@ -120,7 +120,7 @@
 
                 
         <header :class="[mobileView ? 'header-2-m' : 'header-2']">Love Nature</header>
-        <div :class="[mobileView ? 'introduction-m' : 'introduction']">Mickey Love Nature aspires to put its own twist on sustainability through regenerative design. By taking a modern design approach towards environmental themes, this campaign aims to appeal to the younger audience with a touch of revitalisation. I had the opportunity to lead this project, create the key visual and prepare assets for on-ground activation.</div>
+        <div :class="[mobileView ? 'overview-m' : 'overview']">Mickey Love Nature aspires to put its own twist on sustainability through regenerative design. By taking a modern design approach towards environmental themes, this campaign aims to appeal to the younger audience with a touch of revitalisation. I had the opportunity to lead this project, create the key visual and prepare assets for on-ground activation.</div>
         <div class="row specs-row" v-if="!mobileView">
             <div class="col-2 l3 offset-l1 m3" >
                 <ul class="specs">
@@ -158,7 +158,7 @@
         </section>
 
         <header :class="[mobileView ? 'header-2-m' : 'header-2']">Pixar Fest 2022</header>
-        <div :class="[mobileView ? 'introduction-m' : 'introduction']">Pixar Fest celebrates all the different stories and characters of Pixar, and invites audiences to come down to experience and celebrate a day of all things Pixar. I designed the key visual for this campaign.</div>
+        <div :class="[mobileView ? 'overview-m' : 'overview']">Pixar Fest celebrates all the different stories and characters of Pixar, and invites audiences to come down to experience and celebrate a day of all things Pixar. I designed the key visual for this campaign.</div>
         <div class="row specs-row" v-if="!mobileView">
             <div class="col-2 l3 offset-l1 m3" >
                 <ul class="specs">
@@ -327,14 +327,9 @@ export default ({
     width: 100%;
 }
 
-.header-2 {
-    margin-left: 200px;
+.add-margin{
+    margin-top:100px;
+    margin-bottom:120px;
 }
 
-.introduction {
-    font-size: 20px;
-    margin-left: 200px;
-    margin-right: 200px;
-    line-height: 28px;
-}
 </style>

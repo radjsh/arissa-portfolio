@@ -38,13 +38,13 @@
             <p class="specs-list-m"><text class="specs-title-m">Tools used:</text> Figma and Adobe Illustrator</p>
         </div>
         <header :class="[mobileView ? 'header-2-m' : 'header-2']">Logos</header>
-        <div :class="[mobileView ? 'introduction-m' : 'introduction']">During the 2020 circuit breaker, I approached small local businesses based in Singapore, offering my design services. This fueled my passion in creating graphical logos and icons freelance. Here are some of them that I designed using Adobe Illustrator!
+        <div :class="[mobileView ? 'overview-m' : 'overview']">During the 2020 circuit breaker, I approached small local businesses based in Singapore, offering my design services. This fueled my passion in creating graphical logos and icons freelance. Here are some of them that I designed using Adobe Illustrator!
         </div>
         <section class="posters">
             <poster v-for="logo in logos" :key="logo.title" :poster="logo"></poster>
         </section>
         <header :class="[mobileView ? 'header-2-m' : 'header-2']">Icons</header>
-        <div :class="[mobileView ? 'introduction-m' : 'introduction']">I believe that icons are a great way for brands to express themselves while aligning with their brand identity. I’ve created icon sets for a range of purposes, from internal admin terminals, to in-app buttons and Instagram story highlights.
+        <div :class="[mobileView ? 'overview-m' : 'overview']">I believe that icons are a great way for brands to express themselves while aligning with their brand identity. I’ve created icon sets for a range of purposes, from internal admin terminals, to in-app buttons and Instagram story highlights.
         </div>
         <section class="posters">
             <poster v-for="icon in icons" :key="icon.title" :poster="icon"></poster>
@@ -162,15 +162,4 @@ export default ({
     height: 100px;
 }
 
-.header-2 {
-    margin-left: 250px;
-    margin-right: 180px;
-}
-
-.introduction {
-    font-size: 18px;
-    margin-left: 250px;
-    margin-right: 180px;
-    line-height: 26px;
-}
 </style>

@@ -84,25 +84,11 @@ export default {
                     cat: 'cw',
                 },
                 {
-                    title: '30 days of UI challenge',
-                    subheader: 'ui/ux design & graphic design',
-                    src: require("@/assets/portfolio-categories/30daysofuichallenge.svg"),
-                    path: 'ui-challenge',
-                    cat: 'pp',
-                },
-                {
                     title: 'LTA Move Lite Campaign',
                     subheader: 'illustration',
                     src: require("@/assets/portfolio-categories/lta.jpg"),
                     path: 'lta',
                     cat: 'fi',
-                },
-                {
-                    title: 'Worm Squirm Typeface',
-                    subheader: 'typeface design',
-                    src: require("@/assets/portfolio-categories/worm-squirm.jpg"),
-                    path: 'wormsquirm',
-                    cat: 'pp',
                 },
                 {
                     title: 'Samsung x Casetify',
@@ -112,10 +98,17 @@ export default {
                     cat: 'fi',
                 },
                 {
-                    title: '2022 SUTD Yearbook',
-                    subheader: 'editorial design',
-                    src: require("@/assets/portfolio-categories/yearbook.jpg"),
-                    path: 'yearbook',
+                    title: '30 days of UI challenge',
+                    subheader: 'ui/ux design & graphic design',
+                    src: require("@/assets/portfolio-categories/30daysofuichallenge.svg"),
+                    path: 'ui-challenge',
+                    cat: 'pp',
+                },
+                {
+                    title: 'Digital Illustrations',
+                    subheader: 'visual design',
+                    src: require("@/assets/portfolio-categories/digital-illustrations.png"),
+                    path: 'digital-illustrations',
                     cat: 'pp',
                 },
                 {
@@ -124,7 +117,15 @@ export default {
                     src: require("@/assets/portfolio-categories/tele.jpg"),
                     path: 'telegram-stickers',
                     cat: 'pp',
-                }
+                },
+                {
+                    title: '2022 SUTD Yearbook',
+                    subheader: 'editorial design',
+                    src: require("@/assets/portfolio-categories/yearbook.jpg"),
+                    path: 'yearbook',
+                    cat: 'pp',
+                },
+
             ],
             mobileView: null,
             windowWidth: null,

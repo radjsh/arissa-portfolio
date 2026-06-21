@@ -37,13 +37,13 @@
             <p class="specs-list-m"><text class="specs-title-m">Timeline:</text> Feb 2022 - Sept 2022</p>
             <p class="specs-list-m"><text class="specs-title-m">Tools used:</text> Adobe Indesign, Lightroom and Photoshop</p>
         </div>
-        <div :class="[mobileView ? 'introduction-m' : 'introduction']">
+        <div :class="[mobileView ? 'overview-m' : 'overview']">
             I led the SUTD Yearbook Committee as the Editor-in-chief to photograph, curate and design the 2022 edition of the SUTD Yearbook. We photographed 333 students and compiled a 216 page yearbook narrating the story of the graduating class of 2022. 
         </div>
         <section class="posters">
             <poster v-for="poster in posters" :key="poster.title" :poster="poster"></poster>
         </section>
-        <div :class="[mobileView ? 'introduction-m' : 'introduction']">
+        <div :class="[mobileView ? 'overview-m' : 'overview']">
             Special shoutout to Jean, Lucas, Filbert, Nicole and Ferry for bringing the yearbook to fruition. If you would like to view the entire yearbook, please drop me an email! </div>
         <div class="see-more-div">
             <text :class="[mobileView ? 'sm-title-m' : 'sm-title']">See More Projects</text> 
@@ -156,11 +156,6 @@ export default ({
     height: 100px;
 }
 
-.introduction {
-    font-size: 18px;
-    margin-left: 148px;
-    margin-right: 148px;
-}
 
 a {
     color: #EA4C89;

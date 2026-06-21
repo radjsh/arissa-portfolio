@@ -37,7 +37,7 @@
             <p class="specs-list-m"><text class="specs-title-m">Timeline:</text> Dec 2023 - Jan 2024</p>
             <p class="specs-list-m"><text class="specs-title-m">Tools used:</text> Procreate</p>
         </div>
-        <div :class="[mobileView ? 'introduction-m' : 'introduction']">
+        <div :class="[mobileView ? 'overview-m' : 'overview']">
             As part of Samsung’s new S24 Galaxy launch, I was one of the 11 local artists invited to be part of the Epic Playground and design casetify phone covers inspired by local Singapore elements. Additionally, the designs were adapted into Galaxy themes and marketing material on the trains. 
             <br>
             <br>
@@ -52,7 +52,7 @@
             </div>
         </div>
 
-        <div :class="[mobileView ? 'introduction-m' : 'introduction']">
+        <div :class="[mobileView ? 'overview-m' : 'overview']">
             The highlight of this project was getting to see my design on the train. It was such a blessing to have my own EPIC experience on the commute to work!
         </div>
 
@@ -127,16 +127,6 @@ export default ({
     width: 100%;
 }
 
-.header-2 {
-    margin-left: 180px;
-}
-
-.introduction {
-    font-size: 18px;
-    margin-left: 180px;
-    margin-right: 180px;
-    line-height: 26px;
-}
 
 .specs-row-2 {
     margin-top: 48px;

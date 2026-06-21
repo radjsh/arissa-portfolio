@@ -37,12 +37,12 @@
             <p class="specs-list-m"><text class="specs-title-m">Timeline:</text> Sept 2024 - Nov 2024</p>
             <p class="specs-list-m"><text class="specs-title-m">Tools used:</text> Procreate</p>
         </div>
-        <div :class="[mobileView ? 'introduction-m' : 'introduction']">
+        <div :class="[mobileView ? 'overview-m' : 'overview']">
             The "Reasons to Move Lite" campaign by Singapore Land Transport Authority (LTA) aimed to brighten up commute spaces and inspire Singaporeans to adopt sustainable and active transportation habits. A series of stories were collected, sharing how locals embraced moving lite in their daily lives. I was commissioned to bring 2 of these stories to life through my illustrations. The artworks were presented in both horizontal and vertical formats for display at train stations across the island.
         </div>
 
         <header :class="[mobileView ? 'header-2-m' : 'header-2']">Reason #30: Exploring new walking routes with my furkids!</header>
-        <div :class="[mobileView ? 'introduction-m' : 'introduction']">
+        <div :class="[mobileView ? 'overview-m' : 'overview']">
             For this quote, my main onjective was to capture the excitement and joy of shared exploration. I played with the scale of the animals to create a stronger focus on them, and experimented with different color schemes to set the tone and visual hierarchy. These variations helped me to evaluate which palette best conveyed the cheerful and dynamic mood of the scene. 
         </div>
 
@@ -54,7 +54,7 @@
             </div>
         </div>
 
-        <div :class="[mobileView ? 'introduction-m' : 'introduction']">
+        <div :class="[mobileView ? 'overview-m' : 'overview']">
             The completed artwork celebrates the joy of exploration and companionship, resonating with the campaign mission of inspiring active and joyful living. The design can be spotted at 12 train stations.
         </div>
 
@@ -69,7 +69,7 @@
         </div>
 
         <header :class="[mobileView ? 'header-2-m' : 'header-2']">Reason #31: Feeling like my best self as I get to enjoy nature's beauty.</header>
-        <div :class="[mobileView ? 'introduction-m' : 'introduction']">
+        <div :class="[mobileView ? 'overview-m' : 'overview']">
             For this quote, my goal was to convey the idea of "best self" by illustrating the main character glowing, reflecting his inner peace and harmony with nature. The character was designed to look serene and fully immersed in the beauty of the natural surroundings. After discussions with the client, we decided to add clones of the main character in the composition to add movement and energy, bringing more life and dynamism to the scene.
         </div>
 
@@ -81,7 +81,7 @@
             </div>
         </div>
 
-        <div :class="[mobileView ? 'introduction-m' : 'introduction']">
+        <div :class="[mobileView ? 'overview-m' : 'overview']">
             The final artwork radiates positivity and wonder, embodying the joy of being at peace with oneself and the world. The illustration is displayed in 3 train stations, encouraging people to embrace lighter and more meaningful ways of living.
         </div>
 
@@ -96,7 +96,7 @@
         </div>
 
 
-        <div :class="[mobileView ? 'introduction-m' : 'introduction']">
+        <div :class="[mobileView ? 'overview-m' : 'overview']">
             Overall, it was an exciting and fulfilling challenge to bring to life people’s reasons to move lite. Each illustration presented a unique opportunity to explore different themes and emotions, making the project both rewarding and creatively stimulating.
             <br><br>
             A heartfelt thank you to LTA and BLKJ Havas for the opportunity to contribute to this meaningful campaign. And a special thank you to everyone who shared sightings of the illustrations, it was truly encouraging to see them resonating with the public! :)
@@ -174,16 +174,7 @@ export default ({
     width: 100%;
 }
 
-.header-2 {
-    margin-left: 180px;
-}
 
-.introduction {
-    font-size: 18px;
-    margin-left: 180px;
-    margin-right: 180px;
-    line-height: 26px;
-}
 
 .specs-row-2 {
     margin-top: 48px;
@@ -239,7 +230,7 @@ a:hover {
 }
 
 .img3 {
-    width: 80%;
+    width: 75%;
     margin: 1% 1% 1% 1%;
     border-radius: 10px;
 }

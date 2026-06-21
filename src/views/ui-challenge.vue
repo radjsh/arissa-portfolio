@@ -37,13 +37,13 @@
             <p class="specs-list-m"><text class="specs-title-m">Timeline:</text> May 2019 - Jan 2022</p>
             <p class="specs-list-m"><text class="specs-title-m">Tools used:</text> Adobe Illustrator and Figma</p>
         </div>
-        <div :class="[mobileView ? 'introduction-m' : 'introduction']">
+        <div :class="[mobileView ? 'overview-m' : 'overview']">
             To build up my ui/ux vocabulary, I challenged myself to design 30 different prompts. I practiced creating designs for both mobile and desktop, with emphasis on simplicity, clarity and coherence. I took the chance to experiment with bold and unique elements, while still keeping functionality in mind.
         </div>
         <section class="posters">
             <poster v-for="poster in posters" :key="poster.title" :poster="poster"></poster>
         </section>
-        <div :class="[mobileView ? 'introduction-m' : 'introduction']">
+        <div :class="[mobileView ? 'overview-m' : 'overview']">
             To view the entire challenge, check out my <b><a class="link-style" href="https://dribbble.com/arissa/collections/4198970-30-days-of-UI-challenge" target="_blank">dribbble collection</a></b>!
         </div>
         <div class="see-more-div">
@@ -141,11 +141,6 @@ export default ({
     width: 100%;
 }
 
-.introduction {
-    font-size: 18px;
-    margin-left: 148px;
-    margin-right: 148px;
-}
 
 a {
     color: #EA4C89;

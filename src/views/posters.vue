@@ -37,7 +37,7 @@
             <p class="specs-list-m"><text class="specs-title-m">Timeline:</text> May 2019 - Present</p>
             <p class="specs-list-m"><text class="specs-title-m">Tools used:</text> Adobe Illustrator and Photoshop</p>
         </div>
-        <div :class="[mobileView ? 'introduction-m' : 'introduction']">
+        <div :class="[mobileView ? 'overview-m' : 'overview']">
             Designing posters was my first deep dive into graphic design. Here is my collection of graphical posters that I created for school events, projects and workshops.
         </div>
         <section class="posters">
@@ -151,9 +151,4 @@ export default ({
     height: 100px;
 }
 
-.introduction {
-    font-size: 18px;
-    margin-left: 180px;
-    margin-right: 180px;
-}
 </style>

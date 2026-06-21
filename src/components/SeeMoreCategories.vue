@@ -61,19 +61,9 @@ export default {
                     path: 'lta',
                 },
                 {
-                    title: 'Worm Squirm Typeface',
-                    src: require("@/assets/portfolio-categories/worm-squirm.jpg"),
-                    path: 'wormsquirm',
-                },
-                {
                     title: 'Samsung x Casetify',
                     src: require("@/assets/portfolio-categories/samsungxcasetify.jpg"),
                     path: 'samsung',
-                },
-                {
-                    title: '2022 SUTD Yearbook',
-                    src: require("@/assets/portfolio-categories/yearbook.jpg"),
-                    path: 'yearbook',
                 },
                 {
                     title: '30 days of UI challenge',
@@ -81,14 +71,19 @@ export default {
                     path: 'ui-challenge',
                 },
                 {
+                    title: 'Digital Illustrations',
+                    src: require("@/assets/portfolio-categories/digital-illustrations.png"),
+                    path: 'digital-illustrations',
+                },
+                {
                     title: 'Telegram Stickers',
                     src: require("@/assets/portfolio-categories/tele.jpg"),
                     path: 'telegram-stickers',
                 },
                 {
-                    title: 'Digital Illustrations',
-                    src: require("@/assets/portfolio-categories/digital-illustrations.svg"),
-                    path: 'digital-illustrations',
+                    title: '2022 SUTD Yearbook',
+                    src: require("@/assets/portfolio-categories/yearbook.jpg"),
+                    path: 'yearbook',
                 },
             ],
             display: [],

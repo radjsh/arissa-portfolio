@@ -52,23 +52,23 @@
         ></video>
         </div>
         <header :class="[mobileView ? 'header-2-m reveal' : 'header-2 reveal']">The Challenge</header>
-        <div :class="[mobileView ? 'introduction-m reveal' : 'introduction reveal']">Singapore Airlines wanted to highlight how its Premium Economy and Business Class cabins offer meaningful, world-class experiences, while strengthening brand affinity with affluent business travellers.
+        <div :class="[mobileView ? 'overview-m reveal' : 'overview reveal']">Singapore Airlines wanted to highlight how its Premium Economy and Business Class cabins offer meaningful, world-class experiences, while strengthening brand affinity with affluent business travellers.
 
             <br><br>We had to communicate <b>multiple premium offerings without overwhelming users with information</b>, while making the experience feel <b>participatory and engaging</b>, rather than promotional.
 
             <br><br> I saw this as a design problem around <b>cognitive load and engagement </b>— how do we help users absorb detailed information while still enjoying the journey?
         </div>
         <header :class="[mobileView ? 'header-2-m reveal' : 'header-2 reveal']">The Design Process</header>
-        <div :class="[mobileView ? 'introduction-m reveal' : 'introduction reveal']">
+        <div :class="[mobileView ? 'overview-m reveal' : 'overview reveal']">
             We held weekly syncs with producers and SIA to align on content, scope and brand tone. I presented multiple interaction prototypes and collected feedback before finalising flows.
                     </div>
         <poster key="sketches" :poster="sketches"></poster>
-        <div :class="[mobileView ? 'introduction-m reveal' : 'introduction reveal']">
+        <div :class="[mobileView ? 'overview-m reveal' : 'overview reveal']">
             We prioritised experiences that maximised user discovery and engagement while staying true to SIA’s premium brand.
         </div>
         <poster key="lofi" :poster="lofi"></poster>
         <header :class="[mobileView ? 'header-2-m reveal' : 'header-2 reveal']">A Parallel Narrative Structure</header>
-        <div :class="[mobileView ? 'introduction-m reveal' : 'introduction reveal']">
+        <div :class="[mobileView ? 'overview-m reveal' : 'overview reveal']">
             As the brief required an accompanying film featuring two talents, I worked with the team to explore how their stories could be told in parallel rather than separately. We designed a <b>click-to-switch video interaction</b>, where both talents’ journeys play concurrently, allowing users to toggle between Premium Economy and Business Class experiences.
             This interaction became the backbone of the site, grounding all subsequent interactions within a single, cohesive narrative.
 
@@ -81,7 +81,7 @@
 
 
         <header :class="[mobileView ? 'header-2-m reveal' : 'header-2 reveal']">Premium Dining: Learning Through Play</header>
-        <div :class="[mobileView ? 'introduction-m reveal' : 'introduction reveal']">
+        <div :class="[mobileView ? 'overview-m reveal' : 'overview reveal']">
        To make the dining experience interactive, we designed a <b>dish-to-destination matching game</b> where users guess each dish’s country of origin before seeing the context. This active participation makes learning more engaging, and helps users better remember the information, while highlighting SIA’s premium, destination-inspired meals to strengthen brand perception. 
         
     
@@ -93,14 +93,14 @@
     </div>
 
         <header :class="[mobileView ? 'header-2-m reveal' : 'header-2 reveal']">Immersive Cabin Experience</header>
-        <div :class="[mobileView ? 'introduction-m reveal' : 'introduction reveal']">
+        <div :class="[mobileView ? 'overview-m reveal' : 'overview reveal']">
             To simulate the feeling of moving through a cabin, we used a horizontal scroll interaction, allowing users to "stroll" down the aisle of a Premium Economy or Business Class cabin. 
             <br><br>
             Before committing to the illustrations and animations, we systematically listed out the different proof points we wanted to cover, and their accompanying illustrations and interactions.
         </div>
         <poster key="list" :poster="list"></poster>
 
-        <div :class="[mobileView ? 'introduction-m reveal' : 'introduction reveal']">
+        <div :class="[mobileView ? 'overview-m reveal' : 'overview reveal']">
             I animated the cabin illustrations (created by illustrator Alba), embedding micro-interactions that encourage exploration. These interactions were intentionally simple, focusing on discovery rather than instruction, to share SIA's extensive in-flight offerings.
         
             <video 
@@ -111,14 +111,14 @@
         </div>
 
         <header :class="[mobileView ? 'header-2-m reveal' : 'header-2 reveal']">User Testing</header>
-        <div :class="[mobileView ? 'introduction-m reveal' : 'introduction reveal']">
+        <div :class="[mobileView ? 'overview-m reveal' : 'overview reveal']">
             While formal user testing was limited due to the nature of the campaign, internal feedback highlighted that the interactive elements made the experience surprisingly intuitive despite the amount of information presented.
             <br><br>
             One key takeaway for me was how small, playful interactions helped lower the barrier to engaging with information-heavy content, which can otherwise feel taxing.
         </div>
 
         <header :class="[mobileView ? 'header-2-m reveal' : 'header-2 reveal']">Campaign Analytics</header>
-        <div :class="[mobileView ? 'introduction-m reveal' : 'introduction reveal']">
+        <div :class="[mobileView ? 'overview-m reveal' : 'overview reveal']">
 
         <div class="row specs-row" v-if="!mobileView">
             <div class="col l3 offset-l1 m3" >
@@ -163,7 +163,7 @@
 
 
         <header :class="[mobileView ? 'header-2-m reveal' : 'header-2 reveal']">Personal Reflection</header>
-        <div :class="[mobileView ? 'introduction-m reveal' : 'introduction reveal']">Designing this campaign reinforced my belief that good digital experiences aren’t about showing everything at once, but about <b>guiding users through information at the right pace, and encouraging active participation</b>. My team and I approached each story with meticulous care, ensuring that we aligned with SIA's brand guidelines, while adding playful touches that reflected the feeling of being on a flight – exploring the cabin, discovering amenities and enjoying in-flight meals.
+        <div :class="[mobileView ? 'overview-m reveal' : 'overview reveal']">Designing this campaign reinforced my belief that good digital experiences aren’t about showing everything at once, but about <b>guiding users through information at the right pace, and encouraging active participation</b>. My team and I approached each story with meticulous care, ensuring that we aligned with SIA's brand guidelines, while adding playful touches that reflected the feeling of being on a flight – exploring the cabin, discovering amenities and enjoying in-flight meals.
             
             <br><br>This project sharpened my interest in using interaction design not just to inform, but to help users feel curious to discover, and engaged as they explore a product.
         </div>

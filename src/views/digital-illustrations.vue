@@ -1,6 +1,6 @@
 <template>
     <div :class="[mobileView ? 'poster-div-m' : 'poster-div']">
-        <img src="@/assets/digital-illustrations/digital-illustrations-banner.svg" :class="[mobileView ? 'banner-m' : 'banner']">
+        <img src="@/assets/digital-illustrations/digital-illustrations-banner.jpg" :class="[mobileView ? 'banner-m' : 'banner']">
         <div class="heading">
             <header :class="[mobileView ? 'header-m' : 'header']">Digital Illustrations</header>
             <p :class="[mobileView ? 'subheader-posters-m' : 'subheader-posters']">Personal Project, Illustrations</p>
@@ -37,36 +37,33 @@
             <p class="specs-list-m"><text class="specs-title-m">Timeline:</text> June 2020 - Present</p>
             <p class="specs-list-m"><text class="specs-title-m">Tools used:</text> Procreate</p>
         </div>
-        <div :class="[mobileView ? 'introduction-m' : 'introduction']">
-            Buying an iPad meant doodling on the go. From quiet hours on the sofa, to long MRT rides home, I grew fond of creating digital illustrations, each with their own unique story. There is really no limit to what I can create -- unless my apple pencil runs out of battery.
+        <div :class="[mobileView ? 'overview-m' : 'overview']">
+            My digital illustrations turn everyday moments and feelings into light and playful stories, usually featuring original characters such as Bonky and Robert the Corporate Frog.
         </div>
         <div class="digi-ill">
             <div class="row1">
-                <img src="@/assets/digital-illustrations/floating-by.jpg" class="img1"/>
-                <img src="@/assets/digital-illustrations/otgw.svg" class="img1"/>
+                <img src="@/assets/digital-illustrations/r1c1.jpg" class="img1"/>
+                <img src="@/assets/digital-illustrations/r1c2.jpg" class="img1"/>
             </div>
             <div class="row1">
-                <img src="@/assets/digital-illustrations/adventure-time.svg" class="img1"/>
-                <img src="@/assets/digital-illustrations/space-to-grow.svg" class="img1"/>                
+                <img src="@/assets/digital-illustrations/r2c1.jpg" class="img1"/>
+                <img src="@/assets/digital-illustrations/r2c2.jpg" class="img1"/>                
             </div>
             <div class="row1">
-                <img src="@/assets/digital-illustrations/bunny.jpg" class="img1"/>
-                <img src="@/assets/digital-illustrations/spidey.jpg" class="img1"/>                
+                <img src="@/assets/digital-illustrations/r3c1.jpg" class="img1"/>
+                <img src="@/assets/digital-illustrations/r3c2.jpg" class="img1"/>                
             </div>
             <div class="row1">
-                <img src="@/assets/digital-illustrations/ghost.svg" class="img1"/>
-                <img src="@/assets/digital-illustrations/snake.svg" class="img1"/>                
+                <img src="@/assets/digital-illustrations/r4c1.jpg" class="img1"/>
+                <img src="@/assets/digital-illustrations/r4c2.jpg" class="img1"/>                
             </div>
             <div class="row1">
-                 <img src="@/assets/digital-illustrations/comic.svg" class="img2"/>               
+                <img src="@/assets/digital-illustrations/r5c1.jpg" class="img1"/>
+                <img src="@/assets/digital-illustrations/r5c2.jpg" class="img1"/>                
             </div>
             <div class="row1">
-                <img src="@/assets/digital-illustrations/tangled.svg" class="img1"/>
-                <img src="@/assets/digital-illustrations/body-to-work.svg" class="img1"/>                
-            </div>
-            <div class="row1">
-                <img src="@/assets/digital-illustrations/home.svg" class="img1"/>
-                <img src="@/assets/digital-illustrations/float.svg" class="img1"/>                
+                <img src="@/assets/digital-illustrations/r6c1.jpg" class="img1"/>
+                <img src="@/assets/digital-illustrations/r6c2.jpg" class="img1"/>                
             </div>
         </div>
         <div class="see-more-div">
@@ -131,13 +128,9 @@ export default ({
 <style scoped>
 .banner {
     margin-top: 56px;
+    width:100%;
 }
 
-.introduction {
-    font-size: 18px;
-    margin-left: 148px;
-    margin-right: 148px;
-}
 
 .digi-ill {
     display: flex;
